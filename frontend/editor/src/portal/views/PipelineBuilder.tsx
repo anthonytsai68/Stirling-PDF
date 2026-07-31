@@ -1009,6 +1009,7 @@ export function PipelineBuilder() {
         onClose={() => setPickerAt(null)}
         width="md"
         title={t("portal.pipelines.composer.addTool")}
+        className="portal-pipelines__picker-modal"
       >
         <ToolPicker
           tools={executableTools}

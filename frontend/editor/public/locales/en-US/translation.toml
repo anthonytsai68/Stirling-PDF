@@ -7742,7 +7742,6 @@ title = "Pipelines"
 newPipeline = "New pipeline"
 
 [portal.pipelines.builder]
-addStep = "Add tool"
 back = "Back to pipelines"
 chooseAccount = "Choose an account"
 chooseDestination = "Choose a destination"
@@ -7793,7 +7792,6 @@ hours = "hours"
 minutes = "minutes"
 
 [portal.pipelines.definition]
-jsonCaption = "Pipeline definition"
 subtitle = "The pipeline as it would be saved."
 title = "Definition"
 
