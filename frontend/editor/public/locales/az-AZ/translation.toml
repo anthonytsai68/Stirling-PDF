@@ -57,7 +57,7 @@ keepWorking = "İşə davam et"
 loading = "Yüklənir..."
 loginAgreementAccept = "Qəbul et"
 loginAgreementDecline = "İmtina et"
-loginAgreementProvider = "Bu bildiriş Stirling PDF Inc. tərəfindən deyil, administratorunuz tərəfindən təqdim edilib."
+loginAgreementProvider = "Bu bildiriş PDF.wow.to Inc. tərəfindən deyil, administratorunuz tərəfindən təqdim edilib."
 loginAgreementTitle = "Giriş razılaşması"
 logOut = "Hesabdan çıx"
 marginTooltip = "Səhifə nömrəsi ilə səhifənin kənarı arasındakı məsafə."
@@ -633,9 +633,9 @@ description = "Müvəqqəti fayl saxlama və təmizləmə davranışını konfiq
 label = "Müvəqqəti Fayl İdarəetməsi"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Müvəqqəti fayllar üçün baza qovluq (defolt üçün boş saxlayın: java.io.tmpdir/stirling-pdf)"
+description = "Müvəqqəti fayllar üçün baza qovluq (defolt üçün boş saxlayın: java.io.tmpdir/pdf.wow.to)"
 label = "Baza Müvəqqəti Qovluq"
-placeholder = "Standart: java.io.tmpdir/stirling-pdf"
+placeholder = "Standart: java.io.tmpdir/pdf.wow.to"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]
 description = "Təmizləmənin nə qədər tez-tez işlədiləcəyi (dəqiqə ilə)"
@@ -919,11 +919,11 @@ description = "İxtiyari xüsusiyyətləri və funksionallığı konfiqurasiya e
 title = "Xüsusiyyətlər"
 
 [admin.settings.features.serverCertificate]
-description = "\"Stirling-PDF ilə imzala\" funksiyası üçün server-tərəfli sertifikat generasiyasını konfiqurasiya edin"
+description = "\"PDF.wow.to ilə imzala\" funksiyası üçün server-tərəfli sertifikat generasiyasını konfiqurasiya edin"
 label = "Server Sertifikatı"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "\"Stirling-PDF ilə imzala\" seçimi üçün server-tərəfli sertifikatı aktiv et"
+description = "\"PDF.wow.to ilə imzala\" seçimi üçün server-tərəfli sertifikatı aktiv et"
 label = "Server Sertifikatını aktiv et"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1071,7 +1071,7 @@ description = "Kuki siyasətinin URL-i və ya fayl adı"
 label = "Kuki Siyasəti"
 
 [admin.settings.legal.disclaimer]
-message = "Bu hüquqi sənədləri fərdiləşdirməklə, GDPR və digər AB məlumatların qorunması tələbləri daxil olmaqla, tətbiq olunan bütün qanun və qaydalara uyğunluğu təmin etmək üçün tam məsuliyyəti öz üzərinizə götürürsünüz. Yalnız aşağıdakı hallarda bu ayarları dəyişin: (1) şəxsi/xüsusi instansiya işlədirsiniz, (2) AB yurisdiksiyasından kənardasınız və yerli hüquqi öhdəliklərinizi anlayırsınız, və ya (3) müvafiq hüquqi məsləhət almısınız və bütün istifadəçi məlumatları və hüquqi uyğunluq üçün təkbaşına məsuliyyəti qəbul edirsiniz. Stirling-PDF və onun tərtibatçıları hüquqi öhdəliklərinizə görə heç bir məsuliyyət daşımır."
+message = "Bu hüquqi sənədləri fərdiləşdirməklə, GDPR və digər AB məlumatların qorunması tələbləri daxil olmaqla, tətbiq olunan bütün qanun və qaydalara uyğunluğu təmin etmək üçün tam məsuliyyəti öz üzərinizə götürürsünüz. Yalnız aşağıdakı hallarda bu ayarları dəyişin: (1) şəxsi/xüsusi instansiya işlədirsiniz, (2) AB yurisdiksiyasından kənardasınız və yerli hüquqi öhdəliklərinizi anlayırsınız, və ya (3) müvafiq hüquqi məsləhət almısınız və bütün istifadəçi məlumatları və hüquqi uyğunluq üçün təkbaşına məsuliyyəti qəbul edirsiniz. PDF.wow.to və onun tərtibatçıları hüquqi öhdəliklərinizə görə heç bir məsuliyyət daşımır."
 title = "Hüquqi Məsuliyyət Xəbərdarlığı"
 
 [admin.settings.legal.impressum]
@@ -1158,8 +1158,8 @@ description = "SMTP autentifikasiyası üçün istifadəçi adı"
 label = "SMTP İstifadəçi adı"
 
 [admin.settings.mcp]
-apikeyNote = "Clients send a Stirling API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning Stirling user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
-description = "Expose Stirling's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
+apikeyNote = "Clients send a PDF.wow.to API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning PDF.wow.to user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
+description = "Expose PDF.wow.to's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
 title = "MCP Server"
 
 [admin.settings.mcp.acceptedAudiences]
@@ -1189,7 +1189,7 @@ step3ApiKeyb = "header (or Authorization: Bearer <key>). No OAuth or metadata di
 step4 = "Approve the sign-in; the client retries with a token. Tools appear grouped: convert, pages, misc, security, ai."
 step4ApiKey = "Tools appear grouped: convert, pages, misc, security, ai - and every call is audited as the key's owner."
 tip = "Tip: register the resource ID as an allowed audience in your IdP. Tested with MCP Inspector and Claude Desktop."
-tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning Stirling user."
+tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning PDF.wow.to user."
 title = "Connect an MCP client"
 
 [admin.settings.mcp.issuerUri]
@@ -1202,12 +1202,12 @@ label = "JWKS URL (optional)"
 placeholder = "Auto-discovered from issuer"
 
 [admin.settings.mcp.mode]
-description = "OAuth needs an external IdP. API key uses a Stirling per-user API key (X-API-KEY) - simplest for self-host."
+description = "OAuth needs an external IdP. API key uses a PDF.wow.to per-user API key (X-API-KEY) - simplest for self-host."
 label = "Authentication mode"
 
 [admin.settings.mcp.requireAccount]
-description = "Only let tokens through if their subject maps to a provisioned, enabled Stirling user."
-label = "Require an existing Stirling account"
+description = "Only let tokens through if their subject maps to a provisioned, enabled PDF.wow.to user."
+label = "Require an existing PDF.wow.to account"
 
 [admin.settings.mcp.resourceId]
 description = "This server's public /mcp URL. Tokens must list it in their audience (RFC 8707) or they are rejected."
@@ -1218,7 +1218,7 @@ description = "Require mcp.tools.read for read ops and mcp.tools.write for write
 label = "Enforce OAuth scopes"
 
 [admin.settings.mcp.usernameClaim]
-description = "JWT claim matched against a Stirling username (e.g. sub, email, preferred_username)."
+description = "JWT claim matched against a PDF.wow.to username (e.g. sub, email, preferred_username)."
 label = "Username claim"
 
 [admin.settings.plan.noData]
@@ -1539,7 +1539,7 @@ description = "Aktiv edildikdə, yalnız siyahıdakı istifadəçi ID-ləri botd
 label = "Xüsusi istifadəçi ID-lərinə icazə ver"
 
 [admin.settings.telegram.enabled]
-description = "İstifadəçilərin Stirling PDF ilə konfiqurasiya etdiyiniz Telegram botu vasitəsilə qarşılıqlı əlaqə qurmasına icazə verin."
+description = "İstifadəçilərin PDF.wow.to ilə konfiqurasiya etdiyiniz Telegram botu vasitəsilə qarşılıqlı əlaqə qurmasına icazə verin."
 label = "Telegram botunu aktiv et"
 
 [admin.settings.telegram.feedback]
@@ -1612,20 +1612,20 @@ settingsOverview = "Bu <strong>Ayarlar Paneli</strong>dir. Admin ayarları kateq
 systemCustomization = "UI-ni fərdiləşdirməyin geniş yolları var: <strong>Sistem Ayarları</strong> tətbiqin adını və dilləri dəyişməyə imkan verir, <strong>Xüsusiyyətlər</strong> server sertifikatlarının idarəsi üçün istifadə olunur və <strong>Endpoint-lər</strong> istifadəçiləriniz üçün konkret alətləri aktiv/deaktiv etməyə imkan verir."
 teamsAndUsers = "Buradan <strong>Komandaları</strong> və fərdi istifadəçiləri idarə edin. Yeni istifadəçiləri e-poçtla, paylaşılabilən linklə dəvət edə və ya onlar üçün özünüz xüsusi hesablar yarada bilərsiniz."
 welcome = "<strong>Admin Turuna</strong> xoş gəlmisiniz! Gəlin, sistem administratorları üçün əlçatan güclü müəssisə xüsusiyyətləri və ayarları araşdıraq."
-wrapUp = "Admin turu bu qədər! Stirling PDF-i təşkilatlar üçün güclü və fərdiləşdirilə bilən həll edən müəssisə funksiyalarını gördünüz. Bu tura istənilən vaxt <strong>Kömək</strong> menyusundan daxil olun."
+wrapUp = "Admin turu bu qədər! PDF.wow.to-i təşkilatlar üçün güclü və fərdiləşdirilə bilən həll edən müəssisə funksiyalarını gördünüz. Bu tura istənilən vaxt <strong>Kömək</strong> menyusundan daxil olun."
 
 [adminUserSettings]
 admin = "Admin"
 title = "İstifadəçi İdarəetmə Parametrləri"
 
 [agents]
-stirling_name = "Stirling"
+stirling_name = "PDF.wow.to"
 
 [analytics]
 learnMore = "Daha ətraflı öyrənin"
-paragraph1 = "Stirling PDF bizə məhsulu inkişaf etdirməyə kömək etmək üçün analitikaya üstünlük verib. Biz heç bir şəxsi məlumatı və ya fayl məzmununu izləmirik."
+paragraph1 = "PDF.wow.to bizə məhsulu inkişaf etdirməyə kömək etmək üçün analitikaya üstünlük verib. Biz heç bir şəxsi məlumatı və ya fayl məzmununu izləmirik."
 paragraph2 = "Zəhmət olmasa, Stringling-PDF-ə inkişaf etməkdə və istifadəçilərimizi daha yaxşı anlamaqda yardım etmək üçün analitikanı aktivləşdirməyi nəzərə alın."
-title = "Stirling PDF-i daha yaxşı etmək istəyirsinizmi?"
+title = "PDF.wow.to-i daha yaxşı etmək istəyirsinizmi?"
 
 [annotate]
 tags = "annotate,highlight,draw,markup,comment,notes,review,redline,feedback,markup tools,sticky notes,shapes,arrows,text box,freehand"
@@ -2558,7 +2558,7 @@ bullet1 = "PEM, PKCS12, JKS və server sertifikatı formatlarını dəstəkləyi
 bullet2 = "PDF-də imzanı göstərmək və ya gizlətmək seçimi"
 bullet3 = "Səbəb, məkan və imzalayanın adını əlavə edin"
 bullet4 = "Görünən imzaların yerləşdiriləcəyi səhifəni seçin"
-bullet5 = "Sadə 'Stirling-PDF ilə imzala' seçimi üçün server sertifikatından istifadə edin"
+bullet5 = "Sadə 'PDF.wow.to ilə imzala' seçimi üçün server sertifikatından istifadə edin"
 text = "PDF-i imzalamaq üçün rəqəmsal sertifikat lazımdır (məsələn, PEM, PKCS12 və ya JKS). İmzanı sənəddə görünən etmək və ya yalnız təhlükəsizlik məqsədi ilə görünməz saxlamaq seçiminiz var."
 title = "İmzaların əlavə edilməsi"
 
@@ -2739,10 +2739,10 @@ copy = "Mesajı kopyala"
 
 [chat.fab]
 close = "Close chat"
-open = "Open Stirling AI assistant"
+open = "Open PDF.wow.to AI assistant"
 
 [chat.header]
-agentMenu = "Stirling agent seçimləri"
+agentMenu = "PDF.wow.to agent seçimləri"
 clearChat = "Söhbəti təmizlə"
 
 [chat.input]
@@ -3072,14 +3072,14 @@ upgradeButton = "Hesabı yüksəlt"
 
 [config.apiKeys]
 copyKeyAriaLabel = "API açarını kopyala"
-description = "Stirling-in PDF alətləri paketinə çıxış üçün API açarınız. Layihənizə kopyalayın və ya yenisini yaratmaq üçün yeniləyin."
-docsDescription = "Stirling PDF ilə inteqrasiya haqqında daha çox öyrənin:"
+description = "PDF.wow.to-in PDF alətləri paketinə çıxış üçün API açarınız. Layihənizə kopyalayın və ya yenisini yaratmaq üçün yeniləyin."
+docsDescription = "PDF.wow.to ilə inteqrasiya haqqında daha çox öyrənin:"
 docsLink = "API Sənədləri"
 docsTitle = "API Sənədləri"
 generateError = "API açarınızı yarada bilmədik."
 goToAccount = "Hesaba keç"
 guestInfo = "Qonaq istifadəçilərə API açarları verilmir. Tətbiqlərinizdə istifadə etmək üçün API açarı almaq üçün hesab yaradın."
-intro = "API açarınızdan istifadə edərək Stirling PDF-in emal imkanlarına proqramlı şəkildə çıxış əldə edin."
+intro = "API açarınızdan istifadə edərək PDF.wow.to-in emal imkanlarına proqramlı şəkildə çıxış əldə edin."
 label = "API Açarı"
 publicKeyAriaLabel = "Açıq API açarı"
 refreshAriaLabel = "API açarını yenilə"
@@ -3103,10 +3103,10 @@ title = "API Açarlarını Yenilə"
 warning = "⚠️ Xəbərdarlıq: Bu əməliyyat yeni API açarları yaradacaq və əvvəlki açarları etibarsız edəcək."
 
 [config.mcp]
-description = "Model Context Protocol (MCP) lets AI assistants like Claude use your Stirling PDF tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
-guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run Stirling PDF tools on your behalf."
+description = "Model Context Protocol (MCP) lets AI assistants like Claude use your PDF.wow.to tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
+guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run PDF.wow.to tools on your behalf."
 navLabel = "MCP Server"
-tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using Stirling PDF directly."
+tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using PDF.wow.to directly."
 title = "MCP Server"
 viewApiKeys = "View API keys"
 
@@ -3123,7 +3123,7 @@ label = "Your MCP endpoint"
 
 [config.mcp.setup]
 addTo = "Add to"
-hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your Stirling account on first use - no keys to copy."
+hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your PDF.wow.to account on first use - no keys to copy."
 title = "Connect your AI assistant"
 
 [config.overview]
@@ -3232,7 +3232,7 @@ showPreferencesBtn = "Seçimləri idarə et"
 title = "Çərəzlərdən necə istifadə edirik"
 
 [cookieBanner.popUp.description]
-1 = "Stirling PDF-i sizin üçün daha yaxşı işlətmək üçün çərəzlərdən və digər texnologiyalardan istifadə edirik — alətlərimizi yaxşılaşdırmağa və sevəcəyiniz funksiyalar yaratmağa kömək edir."
+1 = "PDF.wow.to-i sizin üçün daha yaxşı işlətmək üçün çərəzlərdən və digər texnologiyalardan istifadə edirik — alətlərimizi yaxşılaşdırmağa və sevəcəyiniz funksiyalar yaratmağa kömək edir."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3245,12 +3245,12 @@ subtitle = "Kukilərdən istifadə"
 title = "Razılıq Seçimləri Mərkəzi"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Bu kukilər alətlərimizin necə istifadə olunduğunu anlamağa kömək edir ki, icmamızın ən çox dəyər verdiyi xüsusiyyətlərin yaradılmasına fokuslanaq. Arxayın olun — Stirling PDF işlədiyiniz sənədlərin məzmununu izləyə bilməz və heç vaxt izləməyəcək."
+description = "Bu kukilər alətlərimizin necə istifadə olunduğunu anlamağa kömək edir ki, icmamızın ən çox dəyər verdiyi xüsusiyyətlərin yaradılmasına fokuslanaq. Arxayın olun — PDF.wow.to işlədiyiniz sənədlərin məzmununu izləyə bilməz və heç vaxt izləməyəcək."
 title = "Analitika"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF təcrübənizi yaxşılaşdırmaq və alətlərimizin necə istifadə olunduğunu anlamaq üçün kukilər və oxşar texnologiyalardan istifadə edir. Bu, performansı yaxşılaşdırmağa, sizin üçün vacib funksiyaları inkişaf etdirməyə və istifadəçilərimizə davamlı dəstək göstərməyə kömək edir."
-2 = "Stirling PDF istifadə etdiyiniz sənədlərin məzmununu izləyə və ya ona çıxış əldə edə bilməz və heç vaxt etməyəcək."
+1 = "PDF.wow.to təcrübənizi yaxşılaşdırmaq və alətlərimizin necə istifadə olunduğunu anlamaq üçün kukilər və oxşar texnologiyalardan istifadə edir. Bu, performansı yaxşılaşdırmağa, sizin üçün vacib funksiyaları inkişaf etdirməyə və istifadəçilərimizə davamlı dəstək göstərməyə kömək edir."
+2 = "PDF.wow.to istifadə etdiyiniz sənədlərin məzmununu izləyə və ya ona çıxış əldə edə bilməz və heç vaxt etməyəcək."
 3 = "Məxfilik və etimadınız gördüyümüz işin mərkəzindədir."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3346,14 +3346,14 @@ message = "Standart PDF işləyicisini təyin etmək alınmadı"
 title = "Xəta"
 
 [defaultApp.prompt]
-message = "PDF fayllarını açmaq üçün Stirling PDF-i standart tətbiqiniz edin."
+message = "PDF fayllarını açmaq üçün PDF.wow.to-i standart tətbiqiniz edin."
 
 [defaultApp.settingsOpened]
-message = "Zəhmət olmasa sistem ayarlarında Stirling PDF-i seçin"
+message = "Zəhmət olmasa sistem ayarlarında PDF.wow.to-i seçin"
 title = "Ayarlar açıldı"
 
 [defaultApp.success]
-message = "Stirling PDF artıq standart PDF redaktorunuzdur"
+message = "PDF.wow.to artıq standart PDF redaktorunuzdur"
 title = "Standart tətbiq təyin edildi"
 
 [desktopUpdate]
@@ -3369,7 +3369,7 @@ updateFailedMessage = "Yeniləməni endirmək və ya quraşdırmaq alınmadı."
 
 [desktopUpdate.blocked]
 docsLink = "Quraşdırma sənədlərinə bax"
-message = "Stirling-PDF bu kompüterdə özünü yeniləmək üçün icazəyə malik deyil."
+message = "PDF.wow.to bu kompüterdə özünü yeniləmək üçün icazəyə malik deyil."
 title = "Administrator icazələri tələb olunur"
 
 [devAirgapped]
@@ -3939,7 +3939,7 @@ title = "Qovluğa köçür"
 [filesPage.origin]
 all = "Bütün mənbələr"
 cloud = "Bulud"
-cloudHint = "Stirling serverində saxlanılır"
+cloudHint = "PDF.wow.to serverində saxlanılır"
 local = "Lokal"
 localHint = "Yalnız bu brauzerdə saxlanılır"
 shared = "Paylaşılan"
@@ -4203,7 +4203,7 @@ invisible = "Görünməz (yalnız metadata)"
 location = "Məkan:"
 logo = "Loqo:"
 logoHidden = "Loqo yoxdur"
-logoShown = "Stirling PDF loqosu göstərilir"
+logoShown = "PDF.wow.to loqosu göstərilir"
 participantCount_one = "{{count}} participant will sign in order"
 participantCount_other = "{{count}} participants will sign in order"
 participants = "İştirakçılar"
@@ -4257,7 +4257,7 @@ title = "Ardıcıllıqla İmzalama"
 dismiss = "Banneri bağla"
 message = "İşinizi saxlamaq, daha çox funksiyaya çıxış əldə etmək və layihəni dəstəkləmək üçün pulsuz hesab yaradın."
 signUp = "Pulsuz qeydiyyatdan keç"
-title = "Siz Stirling PDF-i qonaq kimi istifadə edirsiniz!"
+title = "Siz PDF.wow.to-i qonaq kimi istifadə edirsiniz!"
 
 [home.addAttachments]
 desc = "PDF-ə daxil edilmiş faylları (əlavələri) əlavə et və ya sil"
@@ -4416,7 +4416,7 @@ tags = "birləşdir,bir araya gətir,birləşdir"
 title = "Birləşdir"
 
 [home.mobile]
-brandAlt = "Stirling PDF loqosu"
+brandAlt = "PDF.wow.to loqosu"
 openFiles = "Faylları aç"
 swipeHint = "Görünüşləri dəyişmək üçün sola və ya sağa sürüşdürün"
 tools = "Alətlər"
@@ -4455,7 +4455,7 @@ tags = "təşkil et,yenidən düz,yer dəyişdir"
 title = "Səhifələri Sırala"
 
 [home.pdfTextEditor]
-desc = "Qruplaşdırılmış mətn redaktəsi və PDF yenidən yaradılması ilə Stirling PDF JSON ixraclarını nəzərdən keçirin və redaktə edin"
+desc = "Qruplaşdırılmış mətn redaktəsi və PDF yenidən yaradılması ilə PDF.wow.to JSON ixraclarını nəzərdən keçirin və redaktə edin"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF Mətn Redaktoru"
 
@@ -4641,7 +4641,7 @@ passwordRequired = "Parol tələb olunur"
 signIn = "Daxil olun"
 validating = "Dəvət yoxlanılır..."
 validationError = "Dəvət keçidinin doğrulanması alınmadı"
-welcome = "Stirling PDF-ə xoş gəldiniz"
+welcome = "PDF.wow.to-ə xoş gəldiniz"
 welcomeSubtitle = "Başlamaq üçün hesab qurulumunu tamamlayın"
 welcomeTitle = "Siz dəvət olunmusunuz!"
 
@@ -4669,7 +4669,7 @@ terms = "Qaydalar və Şərtlər"
 title = "3-cü Tərəf Lisenziyalar"
 
 [localMode]
-toolUnavailable = "Bu alət hesab tələb edir. İstifadə etmək üçün Stirling Cloud-a daxil olun və ya öz serverinizə qoşulun."
+toolUnavailable = "Bu alət hesab tələb edir. İstifadə etmək üçün PDF.wow.to Cloud-a daxil olun və ya öz serverinizə qoşulun."
 
 [localMode.toolPicker]
 message = "Bütün alətləri açmaq üçün daxil olun."
@@ -4726,7 +4726,7 @@ subtitle = "PDF-ləri məxfiləşdirmək, imzalamaq, oxumaq və onlarla işləm�
 title = "İstədiyiniz məlumatı göstərmək/qorumaq üçün PDF-ləri redaktə edin"
 
 [login.slides.overview]
-alt = "Stirling PDF icmalı"
+alt = "PDF.wow.to icmalı"
 subtitle = "PDF-lər üçün məxfilik-öncəli bulud paketi: sənədləri çevirməyə, imzalamağa, məzmunu məxfiləşdirməyə və idarə etməyə, üstəlik 50+ güclü alət."
 title = "PDF ehtiyaclarınız üçün tək ünvan."
 
@@ -4844,7 +4844,7 @@ message = "Təsdiqləmə uğurlu olmadı. Bu pəncərəni bağlayıb yenidən c�
 title = "Təsdiqləmə uğursuz oldu"
 
 [oauth.success]
-message = "Bu pəncərəni bağlayıb Stirling PDF-ə qayıda bilərsiniz."
+message = "Bu pəncərəni bağlayıb PDF.wow.to-ə qayıda bilərsiniz."
 title = "Təsdiqləmə uğurlu oldu"
 
 [oauthConsent]
@@ -4857,17 +4857,17 @@ loadFailed = "This authorisation request is invalid or has expired. Close this t
 loading = "Loading authorisation request..."
 missingId = "Missing authorisation request. Start the connection from your app and try again."
 redirecting = "Returning you to the app..."
-requesting = "{{app}} wants to access your Stirling PDF account"
+requesting = "{{app}} wants to access your PDF.wow.to account"
 scopesIntro = "This will allow {{app}} to:"
 signedInAs = "Signed in as {{name}}"
 signInButton = "Sign in to continue"
-signInPrompt = "Sign in to your Stirling PDF account to continue connecting the app."
+signInPrompt = "Sign in to your PDF.wow.to account to continue connecting the app."
 title = "Authorise access"
 unknownApp = "A third-party application"
 
 [oauthConsent.access]
 actAsYou = "Act as you - everything {{app}} does runs under your account and counts towards your usage"
-tools = "Use your Stirling PDF tools on your behalf - convert, edit, sign, secure and process your documents"
+tools = "Use your PDF.wow.to tools on your behalf - convert, edit, sign, secure and process your documents"
 
 [oauthConsent.scope]
 email = "See your email address"
@@ -4989,7 +4989,7 @@ skipForNow = "Hələlik ötür"
 skipTheTour = "Turu keç"
 
 [onboarding.desktopInstall]
-body = "Stirling masaüstü tətbiq kimi ən yaxşı işləyir. Onu oflayn istifadə edə, sənədlərə daha sürətli baxa və düzəlişləri yerli olaraq kompüterinizdə edə bilərsiniz."
+body = "PDF.wow.to masaüstü tətbiq kimi ən yaxşı işləyir. Onu oflayn istifadə edə, sənədlərə daha sürətli baxa və düzəlişləri yerli olaraq kompüterinizdə edə bilərsiniz."
 selectOs = "Əməliyyat sistemini seçin"
 title = "Yüklə"
 titleWithOs = "{{osLabel}} üçün yüklə"
@@ -4999,8 +4999,8 @@ authenticationCode = "Təsdiqləmə kodu"
 qrCodeLoading = "QR kodunuz yaradılır…"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Giriş rejimini aktivləşdirdikdən sonra istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Stirling-dən pulsuz istifadə edir."
-adminBodyLoginEnabled = "Admin kimi istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər Stirling-dən pulsuz istifadə edir."
+adminBodyLoginDisabled = "Giriş rejimini aktivləşdirdikdən sonra istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər PDF.wow.to-dən pulsuz istifadə edir."
+adminBodyLoginEnabled = "Admin kimi istifadəçiləri idarə edə, ayarları konfiqurasiya edə və serverin vəziyyətini izləyə bilərsiniz. Serverinizdə ilk <strong>{{freeTierLimit}}</strong> nəfər PDF.wow.to-dən pulsuz istifadə edir."
 adminTitle = "Admin icmalı"
 userBody = "Komanda yoldaşlarını dəvət edin, rollar təyin edin və sənədlərinizi bir təhlükəsiz iş mühitində səliqəli saxlayın. Tək istifadədən böyüməyə hazır olduqda giriş rejimini aktivləşdirin."
 userTitle = "Plan icmalı"
@@ -5008,7 +5008,7 @@ userTitle = "Plan icmalı"
 [onboarding.saas.freeEditor]
 freeLine = "The editor is now <free>completely free</free>."
 premium = "We've added loads of new features, including <strong>Policies</strong> and <strong>Agent Chat</strong>."
-title = "Welcome to Stirling"
+title = "Welcome to PDF.wow.to"
 
 [onboarding.saas.team]
 addButton = "Add"
@@ -5028,20 +5028,20 @@ rolePlaceholder = "Rolunuzu təsdiqləyin"
 roleUser = "İstifadəçi"
 
 [onboarding.serverLicense]
-freeBody = "Bizim <strong>Open-Core</strong> lisenziyası hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Fasiləsiz miqyaslanmaq və yeni <strong>PDF mətn redaktəsi alətimizə</strong> erkən çıxış əldə etmək üçün Stirling Server planını tövsiyə edirik — tam redaktə və <strong>limitsiz yerlər</strong> $99/server/ay."
+freeBody = "Bizim <strong>Open-Core</strong> lisenziyası hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Fasiləsiz miqyaslanmaq və yeni <strong>PDF mətn redaktəsi alətimizə</strong> erkən çıxış əldə etmək üçün PDF.wow.to Server planını tövsiyə edirik — tam redaktə və <strong>limitsiz yerlər</strong> $99/server/ay."
 freeTitle = "Server lisenziyası"
-overLimitBody = "Lisenziyalaşmamız hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Sizdə <strong>{{overLimitUserCopy}}</strong> Stirling istifadəçisi var. Fasiləsiz davam etmək üçün Stirling Server planına yüksəldin - <strong>limitsiz yerlər</strong>, PDF mətn redaktəsi və tam admin nəzarəti cəmi $99/server/ay."
+overLimitBody = "Lisenziyalaşmamız hər server üçün pulsuz olaraq maksimum <strong>{{freeTierLimit}}</strong> istifadəçiyə icazə verir. Sizdə <strong>{{overLimitUserCopy}}</strong> PDF.wow.to istifadəçisi var. Fasiləsiz davam etmək üçün PDF.wow.to Server planına yüksəldin - <strong>limitsiz yerlər</strong>, PDF mətn redaktəsi və tam admin nəzarəti cəmi $99/server/ay."
 overLimitTitle = "Server lisenziyası tələb olunur"
 seePlans = "Planlara baxın →"
 upgrade = "İndi yüksəlt →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 onlarca alət və yenilənmiş tərtibatla gəlir. Sürətli turla nələrin dəyişdiyini və lazım olan funksiyaları harada tapacağınızı görün."
+body = "PDF.wow.to V2 onlarca alət və yenilənmiş tərtibatla gəlir. Sürətli turla nələrin dəyişdiyini və lazım olan funksiyaları harada tapacağınızı görün."
 title = "Tur icmalı"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF artıq hər ölçüdə komanda üçün hazırdır. Bu yeniləmə yeni düzən, güclü admin imkanları və ən çox tələb olunan xüsusiyyətimizi ehtiva edir - <strong>Mətni redaktə et</strong>."
-title = "Stirling-ə xoş gəlmisiniz"
+body = "PDF.wow.to artıq hər ölçüdə komanda üçün hazırdır. Bu yeniləmə yeni düzən, güclü admin imkanları və ən çox tələb olunan xüsusiyyətimizi ehtiva edir - <strong>Mətni redaktə et</strong>."
+title = "PDF.wow.to-ə xoş gəlmisiniz"
 
 [onboarding.whatsNew]
 activeFilesView = "Açıq olan hər şeyə baxmaq və işləyəcəyinizi seçmək üçün Aktiv Fayllardan istifadə edin."
@@ -5347,7 +5347,7 @@ benefit1Body = "chain tools, schedule runs, batch process"
 benefit1Title = "Automation pipelines"
 benefit2Body = "summarise, classify, redact, AI-OCR"
 benefit2Title = "AI tools"
-benefit3Body = "call any Stirling endpoint programmatically"
+benefit3Body = "call any PDF.wow.to endpoint programmatically"
 benefit3Title = "API access"
 button = "Turn on Processor →"
 reassurance = "No minimum · Set a $0 cap to test · Cancel anytime"
@@ -5406,7 +5406,7 @@ leader = "Team owner"
 member = "Member"
 
 [payg.signupRequired]
-body = "Stirling PDF gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using Stirling as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
+body = "PDF.wow.to gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using PDF.wow.to as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
 cancel = "Not now"
 cta = "Sign up free"
 subtext = "Creating an account is free and takes a few seconds. No credit card required."
@@ -5454,7 +5454,7 @@ usdNote = "Estimated in USD. You can adjust your cap any time after subscribing,
 [payg.upgrade.checkout]
 capValue = "{{symbol}}{{amount}} / month"
 edit = "Edit"
-help = "Stripe handles your card details. Stirling never sees them."
+help = "Stripe handles your card details. PDF.wow.to never sees them."
 loading = "Loading checkout…"
 noCap = "No cap"
 title = "Add your payment method"
@@ -5462,7 +5462,7 @@ title = "Add your payment method"
 [payg.upgrade.help]
 aiBody = "summarise, classify, redact, AI-OCR"
 aiTitle = "AI tools"
-apiBody = "programmatic access to any Stirling endpoint"
+apiBody = "programmatic access to any PDF.wow.to endpoint"
 apiTitle = "API calls"
 automationBody = "chained tools or scheduled runs that don't need clicks"
 automationTitle = "Automation pipelines"
@@ -5893,7 +5893,7 @@ upToFiveUsers = "5 istifadəçiyədək"
 usageTrackingPrometheus = "İstifadənin izlənməsi və Prometheus"
 
 [plan.licenseWarning]
-body = "Sizdə {{total}} istifadəçi var, lakin pulsuz səviyyə hər server üçün yalnız {{limit}}-ni dəstəkləyir. Stirling PDF-in fasiləsiz işləməsi üçün yüksəldin."
+body = "Sizdə {{total}} istifadəçi var, lakin pulsuz səviyyə hər server üçün yalnız {{limit}}-ni dəstəkləyir. PDF.wow.to-in fasiləsiz işləməsi üçün yüksəldin."
 cta = "Planlara bax"
 overLimit = "{{limit}}-dən çox"
 title = "Pulsuz self-hosted limiti çatıb"
@@ -6192,25 +6192,25 @@ comingSoon = "Tezliklə"
 [portal.accountLink.card]
 billingNote = "Nəzarətsiz emal təşkilatınızın pul kisəsindən hesablanır."
 eyebrow = "Hesab bağlantısı"
-linkButton = "Stirling hesabınızı bağlayın"
+linkButton = "PDF.wow.to hesabınızı bağlayın"
 linked = "Bağlanıb"
 linkedAs = "{{name}} kimi bağlanıb."
 linkedGeneric = "Bu instansiya bağlanıb."
 notLinked = "Bağlanmayıb"
-title = "Bu təşkilatı öz Stirling hesabına bağlayın"
+title = "Bu təşkilatı öz PDF.wow.to hesabına bağlayın"
 unlink = "Bağlantını kəs"
 
 [portal.accountLink.card.error]
 title = "Bağlamaq mümkün olmadı"
 
 [portal.accountLink.card.loginNotConfigured]
-after = "host edilmiş Stirling hesabına qarşı hesab bağlanmasını aktivləşdirmək üçün. Dev-də bağlantı dialoqundan daxil olmanı simulyasiya edə bilərsiniz."
+after = "host edilmiş PDF.wow.to hesabına qarşı hesab bağlanmasını aktivləşdirmək üçün. Dev-də bağlantı dialoqundan daxil olmanı simulyasiya edə bilərsiniz."
 before = "Ayarla"
 title = "SaaS girişi konfiqurasiya edilməyib"
 
 [portal.accountLink.gate]
 action = "Hesabı bağla"
-description = "Ödənişli funksiyalardan istifadə etmək üçün bu təşkilatın Stirling hesabını bağlayın."
+description = "Ödənişli funksiyalardan istifadə etmək üçün bu təşkilatın PDF.wow.to hesabını bağlayın."
 title = "Kilidi açmaq üçün bağlayın"
 titleFeature = "{{feature}} kilidini açmaq üçün bağlayın"
 
@@ -6242,13 +6242,13 @@ never = "heç vaxt"
 
 [portal.accountLink.modal]
 linkSubtitle = "Bu serverin hesablanacağı hesaba daxil olun."
-linkTitle = "Stirling hesabınızı bağlayın"
-reauthSubtitle = "Sessiyanızın müddəti bitdi — Stirling hesabınıza yenidən daxil olun. Instansiyanız bağlı qalır."
+linkTitle = "PDF.wow.to hesabınızı bağlayın"
+reauthSubtitle = "Sessiyanızın müddəti bitdi — PDF.wow.to hesabınıza yenidən daxil olun. Instansiyanız bağlı qalır."
 reauthTitle = "Yenidən daxil olun"
 simulateSignIn = "Daxil olmanı simulyasiya et (dev)"
 
 [portal.accountLink.modal.loginNotConfigured]
-after = "host edilmiş Stirling hesabına qarşı tətbiqdaxili bağlanmanı aktivləşdirmək üçün."
+after = "host edilmiş PDF.wow.to hesabına qarşı tətbiqdaxili bağlanmanı aktivləşdirmək üçün."
 and = "və"
 before = "Ayarla"
 title = "SaaS girişi konfiqurasiya edilməyib"
@@ -6257,7 +6257,7 @@ title = "SaaS girişi konfiqurasiya edilməyib"
 instancesSub = "Bu təşkilata qeydiyyatdan keçirilmiş hər öz hostinqli instansiya. Nəzarətsiz girişi dərhal dayandırmaq üçün etimadnaməni ləğv edin."
 instancesTitle = "Bağlanmış instansiyalar"
 revokeError = "Instansiyanı ləğv etmək mümkün olmadı"
-sub = "Bu öz hostinqli təşkilatı Stirling hesabına bağlayın ki, nəzarətsiz emal təşkilatınızın pul kisəsindən hesablansın."
+sub = "Bu öz hostinqli təşkilatı PDF.wow.to hesabına bağlayın ki, nəzarətsiz emal təşkilatınızın pul kisəsindən hesablansın."
 
 [portal.accountLink.panel.loadError]
 forbidden = "Yalnız komanda sahibi təşkilatın bağlanmış instansiyalarını görə bilər."
@@ -6354,7 +6354,7 @@ close = "Köməkçini bağla"
 error = "Köməkçiyə çatmaq mümkün olmadı."
 errorWithDetail = "Köməkçiyə çatmaq mümkün olmadı: {{detail}}"
 inputAriaLabel = "Köməkçidən soruş"
-inputPlaceholder = "Stirling haqqında soruşun…"
+inputPlaceholder = "PDF.wow.to haqqında soruşun…"
 open = "Köməkçini aç"
 send = "Göndər"
 title = "Köməkçi"
@@ -6392,7 +6392,7 @@ title = "Stripe konfiqurasiya edilməyib"
 cta = "Enterprise təklifinizi qurun"
 description = "Öhdəlikli həcm endirimləri, air-gapped yerləşdirmə, xüsusi MSA və təhlükəsizlik yoxlamaları, həmçinin 3-cü tərəf distribyutor tərəfdaşlıqları."
 eyebrow = "Həcm endirimi · 1M+ PDF"
-title = "Stirling Enterprise"
+title = "PDF.wow.to Enterprise"
 
 [portal.billing.freeEditors]
 activeThisMonth = "Bu ay aktiv"
@@ -6439,9 +6439,9 @@ viewAriaLabel = "{{number}} fakturasını Stripe-də göstər"
 viewLink = "Göstər ↗"
 
 [portal.billing.linkPrompt]
-cta = "Stirling hesabını bağla"
+cta = "PDF.wow.to hesabını bağla"
 description = "Manual PDF redaktəsi — göstərmə, imzalama, birləşdirmə, bölmə, su nişanı, sıxma, çevirmə, manual OCR — bağlı olub-olmamasından asılı olmayaraq həmişə pulsuzdur. Ölçülü emalın (avtomatlaşdırma, AI və API) 500 pulsuz PDF haqqını əldə etmək üçün bağlayın; daha çox lazım olduqda Processor planını aktiv edin və yalnız istifadə etdiyiniz qədər ödəyin."
-title = "Stirling hesabınızı bağlayın"
+title = "PDF.wow.to hesabınızı bağlayın"
 
 [portal.billing.paymentMethod]
 billedMonthly = "Aylıq hesablanır"
@@ -6723,7 +6723,7 @@ time = "Vaxt"
 user = "İstifadəçi"
 
 [portal.editorAdmin]
-subtitle = "Stirling PDF Editor yerləşdirin, öz hostinqinizdə olan instansiyaları təşkilatınızla cütləşdirin və işləyən parkı idarə edin — hədəflər, sağlamlıq, giriş məlumatları və offline aktivləşdirmə bir yerdə."
+subtitle = "PDF.wow.to Editor yerləşdirin, öz hostinqinizdə olan instansiyaları təşkilatınızla cütləşdirin və işləyən parkı idarə edin — hədəflər, sağlamlıq, giriş məlumatları və offline aktivləşdirmə bir yerdə."
 title = "Editor yerləşdirilməsi"
 
 [portal.editorAdmin.health.columns]
@@ -6809,7 +6809,7 @@ title = "Bu səhifədə nəsə səhv getdi"
 [portal.home.editor]
 activeUsers = "{{n}} aktiv"
 invite = "Komanda yoldaşlarını dəvət et"
-name = "Stirling PDF Editor"
+name = "PDF.wow.to Editor"
 open = "Brauzerdə aç"
 updated = "{{time}} yeniləndi"
 
@@ -6869,7 +6869,7 @@ title = "API açarı ver"
 [portal.infrastructure]
 manageEditorDeployment = "Editor yerləşdirilməsini idarə et"
 sectionsAriaLabel = "İnfrastruktur bölmələri"
-subtitle = "Stirling iş sahəniz üçün yerləşdirmələr, giriş məlumatları, təhlükəsizlik vəziyyəti, saxlama və audit izi."
+subtitle = "PDF.wow.to iş sahəniz üçün yerləşdirmələr, giriş məlumatları, təhlükəsizlik vəziyyəti, saxlama və audit izi."
 title = "İnfrastruktur"
 
 [portal.infrastructure.apiKeys]
@@ -6889,7 +6889,7 @@ usageMonth = "Bu ay istifadə"
 usageToday = "Bu gün istifadə"
 
 [portal.infrastructure.apiKeys.empty]
-description = "Stirling API çağırmağa başlamaq üçün əhatəli açar yaradın."
+description = "PDF.wow.to API çağırmağa başlamaq üçün əhatəli açar yaradın."
 title = "Hələ API açarı yoxdur"
 
 [portal.infrastructure.audit]
@@ -6958,7 +6958,7 @@ keyNameLabel = "Açar adı"
 keyNamePlaceholder = "məs. Production · ingest"
 permissionsLabel = "İcazələr"
 secretKeyCaption = "Gizli açar"
-secretWarning = "Bunu secrets manager-də saxlayın. Stirling yalnız hash saxlayır — onu sonradan bərpa etmək mümkün deyil."
+secretWarning = "Bunu secrets manager-də saxlayın. PDF.wow.to yalnız hash saxlayır — onu sonradan bərpa etmək mümkün deyil."
 subtitle = "Açarı lazım olan minimum əhatə ilə məhdudlaşdırın. İstənilən vaxt dövr edə və ya ləğv edə bilərsiniz."
 subtitleCreated = "Bu sirri indi kopyalayın — bir daha göstərilməyəcək."
 title = "API açarı yarat"
@@ -6993,7 +6993,7 @@ version = "Versiya"
 
 [portal.infrastructure.deployments.regions]
 heading = "Regionlar"
-subheading = "Hər yerləşdirilmiş Stirling regionu üçün canlı sağlamlıq — gecikmə, yük və rollout versiyası."
+subheading = "Hər yerləşdirilmiş PDF.wow.to regionu üçün canlı sağlamlıq — gecikmə, yük və rollout versiyası."
 
 [portal.infrastructure.deployments.regions.empty]
 description = "İş sahəniz təmin edildikdən sonra yerləşdirilmiş regionlar burada görünəcək."
@@ -7050,16 +7050,16 @@ operation = "Əməliyyat"
 routedTo = "Yönləndirilib"
 
 [portal.infrastructure.security.access.byok]
-description = "Öz KMS-inizdən açar təqdim edin. Stirling onunla şifrələyir, lakin yenə də oxuya bilir."
+description = "Öz KMS-inizdən açar təqdim edin. PDF.wow.to onunla şifrələyir, lakin yenə də oxuya bilir."
 label = "Öz açarınızı gətirin (BYOK)"
 
 [portal.infrastructure.security.access.hyok]
-description = "Açarlar KMS-inizi heç vaxt tərk etmir. Stirling yalnız ciphertext saxlayır."
+description = "Açarlar KMS-inizi heç vaxt tərk etmir. PDF.wow.to yalnız ciphertext saxlayır."
 label = "Öz açarınızı saxlayın (HYOK)"
 
 [portal.infrastructure.security.access.stirling]
-description = "Stirling şifrələmə açarlarını idarə edir. Ən sadə variant — sizin tərəfdə sıfır açar əməliyyatı."
-label = "Stirling-də saxlanılan açarlar"
+description = "PDF.wow.to şifrələmə açarlarını idarə edir. Ən sadə variant — sizin tərəfdə sıfır açar əməliyyatı."
+label = "PDF.wow.to-də saxlanılan açarlar"
 
 [portal.infrastructure.security.accessPolicy]
 heading = "Sənəd giriş siyasəti"
@@ -7073,15 +7073,15 @@ viewReport = "Hesabata bax →"
 
 [portal.infrastructure.security.compliance]
 heading = "Uyğunluq"
-subheading = "Stirling platformasını əhatə edən attestatlar və sertifikatlar."
+subheading = "PDF.wow.to platformasını əhatə edən attestatlar və sertifikatlar."
 
 [portal.infrastructure.security.empty]
 description = "İş sahənizin təhlükəsizlik konfiqurasiyası burada görünəcək."
 title = "Təhlükəsizlik vəziyyəti əlçatan deyil"
 
 [portal.infrastructure.security.hyokBanner]
-description = "HYOK ilə şifrələmə açarları KMS-inizi heç vaxt tərk etmir. Stirling yalnız istənilən vaxt ləğv edə biləcəyiniz ciphertext-i saxlayır və emal edir."
-title = "Stirling sənədlərinizi deşifr edə bilmir"
+description = "HYOK ilə şifrələmə açarları KMS-inizi heç vaxt tərk etmir. PDF.wow.to yalnız istənilən vaxt ləğv edə biləcəyiniz ciphertext-i saxlayır və emal edir."
+title = "PDF.wow.to sənədlərinizi deşifr edə bilmir"
 
 [portal.infrastructure.security.ipAllowlist]
 empty = "IP aralığı konfiqurasiya edilməyib — bütün IP-lərə icazə verilir."
@@ -7110,7 +7110,7 @@ subheading = "Sənədləri saxlanma vəziyyətində şifrələyən açarların s
 
 [portal.infrastructure.security.managedBanner]
 description = "Bring-your-own-key (BYOK) və hold-your-own-key (HYOK) saxlanması Enterprise-də əlçatandır. Öz KMS-inizdən açarlar təqdim etmək üçün yüksəldin."
-title = "Planınızda açarlar Stirling tərəfindən idarə olunur"
+title = "Planınızda açarlar PDF.wow.to tərəfindən idarə olunur"
 
 [portal.infrastructure.security.residency.apac]
 description = "ap-southeast-1"
@@ -7591,7 +7591,7 @@ upload = "Yüklə"
 
 [portal.procurement.agreement]
 agreeCta = "Razılaş və abunə ol"
-confirm = "Stirling Enterprise Agreement-i oxudum və razıyam."
+confirm = "PDF.wow.to Enterprise Agreement-i oxudum və razıyam."
 eyebrow = "Razılaşma"
 intro = "Bir birləşdirilmiş razılaşma sövdələşmənizi əhatə edir: Master Service Agreement, Order Form, EULA və Data Processing Agreement. Onu nəzərdən keçirin, sonra təklifi öhdəlikli abunəliyə qəbul etmək üçün razılaşın."
 title = "Enterprise razılaşmanızı nəzərdən keçirin"
@@ -7606,7 +7606,7 @@ country = "Ölkə"
 countryEuro = "Avrozona (EUR €)"
 countryUK = "Birləşmiş Krallıq (GBP £)"
 countryUS = "Amerika Birləşmiş Ştatları (USD $)"
-eula = "Stirling Enterprise EULA-nı oxudum və razıyam. O, bu təklifdən yaradılan razılaşmanı tənzimləyir."
+eula = "PDF.wow.to Enterprise EULA-nı oxudum və razıyam. O, bu təklifdən yaradılan razılaşmanı tənzimləyir."
 generate = "Təklif yarat"
 included = "Daxildir"
 indemnification = "IP kompensasiyası"
@@ -7689,7 +7689,7 @@ daysLeft_one = "{{count}} gün qalıb"
 daysLeft_other = "{{count}} gün qalıb"
 engineerLabel = "Həllər mühəndisiniz"
 eyebrow = "Yayımınız"
-live = "Stirling Enterprise-də canlıdasınız"
+live = "PDF.wow.to Enterprise-də canlıdasınız"
 nextStep = "Növbəti addım: {{action}}"
 subtitle = "Həllər mühəndisiniz hər addımdadır. Hər dəfə bir növbəti əməliyyat; tam yoxlama siyahısı aşağıdadır."
 title = "Sınaqdan canlıya, bir yönləndirilmiş yol"
@@ -7716,7 +7716,7 @@ gatingAction = "Təklifinizi qəbul edin"
 label = "Təklif"
 
 [portal.procurement.journeySteps.trial]
-blurb = "Stirling-i sənədləriniz və iş axınlarınızla qiymətləndirin."
+blurb = "PDF.wow.to-i sənədləriniz və iş axınlarınızla qiymətləndirin."
 gatingAction = "Təklifinizi qurun"
 label = "Sınaq"
 
@@ -7730,14 +7730,14 @@ label = "Lisenziya açarınız"
 
 [portal.procurement.link]
 cta = "Hesabı əlaqələndir"
-description = "Satınalma əlaqələndirilmiş Stirling hesabınızda işləyir: sınağı təmin etməyimiz, təklifinizi qiymətləndirməyimiz və hesablaşmanı başlatmağımız belə olur. Başlamaq üçün hesabı əlaqələndirin."
+description = "Satınalma əlaqələndirilmiş PDF.wow.to hesabınızda işləyir: sınağı təmin etməyimiz, təklifinizi qiymətləndirməyimiz və hesablaşmanı başlatmağımız belə olur. Başlamaq üçün hesabı əlaqələndirin."
 eyebrow = "Enterprise"
 title = "Başlamaq üçün hesabınızı əlaqələndirin"
 
 [portal.procurement.live]
 description = "Abunəliyiniz aktivdir və lisenziyanız verilib. Komandanız təmin edilib və hesablaşma başlayıb."
 eyebrow = "Canlı"
-title = "Stirling Enterprise-də canlıdasınız"
+title = "PDF.wow.to Enterprise-də canlıdasınız"
 
 [portal.procurement.locked]
 description = "Sınaq açarları, öhdəlikli həcm təklifləri, bir imzalı razılaşma, ödəniş və sənəd reyestriniz Enterprise qiymətləndirməsinə başladıqdan sonra hamısı burada olur."
@@ -7772,7 +7772,7 @@ requestBodyFree = "Bunu tələb əsasında yaradırıq. Təsdiqləyin və həll�
 requestBodyPaid = "Bu ödənişli əlavədir. Təsdiqləyin və həllər mühəndisiniz onun əhatəsini müəyyən edib sənədləri göndərəcək."
 requestCta = "Sorğu göndər"
 requestTitle = "Bu sənədi tələb et"
-signBody = "Stirling Enterprise Agreement-i e-imza üçün açır: bir imza MSA, order form, EULA və DPA-nı əhatə edir. Biz avtomatik qarşı imzalayırıq və siz ödənişə keçirsiniz."
+signBody = "PDF.wow.to Enterprise Agreement-i e-imza üçün açır: bir imza MSA, order form, EULA və DPA-nı əhatə edir. Biz avtomatik qarşı imzalayırıq və siz ödənişə keçirsiniz."
 signCta = "İmza üçün aç"
 signTitle = "Razılaşmanızı nəzərdən keçirin və imzalayın"
 uploadBody = "PO-nuzu bizə göndərin və şərtlərinizə uyğun olaraq ona əsasən faktura yazırıq. PDF-i sürükləyin və ya aşağıdan fayl seçin."
@@ -7824,7 +7824,7 @@ title = "Hələ burada heç nə yoxdur"
 
 [portal.search]
 ariaLabel = "Axtar"
-placeholder = "Stirling-də axtar — son nöqtələr, pipeline-lar, sənədlər…"
+placeholder = "PDF.wow.to-də axtar — son nöqtələr, pipeline-lar, sənədlər…"
 
 [portal.search.empty]
 noActionsDescription = "Sürətli əməliyyatlar əlçatan olduqda burada görünəcək."
@@ -7852,9 +7852,9 @@ switchToLight = "İşıqlı mövzuya keç"
 [portal.shell.sidebar]
 appEditor = "Editor"
 appProcessor = "Processor"
-brandSuffix = "Stirling Processor"
+brandSuffix = "PDF.wow.to Processor"
 docsCount = "{{docs}} sənəd"
-linkAccount = "Stirling hesabını əlaqələndir"
+linkAccount = "PDF.wow.to hesabını əlaqələndir"
 planEditor = "Editor planı"
 planEnterprise = "Enterprise planı"
 planProcessor = "Processor planı"
@@ -7862,7 +7862,7 @@ primaryNav = "Əsas naviqasiya"
 switchApp = "Tətbiqi dəyiş"
 
 [portal.sources]
-subtitle = "Sənədləri Stirling-ə ötürən təkrar istifadə edilə bilən giriş bağlantıları. Bağlantını bir dəfə konfiqurasiya edin, sonra istənilən sayda siyasətdə ona istinad edin. Konfiqurasiyası və hansı siyasətlərin istifadə etməsi üçün sətrə klikləyin."
+subtitle = "Sənədləri PDF.wow.to-ə ötürən təkrar istifadə edilə bilən giriş bağlantıları. Bağlantını bir dəfə konfiqurasiya edin, sonra istənilən sayda siyasətdə ona istinad edin. Konfiqurasiyası və hansı siyasətlərin istifadə etməsi üçün sətrə klikləyin."
 title = "Mənbələr"
 
 [portal.sources.actions]
@@ -7917,7 +7917,7 @@ description = "Yeni sənədlər üçün serverdəki kataloqu izləyin."
 label = "Qovluq"
 
 [portal.sources.types.folder.fields.directory]
-helperText = "Stirling-in emal ediləcək faylları izlədiyi mütləq yol."
+helperText = "PDF.wow.to-in emal ediləcək faylları izlədiyi mütləq yol."
 label = "Kataloq yolu"
 placeholder = "/data/incoming"
 
@@ -7965,7 +7965,7 @@ review = "Nəzərdən keçir və qoş"
 
 [portal.usage]
 managePayment = "Ödənişi idarə et"
-subtitle = "Stirling-in hesabladığı hər PDF üçün istehlak, fakturalar və plan idarəetməsi, bir konsolda."
+subtitle = "PDF.wow.to-in hesabladığı hər PDF üçün istehlak, fakturalar və plan idarəetməsi, bir konsolda."
 title = "İstifadə və hesablaşma"
 
 [portal.usage.error]
@@ -7975,7 +7975,7 @@ walletUnavailable = "Cüzdan əlçatan deyil: {{status}} {{statusText}}"
 
 [portal.usage.sessionExpired]
 action = "Yenidən daxil ol"
-body = "Stirling hesab sessiyanızın müddəti bitib. Hesablaşmaya baxmaq üçün yenidən daxil olun — instansiyanız əlaqəli qalır."
+body = "PDF.wow.to hesab sessiyanızın müddəti bitib. Hesablaşmaya baxmaq üçün yenidən daxil olun — instansiyanız əlaqəli qalır."
 title = "Sessiyanın müddəti bitib"
 
 [portal.users]
@@ -8022,7 +8022,7 @@ summary = "Komandaya sahibdir — onun üzvlərinin resurslarını və paylaşı
 3 = "Member-in edə bildiyi hər şey"
 
 [portal.welcome]
-ariaLabel = "Stirling PDF-ə xoş gəlmisiniz"
+ariaLabel = "PDF.wow.to-ə xoş gəlmisiniz"
 badge = "Open-source"
 installEditor = "Editor-u quraşdır"
 inviteTeammates = "Komanda yoldaşlarını dəvət et"
@@ -8030,7 +8030,7 @@ openInBrowser = "Brauzerdə aç"
 perks = "Həmişə pulsuz · Self-hostable"
 subtitle = "Dünyanın ən təhlükəsiz PDF Editor-u bütün ölçülü komandalar üçün pulsuzdur. 60+ PDF əməliyyatı və SSO daxildir."
 title = "Xoş gəlmisiniz"
-titleAccent = "Stirling PDF"
+titleAccent = "PDF.wow.to"
 
 [printFile]
 title = "Faylı çap edin"
@@ -8721,8 +8721,8 @@ hideTools = "Mövcud olmayan alətləri gizlət ▴"
 messageNoFallback = "Serveriniz onlayn olana qədər alətlər mövcud deyil."
 messageWithFallback = "Bəzi alətlər server bağlantısı tələb edir."
 showTools = "Mövcud olmayan alətləri göstər ▾"
-title = "Sizin Stirling-PDF serveriniz əlçatmazdır"
-toolNotAvailableLocally = "Sizin Stirling-PDF serveriniz oflayndır və \"{{endpoint}}\" yerli arxa xidmətində mövcud deyil."
+title = "Sizin PDF.wow.to serveriniz əlçatmazdır"
+toolNotAvailableLocally = "Sizin PDF.wow.to serveriniz oflayndır və \"{{endpoint}}\" yerli arxa xidmətində mövcud deyil."
 
 [session]
 expired = "Sessiyanızın vaxtı bitdi. Səhifəni yeniləyin və yenidən cəhd edin."
@@ -8782,7 +8782,7 @@ user = "Daxil olub:"
 
 [settings.connection.mode]
 local = "Yalnız yerli"
-saas = "Stirling Cloud"
+saas = "PDF.wow.to Cloud"
 selfhosted = "Öz serverində"
 
 [settings.developer]
@@ -8797,7 +8797,7 @@ autoUnzipFileLimitDescription = "ZIP-dən çıxarılacaq maksimum fayl sayı"
 autoUnzipFileLimitTooltip = "Yalnız ZIP bu qədər və ya daha az fayl ehtiva edirsə çıxarın. Daha böyük ZIP-ləri çıxarmaq üçün dəyəri artırın."
 autoUnzipTooltip = "API əməliyyatlarından qaytarılan ZIP fayllarını avtomatik çıxarın. ZIP fayllarını toxunulmaz saxlamaq üçün bunu deaktiv edin. Bu, avtomatlaşdırma iş axınlarına təsir etmir."
 defaultPdfEditor = "Standart PDF redaktoru"
-defaultPdfEditorActive = "Stirling PDF standart PDF redaktorunuzdur"
+defaultPdfEditorActive = "PDF.wow.to standart PDF redaktorunuzdur"
 defaultPdfEditorChecking = "Yoxlanılır..."
 defaultPdfEditorInactive = "Başqa tətbiq standart kimi təyin edilib"
 defaultPdfEditorSet = "Artıq standartdır"
@@ -8858,7 +8858,7 @@ updateBehavior = "Yeniləmə davranışı"
 updateBehaviorDescription = "Yeniləmələri quraşdırmadan əvvəl xəbərdarlıq etmək, onları avtomatik quraşdırmaq və ya ümumiyyətlə yoxlamamaq seçimlərini edin."
 updateBehaviorError = "Yeniləmə davranışını dəyişmək alınmadı"
 updateBehaviorErrorLocked = "Bu ayar administratorunuz tərəfindən kilidlənib."
-updateBehaviorLockedDescription = "Administratorunuz bu kompüterdə Stirling-PDF-in yeniləmələri necə idarə etdiyini qurub. Dəyişdirmək üçün onunla əlaqə saxlayın."
+updateBehaviorLockedDescription = "Administratorunuz bu kompüterdə PDF.wow.to-in yeniləmələri necə idarə etdiyini qurub. Dəyişdirmək üçün onunla əlaqə saxlayın."
 updateBehaviorSaved = "Yeniləmə davranışı saxlanıldı."
 versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
 viewDetails = "Ətraflı bax"
@@ -8942,7 +8942,7 @@ usageAnalytics = "İstifadə analitikası"
 [settings.planBilling]
 currentPlan = "Cari plan"
 loading = "Hesab-faktura məlumatları yüklənir..."
-notAvailable = "Plan və Hesab-faktura yalnız Stirling Cloud-a (SaaS rejimi) qoşulduqda mövcuddur."
+notAvailable = "Plan və Hesab-faktura yalnız PDF.wow.to Cloud-a (SaaS rejimi) qoşulduqda mövcuddur."
 title = "Plan və Hesab-faktura"
 
 [settings.planBilling.billing]
@@ -9068,7 +9068,7 @@ emptyUsername = "Zəhmət olmasa istifadəçi adınızı daxil edin"
 oauthFailed = "OAuth girişi uğursuz oldu. Yenidən cəhd edin."
 
 [setup.saas]
-title = "Stirling-ə daxil olun"
+title = "PDF.wow.to-ə daxil olun"
 
 [setup.selfhosted]
 changeServerLocked = "Təşkilatınız bu tətbiqi konkret serverlə məhdudlaşdırıb"
@@ -9106,7 +9106,7 @@ step3 = "Serveri yenidən başladın"
 title = "Giriş aktiv deyil"
 
 [setup.server.url]
-description = "Öz Stirling PDF serverinizin tam URL ünvanını daxil edin"
+description = "Öz PDF.wow.to serverinizin tam URL ünvanını daxil edin"
 label = "Server URL"
 
 [sharedSign]
@@ -9342,7 +9342,7 @@ pleaseFillAllFields = "Zəhmət olmasa bütün sahələri doldurun"
 signUp = "Qeydiyyatdan keç"
 signUpWith = "Sign up with"
 skip = "Skip"
-subtitle = "Başlamaq üçün Stirling PDF-ə qoşulun"
+subtitle = "Başlamaq üçün PDF.wow.to-ə qoşulun"
 title = "Hesab yaradın"
 unexpectedError = "Gözlənilməz xəta: {{message}}"
 
@@ -9569,7 +9569,7 @@ download = "Endir"
 downloaded = "Endirilib"
 downloadFailed = "Bu faylı endirmək mümkün deyil."
 downloadsCount = "Endirmələr: {{count}}"
-emailWarningBody = "Bu e-poçt ünvanına bənzəyir. Bu şəxs Stirling PDF istifadəçisi deyilsə, fayla çata bilməyəcək."
+emailWarningBody = "Bu e-poçt ünvanına bənzəyir. Bu şəxs PDF.wow.to istifadəçisi deyilsə, fayla çata bilməyəcək."
 emailWarningConfirm = "Yenə də paylaş"
 emailWarningTitle = "E-poçt ünvanı"
 errorTitle = "Paylaşma alınmadı"
@@ -9600,7 +9600,7 @@ manageTitle = "Paylaşmanın idarə edilməsi"
 noActivity = "Hələ fəaliyyət yoxdur."
 noLinks = "Hələ aktiv paylaşma linki yoxdur."
 noSharedUsers = "Hələ heç bir istifadəçinin girişi yoxdur."
-openInApp = "Open in Stirling PDF"
+openInApp = "Open in PDF.wow.to"
 ownerLabel = "Sahib"
 ownerUnknown = "Naməlum"
 removeLink = "Linki sil"
@@ -9654,7 +9654,7 @@ updateButton = "Serverdə yenilə"
 uploadButton = "Serverə yüklə"
 
 [survey]
-title = "Stirling-PDF Survey"
+title = "PDF.wow.to Survey"
 
 [swagger]
 tags = "api,sənədləşmə,swagger,endpointlər,inkişaf"
@@ -9782,7 +9782,7 @@ favorites = "Seçilmişlər"
 heading = "Bütün alətlər (tam ekran görünüşü)"
 noResults = "Lazımi aləti tapmaq üçün axtarışı tənzimləyin və ya təsvirləri dəyişin."
 recommended = "Tövsiyə olunur"
-selfHostedOffline = "Sizin Stirling-PDF serverinizi tələb edir (hazırda oflayn):"
+selfHostedOffline = "Sizin PDF.wow.to serverinizi tələb edir (hazırda oflayn):"
 showDetails = "Təfərrüatları göstər"
 unavailable = "Server administratoru tərəfindən deaktiv edilib:"
 unavailableDependency = "Mövcud deyil - serverdə tələb olunan alət yoxdur:"
@@ -9791,7 +9791,7 @@ unfavorite = "Seçilmişlərdən çıxar"
 [toolPanel.modePrompt]
 chooseFullscreen = "Tam ekran rejimindən istifadə edin"
 chooseSidebar = "Yan panel rejimindən istifadə edin"
-description = "Hər iki tərtibatı önizləyin və Stirling PDF alətlərini necə araşdırmaq istədiyinizi qərarlaşdırın."
+description = "Hər iki tərtibatı önizləyin və PDF.wow.to alətlərini necə araşdırmaq istədiyinizi qərarlaşdırın."
 dismiss = "Bəlkə sonra"
 fullscreenDescription = "Birini seçənədək iş sahəsini örtən kataloqda bütün alətlərə baxın."
 fullscreenTitle = "Tam ekran rejimi - (köhnə)"
@@ -9859,7 +9859,7 @@ loadingDetailedInfo = "Ətraflı məlumat yüklənir..."
 migrationGuide = "Miqrasiya bələdçisi"
 migrationGuides = "Miqrasiya bələdçiləri"
 migrationGuidesDesc = "Yeniləməzdən əvvəl vacib dəyişiklikləri nəzərdən keçirin."
-modalSubtitle = "Stirling PDF-in yeni versiyası quraşdırmağa hazırdır."
+modalSubtitle = "PDF.wow.to-in yeni versiyası quraşdırmağa hazırdır."
 modalTitle = "Yeniləmə mövcuddur"
 notes = "Qeydlər"
 releaseNotes = "Buraxılış qeydləri"
@@ -9883,7 +9883,7 @@ urgent = "Təcili"
 attentionBody = "Daha çox məlumat üçün admin daxil olmalıdır. Zəhmət olmasa, dərhal əlaqə saxlayın."
 attentionBodyAdmin = "Bu serverin uyğunluğunu qorumaq üçün lisenziya tələblərini nəzərdən keçirin."
 attentionTitle = "Bu server admin diqqəti tələb edir"
-message = "Limitsiz istifadəçi və qabaqcıl xüsusiyyətlərlə Stirling PDF-dən maksimum yararlanın"
+message = "Limitsiz istifadəçi və qabaqcıl xüsusiyyətlərlə PDF.wow.to-dən maksimum yararlanın"
 seeInfo = "Məlumata bax"
 title = "Server planına yüksəldin"
 upgradeButton = "İndi yüksəlt"
@@ -10000,7 +10000,7 @@ authWeb = "Şifrə"
 create = "Hesab yarat"
 createSubtitle = "Şifrə və ya SSO ilə self-hosted hesab yaradın."
 createTitle = "Hesab yarat"
-editorDesc = "Stirling PDF Editor-da PDF-ləri redaktə edin. Hər kəs bunu əldə edir."
+editorDesc = "PDF.wow.to Editor-da PDF-ləri redaktə edin. Hər kəs bunu əldə edir."
 email = "Email ünvanı"
 emailError = "Etibarlı email ünvanı daxil edin"
 emailPlaceholder2 = "name@company.com"
@@ -10015,7 +10015,7 @@ processorDeferred = "Dəvət göndərildi, lakin Processor girişi hələ veril�
 processorDesc = "İdarəetmə səthi, pipeline-ları, agentləri və API-ni işə salır."
 role = "Rol"
 send2 = "Dəvət göndər"
-subtitle2 = "Stirling iş məkanınıza qoşulmaq üçün e-poçt alacaqlar."
+subtitle2 = "PDF.wow.to iş məkanınıza qoşulmaq üçün e-poçt alacaqlar."
 team = "Komanda"
 title = "İnsanları dəvət edin"
 username = "İstifadəçi adı"
@@ -10138,7 +10138,7 @@ downloads = "Yükləmələr"
 entryLabel = "İmza xülasəsi"
 filesEvaluated_one = "{{count}} fayl qiymətləndirildi"
 filesEvaluated_other = "{{count}} fayl qiymətləndirildi"
-footer = "Stirling PDF vasitəsilə təsdiqlənib"
+footer = "PDF.wow.to vasitəsilə təsdiqlənib"
 generatedAt = "Yaradılma vaxtı"
 noPdf = "PDF hesabatı uğurlu doğrulamadan sonra əlçatan olacaq."
 page = "Səhifə"

@@ -57,7 +57,7 @@ keepWorking = "继续编辑"
 loading = "འཇུག་བཞིན་པ..."
 loginAgreementAccept = "接受"
 loginAgreementDecline = "拒绝"
-loginAgreementProvider = "此通知由您的管理员提供，而非 Stirling PDF Inc."
+loginAgreementProvider = "此通知由您的管理员提供，而非 PDF.wow.to Inc."
 loginAgreementTitle = "登录协议"
 logOut = "退出登录"
 marginTooltip = "页码与页面边缘之间的距离。"
@@ -633,9 +633,9 @@ description = "配置临时文件存储和清理行为"
 label = "临时文件管理"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "临时文件的基础目录（留空使用默认：java.io.tmpdir/stirling-pdf）"
+description = "临时文件的基础目录（留空使用默认：java.io.tmpdir/pdf.wow.to）"
 label = "基础临时目录"
-placeholder = "默认：java.io.tmpdir/stirling-pdf"
+placeholder = "默认：java.io.tmpdir/pdf.wow.to"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]
 description = "运行清理的频率（分钟）"
@@ -919,11 +919,11 @@ description = "配置可选功能与特性。"
 title = "功能"
 
 [admin.settings.features.serverCertificate]
-description = "为\"使用 Stirling-PDF 签名\"功能配置服务器端证书"
+description = "为\"使用 PDF.wow.to 签名\"功能配置服务器端证书"
 label = "服务器证书"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "为\"使用 Stirling-PDF 签名\"选项启用服务器端证书"
+description = "为\"使用 PDF.wow.to 签名\"选项启用服务器端证书"
 label = "启用服务器证书"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1071,7 +1071,7 @@ description = "Cookie 政策的 URL 或文件名"
 label = "Cookie 政策"
 
 [admin.settings.legal.disclaimer]
-message = "通过自定义这些法律文档，你将完全负责确保遵守所有适用的法律法规，包括但不限于 GDPR 和其他欧盟数据保护要求。仅在以下情况修改这些设置：(1) 你运行的是个人/私有实例，(2) 你处于欧盟司法管辖区之外并了解你所在地区的法律义务，或 (3) 你已获得适当的法律意见，并接受对所有用户数据和合规的唯一责任。Stirling-PDF 及其开发者不对你的法律义务承担任何责任。"
+message = "通过自定义这些法律文档，你将完全负责确保遵守所有适用的法律法规，包括但不限于 GDPR 和其他欧盟数据保护要求。仅在以下情况修改这些设置：(1) 你运行的是个人/私有实例，(2) 你处于欧盟司法管辖区之外并了解你所在地区的法律义务，或 (3) 你已获得适当的法律意见，并接受对所有用户数据和合规的唯一责任。PDF.wow.to 及其开发者不对你的法律义务承担任何责任。"
 title = "法律责任警告"
 
 [admin.settings.legal.impressum]
@@ -1158,8 +1158,8 @@ description = "SMTP 认证用户名"
 label = "SMTP 用户名"
 
 [admin.settings.mcp]
-apikeyNote = "Clients send a Stirling API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning Stirling user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
-description = "Expose Stirling's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
+apikeyNote = "Clients send a PDF.wow.to API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning PDF.wow.to user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
+description = "Expose PDF.wow.to's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
 title = "MCP Server"
 
 [admin.settings.mcp.acceptedAudiences]
@@ -1189,7 +1189,7 @@ step3ApiKeyb = "header (or Authorization: Bearer <key>). No OAuth or metadata di
 step4 = "Approve the sign-in; the client retries with a token. Tools appear grouped: convert, pages, misc, security, ai."
 step4ApiKey = "Tools appear grouped: convert, pages, misc, security, ai - and every call is audited as the key's owner."
 tip = "Tip: register the resource ID as an allowed audience in your IdP. Tested with MCP Inspector and Claude Desktop."
-tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning Stirling user."
+tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning PDF.wow.to user."
 title = "Connect an MCP client"
 
 [admin.settings.mcp.issuerUri]
@@ -1202,12 +1202,12 @@ label = "JWKS URL (optional)"
 placeholder = "Auto-discovered from issuer"
 
 [admin.settings.mcp.mode]
-description = "OAuth needs an external IdP. API key uses a Stirling per-user API key (X-API-KEY) - simplest for self-host."
+description = "OAuth needs an external IdP. API key uses a PDF.wow.to per-user API key (X-API-KEY) - simplest for self-host."
 label = "Authentication mode"
 
 [admin.settings.mcp.requireAccount]
-description = "Only let tokens through if their subject maps to a provisioned, enabled Stirling user."
-label = "Require an existing Stirling account"
+description = "Only let tokens through if their subject maps to a provisioned, enabled PDF.wow.to user."
+label = "Require an existing PDF.wow.to account"
 
 [admin.settings.mcp.resourceId]
 description = "This server's public /mcp URL. Tokens must list it in their audience (RFC 8707) or they are rejected."
@@ -1218,7 +1218,7 @@ description = "Require mcp.tools.read for read ops and mcp.tools.write for write
 label = "Enforce OAuth scopes"
 
 [admin.settings.mcp.usernameClaim]
-description = "JWT claim matched against a Stirling username (e.g. sub, email, preferred_username)."
+description = "JWT claim matched against a PDF.wow.to username (e.g. sub, email, preferred_username)."
 label = "Username claim"
 
 [admin.settings.plan.noData]
@@ -1539,7 +1539,7 @@ description = "启用后，仅列出的用户 ID 可使用该机器人。"
 label = "仅允许特定用户 ID"
 
 [admin.settings.telegram.enabled]
-description = "允许用户通过您配置的 Telegram 机器人与 Stirling PDF 交互。"
+description = "允许用户通过您配置的 Telegram 机器人与 PDF.wow.to 交互。"
 label = "启用 Telegram 机器人"
 
 [admin.settings.telegram.feedback]
@@ -1612,20 +1612,20 @@ settingsOverview = "这是 <strong>设置面板</strong>。管理员设置按类
 systemCustomization = "我们有多种方式自定义 UI：<strong>系统设置</strong> 可更改应用名称和语言，<strong>功能</strong> 可进行服务器证书管理，<strong>端点</strong> 可为您的用户启用或禁用特定工具。"
 teamsAndUsers = "在这里管理 <strong>团队</strong> 和单个用户。您可以通过邮件、可分享链接邀请新用户，或自行创建自定义账户。"
 welcome = "欢迎使用 <strong>管理员导览</strong>！让我们一起探索提供给系统管理员的强大企业功能和设置。"
-wrapUp = "管理员导览结束！您已看到让 Stirling PDF 成为组织强大且可定制解决方案的企业功能。可随时从 <strong>帮助</strong> 菜单访问此导览。"
+wrapUp = "管理员导览结束！您已看到让 PDF.wow.to 成为组织强大且可定制解决方案的企业功能。可随时从 <strong>帮助</strong> 菜单访问此导览。"
 
 [adminUserSettings]
 admin = "དོ་དམ་པ།"
 title = "སྤྱོད་མཁན་ཚོད་འཛིན་སྒྲིག་འགོད།"
 
 [agents]
-stirling_name = "Stirling"
+stirling_name = "PDF.wow.to"
 
 [analytics]
 learnMore = "了解更多"
-paragraph1 = "Stirling PDF ལ་ཐོན་རྫས་ལེགས་སུ་གཏོང་བར་རོགས་རམ་བྱེད་པའི་གདམ་ག་ཡོད་པའི་དཔྱད་ཞིབ་ཡོད། ང་ཚོས་སྒེར་གྱི་ཆ་འཕྲིན་དང་ཡིག་ཆའི་ནང་དོན་གང་ཡང་རྗེས་འདེད་མི་བྱེད།"
-paragraph2 = "Stirling-PDF འཕེལ་རྒྱས་དང་ང་ཚོའི་སྤྱོད་མཁན་ལེགས་པོར་རྟོགས་པར་རོགས་རམ་བྱེད་པའི་ཆེད་དུ་དཔྱད་ཞིབ་སྤྱོད་འགོ་འཛུགས་རོགས།"
-title = "ཁྱེད་ཀྱིས་ Stirling PDF ལེགས་སུ་གཏོང་འདོད་དམ།"
+paragraph1 = "PDF.wow.to ལ་ཐོན་རྫས་ལེགས་སུ་གཏོང་བར་རོགས་རམ་བྱེད་པའི་གདམ་ག་ཡོད་པའི་དཔྱད་ཞིབ་ཡོད། ང་ཚོས་སྒེར་གྱི་ཆ་འཕྲིན་དང་ཡིག་ཆའི་ནང་དོན་གང་ཡང་རྗེས་འདེད་མི་བྱེད།"
+paragraph2 = "PDF.wow.to འཕེལ་རྒྱས་དང་ང་ཚོའི་སྤྱོད་མཁན་ལེགས་པོར་རྟོགས་པར་རོགས་རམ་བྱེད་པའི་ཆེད་དུ་དཔྱད་ཞིབ་སྤྱོད་འགོ་འཛུགས་རོགས།"
+title = "ཁྱེད་ཀྱིས་ PDF.wow.to ལེགས་སུ་གཏོང་འདོད་དམ།"
 
 [annotate]
 tags = "annotate,highlight,draw,markup,comment,notes,review,redline,feedback,markup tools,sticky notes,shapes,arrows,text box,freehand"
@@ -2558,7 +2558,7 @@ bullet1 = "支持 PEM、PKCS12、JKS 和服务器证书格式"
 bullet2 = "可选择在 PDF 上显示或隐藏签名"
 bullet3 = "可添加原因、地点和签名者姓名"
 bullet4 = "选择放置可见签名的页面"
-bullet5 = "使用服务器证书以使用简单的“Sign with Stirling-PDF”选项"
+bullet5 = "使用服务器证书以使用简单的“Sign with PDF.wow.to”选项"
 text = "要签署 PDF，您需要数字证书（如 PEM、PKCS12 或 JKS）。您可以选择让签名在文档中可见或仅用于安全而保持不可见。"
 title = "添加签名"
 
@@ -2739,10 +2739,10 @@ copy = "复制消息"
 
 [chat.fab]
 close = "Close chat"
-open = "Open Stirling AI assistant"
+open = "Open PDF.wow.to AI assistant"
 
 [chat.header]
-agentMenu = "Stirling 代理选项"
+agentMenu = "PDF.wow.to 代理选项"
 clearChat = "清空聊天"
 
 [chat.input]
@@ -3072,14 +3072,14 @@ upgradeButton = "升级账户"
 
 [config.apiKeys]
 copyKeyAriaLabel = "复制 API 密钥"
-description = "用于访问 Stirling 的一套 PDF 工具的 API 密钥。复制到您的项目，或刷新以生成新的密钥。"
-docsDescription = "了解如何集成 Stirling PDF："
+description = "用于访问 PDF.wow.to 的一套 PDF 工具的 API 密钥。复制到您的项目，或刷新以生成新的密钥。"
+docsDescription = "了解如何集成 PDF.wow.to："
 docsLink = "API 文档"
 docsTitle = "API 文档"
 generateError = "我们未能生成您的 API 密钥。"
 goToAccount = "前往账户"
 guestInfo = "访客用户不会获得 API 密钥。创建账户即可在您的应用中使用 API 密钥。"
-intro = "使用您的 API 密钥以编程方式访问 Stirling PDF 的处理能力。"
+intro = "使用您的 API 密钥以编程方式访问 PDF.wow.to 的处理能力。"
 label = "API 密钥"
 publicKeyAriaLabel = "公共 API 密钥"
 refreshAriaLabel = "刷新 API 密钥"
@@ -3103,10 +3103,10 @@ title = "刷新 API 密钥"
 warning = "⚠️ 警告：此操作将生成新的 API 密钥，并使之前的密钥失效。"
 
 [config.mcp]
-description = "Model Context Protocol (MCP) lets AI assistants like Claude use your Stirling PDF tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
-guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run Stirling PDF tools on your behalf."
+description = "Model Context Protocol (MCP) lets AI assistants like Claude use your PDF.wow.to tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
+guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run PDF.wow.to tools on your behalf."
 navLabel = "MCP Server"
-tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using Stirling PDF directly."
+tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using PDF.wow.to directly."
 title = "MCP Server"
 viewApiKeys = "View API keys"
 
@@ -3123,7 +3123,7 @@ label = "Your MCP endpoint"
 
 [config.mcp.setup]
 addTo = "Add to"
-hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your Stirling account on first use - no keys to copy."
+hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your PDF.wow.to account on first use - no keys to copy."
 title = "Connect your AI assistant"
 
 [config.overview]
@@ -3232,7 +3232,7 @@ showPreferencesBtn = "管理偏好"
 title = "我们如何使用 Cookies"
 
 [cookieBanner.popUp.description]
-1 = "我们使用 cookies 和其他技术，让 Stirling PDF 为你更好地工作——帮助我们改进工具，并持续构建你会喜欢的功能。"
+1 = "我们使用 cookies 和其他技术，让 PDF.wow.to 为你更好地工作——帮助我们改进工具，并持续构建你会喜欢的功能。"
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3245,12 +3245,12 @@ subtitle = "Cookie 使用"
 title = "同意偏好中心"
 
 [cookieBanner.preferencesModal.analytics]
-description = "这些 cookies 帮助我们了解我们的工具是如何被使用的，从而让我们专注于构建社区最看重的功能。请放心——Stirling PDF 不能且绝不会跟踪你处理的文档内容。"
+description = "这些 cookies 帮助我们了解我们的工具是如何被使用的，从而让我们专注于构建社区最看重的功能。请放心——PDF.wow.to 不能且绝不会跟踪你处理的文档内容。"
 title = "分析"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF 使用 cookies 和类似技术来提升你的体验，并了解我们的工具如何被使用。这有助于我们改进性能、开发你关心的功能，并为用户提供持续支持。"
-2 = "Stirling PDF 不能——也绝不会——跟踪或访问你使用的文档内容。"
+1 = "PDF.wow.to 使用 cookies 和类似技术来提升你的体验，并了解我们的工具如何被使用。这有助于我们改进性能、开发你关心的功能，并为用户提供持续支持。"
+2 = "PDF.wow.to 不能——也绝不会——跟踪或访问你使用的文档内容。"
 3 = "你的隐私与信任是我们工作的核心。"
 
 [cookieBanner.preferencesModal.necessary]
@@ -3346,14 +3346,14 @@ message = "设置默认 PDF 处理程序失败"
 title = "错误"
 
 [defaultApp.prompt]
-message = "将 Stirling PDF 设为打开 PDF 的默认应用。"
+message = "将 PDF.wow.to 设为打开 PDF 的默认应用。"
 
 [defaultApp.settingsOpened]
-message = "请在系统设置中选择 Stirling PDF"
+message = "请在系统设置中选择 PDF.wow.to"
 title = "已打开设置"
 
 [defaultApp.success]
-message = "Stirling PDF 已设为您的默认 PDF 编辑器"
+message = "PDF.wow.to 已设为您的默认 PDF 编辑器"
 title = "已设为默认应用"
 
 [desktopUpdate]
@@ -3369,7 +3369,7 @@ updateFailedMessage = "下载或安装更新失败。"
 
 [desktopUpdate.blocked]
 docsLink = "查看安装文档"
-message = "Stirling-PDF 无权在此设备上自行更新。"
+message = "PDF.wow.to 无权在此设备上自行更新。"
 title = "需要管理员权限"
 
 [devAirgapped]
@@ -3939,7 +3939,7 @@ title = "移动到文件夹"
 [filesPage.origin]
 all = "所有来源"
 cloud = "云端"
-cloudHint = "存储在 Stirling 服务器上"
+cloudHint = "存储在 PDF.wow.to 服务器上"
 local = "本地"
 localHint = "仅存储在此浏览器中"
 shared = "已共享"
@@ -4203,7 +4203,7 @@ invisible = "不可见（仅元数据）"
 location = "位置："
 logo = "徽标："
 logoHidden = "无徽标"
-logoShown = "已显示 Stirling PDF 徽标"
+logoShown = "已显示 PDF.wow.to 徽标"
 participantCount_one = "{{count}} participant will sign in order"
 participantCount_other = "{{count}} participants will sign in order"
 participants = "参与者"
@@ -4257,7 +4257,7 @@ title = "顺序签署"
 dismiss = "关闭横幅"
 message = "创建免费账户以保存你的工作、访问更多功能，并支持该项目。"
 signUp = "免费注册"
-title = "你正在以访客身份使用 Stirling PDF！"
+title = "你正在以访客身份使用 PDF.wow.to！"
 
 [home.addAttachments]
 desc = "向 PDF 添加或移除内嵌文件（附件）"
@@ -4416,7 +4416,7 @@ tags = "合并,组合,联合"
 title = "སྡེབ་སྦྱོར།"
 
 [home.mobile]
-brandAlt = "Stirling PDF 标志"
+brandAlt = "PDF.wow.to 标志"
 openFiles = "打开文件"
 swipeHint = "左右滑动以切换视图"
 tools = "工具"
@@ -4455,7 +4455,7 @@ tags = "组织,重新排列,重新排序"
 title = "གོ་སྒྲིག"
 
 [home.pdfTextEditor]
-desc = "审阅并编辑 Stirling PDF 的 JSON 导出，支持分组文本编辑与 PDF 再生成"
+desc = "审阅并编辑 PDF.wow.to 的 JSON 导出，支持分组文本编辑与 PDF 再生成"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "PDF 文本编辑器"
 
@@ -4641,7 +4641,7 @@ passwordRequired = "必须填写密码"
 signIn = "登录"
 validating = "正在验证邀请..."
 validationError = "验证邀请链接失败"
-welcome = "欢迎使用 Stirling PDF"
+welcome = "欢迎使用 PDF.wow.to"
 welcomeSubtitle = "完成账户设置即可开始使用"
 welcomeTitle = "您已收到邀请！"
 
@@ -4669,7 +4669,7 @@ terms = "བེད་སྤྱོད་ཆ་རྐྱེན།"
 title = "ཕྱི་ཡི་ཆོག་མཆན།"
 
 [localMode]
-toolUnavailable = "此工具需要账户。请登录 Stirling Cloud 或连接到自建服务器以使用。"
+toolUnavailable = "此工具需要账户。请登录 PDF.wow.to Cloud 或连接到自建服务器以使用。"
 
 [localMode.toolPicker]
 message = "登录以解锁全部工具。"
@@ -4726,7 +4726,7 @@ subtitle = "十余种工具助您涂黑、签名、阅读与处理 PDF，满足�
 title = "编辑 PDF 以展示或保护您想要的信息"
 
 [login.slides.overview]
-alt = "Stirling PDF 概览"
+alt = "PDF.wow.to 概览"
 subtitle = "以隐私为先的 PDF 云套件，支持转换、签名、涂黑和管理文档，并提供 50+ 款强大工具。"
 title = "满足您所有 PDF 需求的一站式工具。"
 
@@ -4844,7 +4844,7 @@ message = "认证未成功。您可以关闭此窗口并重试。"
 title = "认证失败"
 
 [oauth.success]
-message = "您可以关闭此窗口并返回 Stirling PDF。"
+message = "您可以关闭此窗口并返回 PDF.wow.to。"
 title = "认证成功"
 
 [oauthConsent]
@@ -4857,17 +4857,17 @@ loadFailed = "This authorisation request is invalid or has expired. Close this t
 loading = "Loading authorisation request..."
 missingId = "Missing authorisation request. Start the connection from your app and try again."
 redirecting = "Returning you to the app..."
-requesting = "{{app}} wants to access your Stirling PDF account"
+requesting = "{{app}} wants to access your PDF.wow.to account"
 scopesIntro = "This will allow {{app}} to:"
 signedInAs = "Signed in as {{name}}"
 signInButton = "Sign in to continue"
-signInPrompt = "Sign in to your Stirling PDF account to continue connecting the app."
+signInPrompt = "Sign in to your PDF.wow.to account to continue connecting the app."
 title = "Authorise access"
 unknownApp = "A third-party application"
 
 [oauthConsent.access]
 actAsYou = "Act as you - everything {{app}} does runs under your account and counts towards your usage"
-tools = "Use your Stirling PDF tools on your behalf - convert, edit, sign, secure and process your documents"
+tools = "Use your PDF.wow.to tools on your behalf - convert, edit, sign, secure and process your documents"
 
 [oauthConsent.scope]
 email = "See your email address"
@@ -4989,7 +4989,7 @@ skipForNow = "暂时跳过"
 skipTheTour = "跳过引导"
 
 [onboarding.desktopInstall]
-body = "Stirling 作为桌面应用效果最佳。可离线使用、更快访问文档，并在本机进行编辑。"
+body = "PDF.wow.to 作为桌面应用效果最佳。可离线使用、更快访问文档，并在本机进行编辑。"
 selectOs = "选择操作系统"
 title = "下载"
 titleWithOs = "适用于 {{osLabel}} 的下载"
@@ -4999,8 +4999,8 @@ authenticationCode = "验证码"
 qrCodeLoading = "正在生成你的 QR 码…"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "启用登录模式后，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Stirling。"
-adminBodyLoginEnabled = "作为管理员，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Stirling。"
+adminBodyLoginDisabled = "启用登录模式后，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 PDF.wow.to。"
+adminBodyLoginEnabled = "作为管理员，您可以管理用户、配置设置并监控服务器健康状况。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 PDF.wow.to。"
 adminTitle = "管理员概览"
 userBody = "邀请队友、分配角色，并在一个安全的工作区中整理文档。准备扩大规模时，可随时启用登录模式。"
 userTitle = "方案概览"
@@ -5008,7 +5008,7 @@ userTitle = "方案概览"
 [onboarding.saas.freeEditor]
 freeLine = "The editor is now <free>completely free</free>."
 premium = "We've added loads of new features, including <strong>Policies</strong> and <strong>Agent Chat</strong>."
-title = "Welcome to Stirling"
+title = "Welcome to PDF.wow.to"
 
 [onboarding.saas.team]
 addButton = "Add"
@@ -5028,20 +5028,20 @@ rolePlaceholder = "确认你的角色"
 roleUser = "用户"
 
 [onboarding.serverLicense]
-freeBody = "我们的 <strong>开源内核（Open-Core）</strong> 许可允许每台服务器最多 <strong>{{freeTierLimit}}</strong> 名用户免费使用。为顺畅扩展并抢先体验全新的 <strong>PDF 文本编辑工具</strong>，我们推荐 Stirling Server 方案 - 完整编辑与 <strong>无限席位</strong>，$99/服务器/月。"
+freeBody = "我们的 <strong>开源内核（Open-Core）</strong> 许可允许每台服务器最多 <strong>{{freeTierLimit}}</strong> 名用户免费使用。为顺畅扩展并抢先体验全新的 <strong>PDF 文本编辑工具</strong>，我们推荐 PDF.wow.to Server 方案 - 完整编辑与 <strong>无限席位</strong>，$99/服务器/月。"
 freeTitle = "服务器许可证"
-overLimitBody = "我们的许可每台服务器最多允许 <strong>{{freeTierLimit}}</strong> 名用户免费使用。您共有 <strong>{{overLimitUserCopy}}</strong> 名 Stirling 用户。为避免中断，请升级到 Stirling Server 方案 - <strong>无限席位</strong>、PDF 文本编辑，以及每台服务器 $99/月 的完整管理员控制。"
+overLimitBody = "我们的许可每台服务器最多允许 <strong>{{freeTierLimit}}</strong> 名用户免费使用。您共有 <strong>{{overLimitUserCopy}}</strong> 名 PDF.wow.to 用户。为避免中断，请升级到 PDF.wow.to Server 方案 - <strong>无限席位</strong>、PDF 文本编辑，以及每台服务器 $99/月 的完整管理员控制。"
 overLimitTitle = "需要服务器许可证"
 seePlans = "查看方案 →"
 upgrade = "立即升级 →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 提供数十种工具和焕新的布局。快速导览可帮助您了解变化以及如何找到所需功能。"
+body = "PDF.wow.to V2 提供数十种工具和焕新的布局。快速导览可帮助您了解变化以及如何找到所需功能。"
 title = "导览概述"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF 现已适用于各类规模的团队。本次更新包含全新布局、更强大的管理员能力，以及呼声最高的功能 - <strong>编辑文本</strong>。"
-title = "欢迎使用 Stirling"
+body = "PDF.wow.to 现已适用于各类规模的团队。本次更新包含全新布局、更强大的管理员能力，以及呼声最高的功能 - <strong>编辑文本</strong>。"
+title = "欢迎使用 PDF.wow.to"
 
 [onboarding.whatsNew]
 activeFilesView = "使用活动文件查看所有已打开的内容并选择要处理的文件。"
@@ -5347,7 +5347,7 @@ benefit1Body = "chain tools, schedule runs, batch process"
 benefit1Title = "Automation pipelines"
 benefit2Body = "summarise, classify, redact, AI-OCR"
 benefit2Title = "AI tools"
-benefit3Body = "call any Stirling endpoint programmatically"
+benefit3Body = "call any PDF.wow.to endpoint programmatically"
 benefit3Title = "API access"
 button = "Turn on Processor →"
 reassurance = "No minimum · Set a $0 cap to test · Cancel anytime"
@@ -5406,7 +5406,7 @@ leader = "Team owner"
 member = "Member"
 
 [payg.signupRequired]
-body = "Stirling PDF gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using Stirling as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
+body = "PDF.wow.to gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using PDF.wow.to as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
 cancel = "Not now"
 cta = "Sign up free"
 subtext = "Creating an account is free and takes a few seconds. No credit card required."
@@ -5454,7 +5454,7 @@ usdNote = "Estimated in USD. You can adjust your cap any time after subscribing,
 [payg.upgrade.checkout]
 capValue = "{{symbol}}{{amount}} / month"
 edit = "Edit"
-help = "Stripe handles your card details. Stirling never sees them."
+help = "Stripe handles your card details. PDF.wow.to never sees them."
 loading = "Loading checkout…"
 noCap = "No cap"
 title = "Add your payment method"
@@ -5462,7 +5462,7 @@ title = "Add your payment method"
 [payg.upgrade.help]
 aiBody = "summarise, classify, redact, AI-OCR"
 aiTitle = "AI tools"
-apiBody = "programmatic access to any Stirling endpoint"
+apiBody = "programmatic access to any PDF.wow.to endpoint"
 apiTitle = "API calls"
 automationBody = "chained tools or scheduled runs that don't need clicks"
 automationTitle = "Automation pipelines"
@@ -5893,7 +5893,7 @@ upToFiveUsers = "最多 5 个用户"
 usageTrackingPrometheus = "使用情况跟踪与 Prometheus"
 
 [plan.licenseWarning]
-body = "您有 {{total}} 名用户，但免费层每台服务器仅支持 {{limit}} 名。升级以保持 Stirling PDF 平稳运行。"
+body = "您有 {{total}} 名用户，但免费层每台服务器仅支持 {{limit}} 名。升级以保持 PDF.wow.to 平稳运行。"
 cta = "查看方案"
 overLimit = "超过 {{limit}}"
 title = "自托管免费额度已达上限"
@@ -6192,25 +6192,25 @@ comingSoon = "即将推出"
 [portal.accountLink.card]
 billingNote = "无人值守处理费用将从您的组织钱包中扣除。"
 eyebrow = "账户链接"
-linkButton = "链接您的 Stirling 账户"
+linkButton = "链接您的 PDF.wow.to 账户"
 linked = "已链接"
 linkedAs = "已链接为 {{name}}。"
 linkedGeneric = "此实例已链接。"
 notLinked = "未链接"
-title = "将此组织链接到其 Stirling 账户"
+title = "将此组织链接到其 PDF.wow.to 账户"
 unlink = "取消链接"
 
 [portal.accountLink.card.error]
 title = "无法链接"
 
 [portal.accountLink.card.loginNotConfigured]
-after = "以启用与托管 Stirling 账户的账户链接。在开发环境中，您可以从链接对话框模拟登录。"
+after = "以启用与托管 PDF.wow.to 账户的账户链接。在开发环境中，您可以从链接对话框模拟登录。"
 before = "设置"
 title = "未配置 SaaS 登录"
 
 [portal.accountLink.gate]
 action = "链接账户"
-description = "链接此组织的 Stirling 账户以使用可计费功能。"
+description = "链接此组织的 PDF.wow.to 账户以使用可计费功能。"
 title = "链接以解锁"
 titleFeature = "链接以解锁 {{feature}}"
 
@@ -6242,13 +6242,13 @@ never = "从不"
 
 [portal.accountLink.modal]
 linkSubtitle = "登录此服务器应计费的账户。"
-linkTitle = "链接您的 Stirling 账户"
-reauthSubtitle = "您的会话已过期——请重新登录您的 Stirling 账户。您的实例保持已链接。"
+linkTitle = "链接您的 PDF.wow.to 账户"
+reauthSubtitle = "您的会话已过期——请重新登录您的 PDF.wow.to 账户。您的实例保持已链接。"
 reauthTitle = "重新登录"
 simulateSignIn = "模拟登录（开发）"
 
 [portal.accountLink.modal.loginNotConfigured]
-after = "以启用应用内链接到托管 Stirling 账户。"
+after = "以启用应用内链接到托管 PDF.wow.to 账户。"
 and = "和"
 before = "设置"
 title = "未配置 SaaS 登录"
@@ -6257,7 +6257,7 @@ title = "未配置 SaaS 登录"
 instancesSub = "注册到此组织的每个自托管实例。撤销凭据可立即切断其无人值守访问。"
 instancesTitle = "已链接实例"
 revokeError = "无法撤销实例"
-sub = "将此自托管组织链接到其 Stirling 账户，以便无人值守处理费用从您的组织钱包中扣除。"
+sub = "将此自托管组织链接到其 PDF.wow.to 账户，以便无人值守处理费用从您的组织钱包中扣除。"
 
 [portal.accountLink.panel.loadError]
 forbidden = "只有团队所有者可以查看组织的已链接实例。"
@@ -6354,7 +6354,7 @@ close = "关闭助手"
 error = "无法连接到助手。"
 errorWithDetail = "无法连接到助手：{{detail}}"
 inputAriaLabel = "询问助手"
-inputPlaceholder = "询问有关 Stirling 的问题…"
+inputPlaceholder = "询问有关 PDF.wow.to 的问题…"
 open = "打开助手"
 send = "发送"
 title = "助手"
@@ -6392,7 +6392,7 @@ title = "未配置 Stripe"
 cta = "创建您的 Enterprise 报价"
 description = "承诺用量折扣、隔离部署、自定义 MSA 和安全审查，以及第三方分销商合作。"
 eyebrow = "用量折扣 · 1M+ PDFs"
-title = "Stirling Enterprise"
+title = "PDF.wow.to Enterprise"
 
 [portal.billing.freeEditors]
 activeThisMonth = "本月活跃"
@@ -6439,9 +6439,9 @@ viewAriaLabel = "在 Stripe 中查看发票 {{number}}"
 viewLink = "查看 ↗"
 
 [portal.billing.linkPrompt]
-cta = "链接 Stirling 账户"
+cta = "链接 PDF.wow.to 账户"
 description = "手动 PDF 编辑——查看、签名、合并、拆分、水印、压缩、转换、手动 OCR——无论是否链接都始终免费。链接后可领取 500 个按量处理 PDFs 的免费额度（自动化、AI 和 API）；需要更多时，启用 Processor 方案，仅按实际使用付费。"
-title = "链接您的 Stirling 账户"
+title = "链接您的 PDF.wow.to 账户"
 
 [portal.billing.paymentMethod]
 billedMonthly = "按月计费"
@@ -6723,7 +6723,7 @@ time = "时间"
 user = "用户"
 
 [portal.editorAdmin]
-subtitle = "部署 Stirling PDF Editor，将自托管实例配对到您的组织，并在一处管理运行中的集群 — 目标、健康状况、凭据和离线激活。"
+subtitle = "部署 PDF.wow.to Editor，将自托管实例配对到您的组织，并在一处管理运行中的集群 — 目标、健康状况、凭据和离线激活。"
 title = "编辑器部署"
 
 [portal.editorAdmin.health.columns]
@@ -6809,7 +6809,7 @@ title = "此页面出现问题"
 [portal.home.editor]
 activeUsers = "{{n}} 位活跃"
 invite = "邀请队友"
-name = "Stirling PDF Editor"
+name = "PDF.wow.to Editor"
 open = "在浏览器中打开"
 updated = "已更新 {{time}}"
 
@@ -6869,7 +6869,7 @@ title = "签发 API 密钥"
 [portal.infrastructure]
 manageEditorDeployment = "管理 Editor 部署"
 sectionsAriaLabel = "基础设施部分"
-subtitle = "您的 Stirling 工作区的部署、凭据、安全态势、存储和审计轨迹。"
+subtitle = "您的 PDF.wow.to 工作区的部署、凭据、安全态势、存储和审计轨迹。"
 title = "基础设施"
 
 [portal.infrastructure.apiKeys]
@@ -6889,7 +6889,7 @@ usageMonth = "本月用量"
 usageToday = "今日用量"
 
 [portal.infrastructure.apiKeys.empty]
-description = "创建范围化密钥以开始调用 Stirling API。"
+description = "创建范围化密钥以开始调用 PDF.wow.to API。"
 title = "尚无 API 密钥"
 
 [portal.infrastructure.audit]
@@ -6958,7 +6958,7 @@ keyNameLabel = "密钥名称"
 keyNamePlaceholder = "例如：生产 · 摄取"
 permissionsLabel = "权限"
 secretKeyCaption = "秘密密钥"
-secretWarning = "请将其存储在密钥管理器中。Stirling 只会存储哈希 — 之后无法恢复。"
+secretWarning = "请将其存储在密钥管理器中。PDF.wow.to 只会存储哈希 — 之后无法恢复。"
 subtitle = "将密钥范围限制为所需的最小范围。您可以随时轮换或吊销。"
 subtitleCreated = "立即复制此密钥 — 它不会再次显示。"
 title = "创建 API 密钥"
@@ -6993,7 +6993,7 @@ version = "版本"
 
 [portal.infrastructure.deployments.regions]
 heading = "区域"
-subheading = "每个已部署 Stirling 区域的实时健康状况 — 延迟、负载和发布版本。"
+subheading = "每个已部署 PDF.wow.to 区域的实时健康状况 — 延迟、负载和发布版本。"
 
 [portal.infrastructure.deployments.regions.empty]
 description = "工作区完成配置后，已部署区域会显示在这里。"
@@ -7050,16 +7050,16 @@ operation = "操作"
 routedTo = "路由至"
 
 [portal.infrastructure.security.access.byok]
-description = "从您自己的 KMS 提供密钥。Stirling 使用它加密，但仍可读取。"
+description = "从您自己的 KMS 提供密钥。PDF.wow.to 使用它加密，但仍可读取。"
 label = "自带密钥 (BYOK)"
 
 [portal.infrastructure.security.access.hyok]
-description = "密钥永不离开您的 KMS。Stirling 仅持有密文。"
+description = "密钥永不离开您的 KMS。PDF.wow.to 仅持有密文。"
 label = "自持密钥 (HYOK)"
 
 [portal.infrastructure.security.access.stirling]
-description = "Stirling 管理加密密钥。最简单 — 您无需进行密钥运维。"
-label = "Stirling 持有的密钥"
+description = "PDF.wow.to 管理加密密钥。最简单 — 您无需进行密钥运维。"
+label = "PDF.wow.to 持有的密钥"
 
 [portal.infrastructure.security.accessPolicy]
 heading = "文档访问策略"
@@ -7073,15 +7073,15 @@ viewReport = "查看报告 →"
 
 [portal.infrastructure.security.compliance]
 heading = "合规"
-subheading = "覆盖 Stirling 平台的证明和认证。"
+subheading = "覆盖 PDF.wow.to 平台的证明和认证。"
 
 [portal.infrastructure.security.empty]
 description = "您工作区的安全配置会显示在这里。"
 title = "安全态势不可用"
 
 [portal.infrastructure.security.hyokBanner]
-description = "使用 HYOK 时，加密密钥永不离开您的 KMS。Stirling 仅存储和处理密文，您可随时吊销。"
-title = "Stirling 无法解密您的文档"
+description = "使用 HYOK 时，加密密钥永不离开您的 KMS。PDF.wow.to 仅存储和处理密文，您可随时吊销。"
+title = "PDF.wow.to 无法解密您的文档"
 
 [portal.infrastructure.security.ipAllowlist]
 empty = "未配置 IP 范围 — 允许所有 IP。"
@@ -7110,7 +7110,7 @@ subheading = "用于加密静态文档的密钥托管 — 谁可以解密，以�
 
 [portal.infrastructure.security.managedBanner]
 description = "自带密钥 (BYOK) 和自持密钥 (HYOK) 托管在企业版中可用。升级后可从您自己的 KMS 提供密钥。"
-title = "您当前计划中的密钥由 Stirling 管理"
+title = "您当前计划中的密钥由 PDF.wow.to 管理"
 
 [portal.infrastructure.security.residency.apac]
 description = "ap-southeast-1"
@@ -7591,7 +7591,7 @@ upload = "上传"
 
 [portal.procurement.agreement]
 agreeCta = "同意并订阅"
-confirm = "我已阅读并同意 Stirling Enterprise Agreement。"
+confirm = "我已阅读并同意 PDF.wow.to Enterprise Agreement。"
 eyebrow = "协议"
 intro = "一份合并协议涵盖您的交易：Master Service Agreement、Order Form、EULA 和 Data Processing Agreement。请审核后同意，将报价接受为已承诺的订阅。"
 title = "审核您的企业协议"
@@ -7606,7 +7606,7 @@ country = "国家/地区"
 countryEuro = "欧元区 (EUR €)"
 countryUK = "英国 (GBP £)"
 countryUS = "美国 (USD $)"
-eula = "我已阅读并同意 Stirling Enterprise EULA。它管理由此报价生成的协议。"
+eula = "我已阅读并同意 PDF.wow.to Enterprise EULA。它管理由此报价生成的协议。"
 generate = "生成报价"
 included = "已包含"
 indemnification = "IP 赔偿"
@@ -7689,7 +7689,7 @@ daysLeft_one = "剩余 {{count}} 天"
 daysLeft_other = "剩余 {{count}} 天"
 engineerLabel = "您的解决方案工程师"
 eyebrow = "您的推出流程"
-live = "您已在 Stirling Enterprise 上线"
+live = "您已在 PDF.wow.to Enterprise 上线"
 nextStep = "下一步：{{action}}"
 subtitle = "您的解决方案工程师会参与每一步。一次只需完成一个下一步操作；完整清单如下。"
 title = "从试用到上线，一条引导路径"
@@ -7716,7 +7716,7 @@ gatingAction = "接受您的报价"
 label = "报价"
 
 [portal.procurement.journeySteps.trial]
-blurb = "使用您的文档和工作流评估 Stirling。"
+blurb = "使用您的文档和工作流评估 PDF.wow.to。"
 gatingAction = "构建您的报价"
 label = "试用"
 
@@ -7730,14 +7730,14 @@ label = "您的许可证密钥"
 
 [portal.procurement.link]
 cta = "关联账户"
-description = "采购在您关联的 Stirling 账户上运行：我们通过它预配试用、为报价定价并开始计费。关联账户即可开始。"
+description = "采购在您关联的 PDF.wow.to 账户上运行：我们通过它预配试用、为报价定价并开始计费。关联账户即可开始。"
 eyebrow = "企业版"
 title = "关联您的账户以开始"
 
 [portal.procurement.live]
 description = "您的订阅已激活，许可证已签发。您的团队已预配，计费已开始。"
 eyebrow = "上线"
-title = "您已在 Stirling Enterprise 上线"
+title = "您已在 PDF.wow.to Enterprise 上线"
 
 [portal.procurement.locked]
 description = "开始企业评估后，试用密钥、承诺用量报价、一次签署协议、付款以及您的文档台账都将在这里。"
@@ -7772,7 +7772,7 @@ requestBodyFree = "我们会按需生成此文档。确认后，您的解决方�
 requestBodyPaid = "这是付费附加项。确认后，您的解决方案工程师将评估范围并发送文件。"
 requestCta = "请求"
 requestTitle = "请求此文档"
-signBody = "打开 Stirling Enterprise Agreement 进行电子签名：一次签署涵盖 MSA、订单表、EULA 和 DPA。我们会自动会签，您将进入付款步骤。"
+signBody = "打开 PDF.wow.to Enterprise Agreement 进行电子签名：一次签署涵盖 MSA、订单表、EULA 和 DPA。我们会自动会签，您将进入付款步骤。"
 signCta = "打开以签署"
 signTitle = "审核并签署您的协议"
 uploadBody = "将您的 PO 发送给我们，我们会按您的条款开具发票。拖入 PDF 或在下方选择文件。"
@@ -7824,7 +7824,7 @@ title = "这里还没有内容"
 
 [portal.search]
 ariaLabel = "搜索"
-placeholder = "搜索 Stirling — 端点、管道、文档…"
+placeholder = "搜索 PDF.wow.to — 端点、管道、文档…"
 
 [portal.search.empty]
 noActionsDescription = "快速操作可用后将显示在这里。"
@@ -7852,9 +7852,9 @@ switchToLight = "切换到浅色主题"
 [portal.shell.sidebar]
 appEditor = "编辑器"
 appProcessor = "处理器"
-brandSuffix = "Stirling Processor"
+brandSuffix = "PDF.wow.to Processor"
 docsCount = "{{docs}} 个文档"
-linkAccount = "关联 Stirling 账户"
+linkAccount = "关联 PDF.wow.to 账户"
 planEditor = "编辑器方案"
 planEnterprise = "企业版方案"
 planProcessor = "处理器方案"
@@ -7862,7 +7862,7 @@ primaryNav = "主导航"
 switchApp = "切换应用"
 
 [portal.sources]
-subtitle = "可重复使用的输入连接，将文档送入 Stirling。配置一次连接，然后可在任意数量的政策中引用它。点击一行可查看其配置以及使用它的政策。"
+subtitle = "可重复使用的输入连接，将文档送入 PDF.wow.to。配置一次连接，然后可在任意数量的政策中引用它。点击一行可查看其配置以及使用它的政策。"
 title = "来源"
 
 [portal.sources.actions]
@@ -7917,7 +7917,7 @@ description = "监视服务器上的目录以发现新文档。"
 label = "文件夹"
 
 [portal.sources.types.folder.fields.directory]
-helperText = "Stirling 监视以处理文件的绝对路径。"
+helperText = "PDF.wow.to 监视以处理文件的绝对路径。"
 label = "目录路径"
 placeholder = "/data/incoming"
 
@@ -7965,7 +7965,7 @@ review = "审核并连接"
 
 [portal.usage]
 managePayment = "管理付款"
-subtitle = "在一个控制台中管理 Stirling 已计费的每个 PDF 的消耗、发票和方案。"
+subtitle = "在一个控制台中管理 PDF.wow.to 已计费的每个 PDF 的消耗、发票和方案。"
 title = "用量与计费"
 
 [portal.usage.error]
@@ -7975,7 +7975,7 @@ walletUnavailable = "钱包不可用：{{status}} {{statusText}}"
 
 [portal.usage.sessionExpired]
 action = "重新登录"
-body = "您的 Stirling 账户会话已过期。请重新登录以查看计费——您的实例仍保持关联。"
+body = "您的 PDF.wow.to 账户会话已过期。请重新登录以查看计费——您的实例仍保持关联。"
 title = "会话已过期"
 
 [portal.users]
@@ -8022,7 +8022,7 @@ summary = "拥有团队——管理其成员的资源和共享配置。"
 3 = "成员能做的一切"
 
 [portal.welcome]
-ariaLabel = "欢迎使用 Stirling PDF"
+ariaLabel = "欢迎使用 PDF.wow.to"
 badge = "开源"
 installEditor = "安装编辑器"
 inviteTeammates = "邀请队友"
@@ -8030,7 +8030,7 @@ openInBrowser = "在浏览器中打开"
 perks = "永久免费 · 可自托管"
 subtitle = "世界上最安全的 PDF 编辑器对各种规模的团队免费。包含 60+ 项 PDF 操作和 SSO。"
 title = "欢迎使用"
-titleAccent = "Stirling PDF"
+titleAccent = "PDF.wow.to"
 
 [printFile]
 title = "ཡིག་ཆ་པར་འདེབས།"
@@ -8721,8 +8721,8 @@ hideTools = "隐藏不可用工具 ▴"
 messageNoFallback = "在您的服务器重新联机之前，这些工具不可用。"
 messageWithFallback = "部分工具需要服务器连接。"
 showTools = "查看不可用工具 ▾"
-title = "您的 Stirling-PDF 服务器不可达"
-toolNotAvailableLocally = "您的 Stirling-PDF 服务器已离线，且本地后端不提供 \"{{endpoint}}\"。"
+title = "您的 PDF.wow.to 服务器不可达"
+toolNotAvailableLocally = "您的 PDF.wow.to 服务器已离线，且本地后端不提供 \"{{endpoint}}\"。"
 
 [session]
 expired = "ཁྱེད་ཀྱི་གླེང་མོལ་དུས་ཡོལ་ཟིན། ཤོག་ངོས་གསར་སྒྱུར་བྱས་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།"
@@ -8782,7 +8782,7 @@ user = "登录身份"
 
 [settings.connection.mode]
 local = "仅本地"
-saas = "Stirling Cloud"
+saas = "PDF.wow.to Cloud"
 selfhosted = "自托管"
 
 [settings.developer]
@@ -8797,7 +8797,7 @@ autoUnzipFileLimitDescription = "从 ZIP 中提取的最大文件数"
 autoUnzipFileLimitTooltip = "仅当 ZIP 含有不超过此数量的文件时才解压。增大该值可提取更大的 ZIP。"
 autoUnzipTooltip = "自动解压 API 操作返回的 ZIP 文件。禁用后将保持 ZIP 文件原样。这不影响自动化工作流。"
 defaultPdfEditor = "默认 PDF 编辑器"
-defaultPdfEditorActive = "Stirling PDF 是您的默认 PDF 编辑器"
+defaultPdfEditorActive = "PDF.wow.to 是您的默认 PDF 编辑器"
 defaultPdfEditorChecking = "正在检查..."
 defaultPdfEditorInactive = "已由其他应用设为默认"
 defaultPdfEditorSet = "已是默认"
@@ -8858,7 +8858,7 @@ updateBehavior = "更新行为"
 updateBehaviorDescription = "选择是否在安装更新前提示、自动安装或完全跳过更新检查。"
 updateBehaviorError = "无法更改更新行为"
 updateBehaviorErrorLocked = "此设置已被你的管理员锁定。"
-updateBehaviorLockedDescription = "你的管理员已配置此设备上 Stirling-PDF 的更新处理方式。若需更改，请联系他们。"
+updateBehaviorLockedDescription = "你的管理员已配置此设备上 PDF.wow.to 的更新处理方式。若需更改，请联系他们。"
 updateBehaviorSaved = "已保存更新行为。"
 versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
 viewDetails = "查看详情"
@@ -8942,7 +8942,7 @@ usageAnalytics = "使用分析"
 [settings.planBilling]
 currentPlan = "当前套餐"
 loading = "正在加载计费信息..."
-notAvailable = "“套餐与计费”仅在连接到 Stirling Cloud（SaaS 模式）时可用。"
+notAvailable = "“套餐与计费”仅在连接到 PDF.wow.to Cloud（SaaS 模式）时可用。"
 title = "套餐与计费"
 
 [settings.planBilling.billing]
@@ -9068,7 +9068,7 @@ emptyUsername = "请输入用户名"
 oauthFailed = "OAuth 登录失败。请重试。"
 
 [setup.saas]
-title = "登录 Stirling"
+title = "登录 PDF.wow.to"
 
 [setup.selfhosted]
 changeServerLocked = "您的组织已将此应用限制为连接特定服务器"
@@ -9106,7 +9106,7 @@ step3 = "重启服务器"
 title = "未启用登录"
 
 [setup.server.url]
-description = "输入自托管 Stirling PDF 服务器的完整 URL"
+description = "输入自托管 PDF.wow.to 服务器的完整 URL"
 label = "服务器 URL"
 
 [sharedSign]
@@ -9342,7 +9342,7 @@ pleaseFillAllFields = "请填写所有字段"
 signUp = "注册"
 signUpWith = "Sign up with"
 skip = "Skip"
-subtitle = "加入 Stirling PDF 开始使用"
+subtitle = "加入 PDF.wow.to 开始使用"
 title = "创建账号"
 unexpectedError = "意外错误：{{message}}"
 
@@ -9569,7 +9569,7 @@ download = "下载"
 downloaded = "已下载"
 downloadFailed = "无法下载此文件。"
 downloadsCount = "下载次数：{{count}}"
-emailWarningBody = "这看起来像一个电子邮箱地址。若此人尚未成为 Stirling PDF 用户，将无法访问该文件。"
+emailWarningBody = "这看起来像一个电子邮箱地址。若此人尚未成为 PDF.wow.to 用户，将无法访问该文件。"
 emailWarningConfirm = "仍要共享"
 emailWarningTitle = "电子邮箱地址"
 errorTitle = "共享失败"
@@ -9600,7 +9600,7 @@ manageTitle = "管理共享"
 noActivity = "暂无活动。"
 noLinks = "暂无有效的共享链接。"
 noSharedUsers = "暂无用户拥有访问权限。"
-openInApp = "在 Stirling PDF 中打开"
+openInApp = "在 PDF.wow.to 中打开"
 ownerLabel = "所有者"
 ownerUnknown = "未知"
 removeLink = "移除链接"
@@ -9654,7 +9654,7 @@ updateButton = "在服务器上更新"
 uploadButton = "上传到服务器"
 
 [survey]
-title = "Stirling-PDF Survey"
+title = "PDF.wow.to Survey"
 
 [swagger]
 tags = "api,文档,swagger,端点,开发"
@@ -9782,7 +9782,7 @@ favorites = "收藏"
 heading = "所有工具（全屏视图）"
 noResults = "尝试调整搜索或切换描述以找到所需内容。"
 recommended = "推荐"
-selfHostedOffline = "需要您的 Stirling-PDF 服务器（当前离线）："
+selfHostedOffline = "需要您的 PDF.wow.to 服务器（当前离线）："
 showDetails = "显示详细信息"
 unavailable = "已被服务器管理员禁用："
 unavailableDependency = "不可用 - 服务器缺少所需工具："
@@ -9791,7 +9791,7 @@ unfavorite = "从收藏中移除"
 [toolPanel.modePrompt]
 chooseFullscreen = "使用全屏模式"
 chooseSidebar = "使用侧边栏模式"
-description = "预览两种布局，决定如何探索 Stirling PDF 的工具。"
+description = "预览两种布局，决定如何探索 PDF.wow.to 的工具。"
 dismiss = "以后再说"
 fullscreenDescription = "在覆盖工作区的目录中浏览全部工具，直到选择其一。"
 fullscreenTitle = "全屏模式（旧版）"
@@ -9859,7 +9859,7 @@ loadingDetailedInfo = "正在加载详细信息..."
 migrationGuide = "迁移指南"
 migrationGuides = "迁移指南"
 migrationGuidesDesc = "更新前请查看重要变更。"
-modalSubtitle = "有新版本 Stirling PDF 可安装。"
+modalSubtitle = "有新版本 PDF.wow.to 可安装。"
 modalTitle = "有可用更新"
 notes = "说明"
 releaseNotes = "发布说明"
@@ -9883,7 +9883,7 @@ urgent = "紧急"
 attentionBody = "管理员需要登录以查看更多信息。请立即联系他们。"
 attentionBodyAdmin = "查看许可要求以保持此服务器合规。"
 attentionTitle = "此服务器需要管理员关注"
-message = "充分利用 Stirling PDF，享受无限用户与高级功能"
+message = "充分利用 PDF.wow.to，享受无限用户与高级功能"
 seeInfo = "查看信息"
 title = "升级到服务器方案"
 upgradeButton = "立即升级"
@@ -10000,7 +10000,7 @@ authWeb = "密码"
 create = "创建账户"
 createSubtitle = "使用密码或 SSO 创建自托管账户。"
 createTitle = "创建账户"
-editorDesc = "在 Stirling PDF 编辑器中编辑 PDF。每个人都可使用。"
+editorDesc = "在 PDF.wow.to 编辑器中编辑 PDF。每个人都可使用。"
 email = "电子邮件地址"
 emailError = "请输入有效的电子邮件地址"
 emailPlaceholder2 = "name@company.com"
@@ -10015,7 +10015,7 @@ processorDeferred = "邀请已发送，但尚无法授予处理器访问权限 -
 processorDesc = "治理界面、运行管道、代理和 API。"
 role = "角色"
 send2 = "发送邀请"
-subtitle2 = "他们将收到一封加入你的 Stirling 工作区的电子邮件。"
+subtitle2 = "他们将收到一封加入你的 PDF.wow.to 工作区的电子邮件。"
 team = "团队"
 title = "邀请人员"
 username = "用户名"
@@ -10138,7 +10138,7 @@ downloads = "下载"
 entryLabel = "签名摘要"
 filesEvaluated_one = "已评估 {{count}} 个文件"
 filesEvaluated_other = "已评估 {{count}} 个文件"
-footer = "通过 Stirling PDF 验证"
+footer = "通过 PDF.wow.to 验证"
 generatedAt = "生成时间"
 noPdf = "成功验证后将提供 PDF 报告。"
 page = "页面"

@@ -57,7 +57,7 @@ keepWorking = "Continua a lavorare"
 loading = "Caricamento..."
 loginAgreementAccept = "Accetta"
 loginAgreementDecline = "Rifiuta"
-loginAgreementProvider = "Questo avviso è fornito dal tuo amministratore, non da Stirling PDF Inc."
+loginAgreementProvider = "Questo avviso è fornito dal tuo amministratore, non da PDF.wow.to Inc."
 loginAgreementTitle = "Accordo di accesso"
 logOut = "Esci"
 marginTooltip = "Distanza tra il numero di pagina e il bordo della pagina."
@@ -633,9 +633,9 @@ description = "Configura l'archiviazione e la pulizia dei file temporanei"
 label = "Gestione file temporanei"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Directory base per i file temporanei (lascia vuoto per default: java.io.tmpdir/stirling-pdf)"
+description = "Directory base per i file temporanei (lascia vuoto per default: java.io.tmpdir/pdf.wow.to)"
 label = "Directory temporanea base"
-placeholder = "Predefinito: java.io.tmpdir/stirling-pdf"
+placeholder = "Predefinito: java.io.tmpdir/pdf.wow.to"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]
 description = "Frequenza di esecuzione della pulizia (in minuti)"
@@ -919,11 +919,11 @@ description = "Configura funzionalità opzionali."
 title = "Funzionalità"
 
 [admin.settings.features.serverCertificate]
-description = "Configura la generazione del certificato lato server per la funzionalità \"Sign with Stirling-PDF\""
+description = "Configura la generazione del certificato lato server per la funzionalità \"Sign with PDF.wow.to\""
 label = "Certificato server"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Abilita il certificato lato server per l'opzione \"Sign with Stirling-PDF\""
+description = "Abilita il certificato lato server per l'opzione \"Sign with PDF.wow.to\""
 label = "Abilita certificato server"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1071,7 +1071,7 @@ description = "URL o nome file della cookie policy"
 label = "Informativa sui cookie"
 
 [admin.settings.legal.disclaimer]
-message = "Personalizzando questi documenti legali, ti assumi la piena responsabilità di garantire la conformità a tutte le leggi e normative applicabili, incluse ma non limitate al GDPR e ad altri requisiti di protezione dei dati dell'UE. Modifica queste impostazioni solo se: (1) gestisci un'istanza personale/privata, (2) sei al di fuori della giurisdizione UE e comprendi i tuoi obblighi legali locali, oppure (3) hai ottenuto un'adeguata consulenza legale e accetti la piena responsabilità per tutti i dati utente e la conformità legale. Stirling-PDF e i suoi sviluppatori non assumono alcuna responsabilità per i tuoi obblighi legali."
+message = "Personalizzando questi documenti legali, ti assumi la piena responsabilità di garantire la conformità a tutte le leggi e normative applicabili, incluse ma non limitate al GDPR e ad altri requisiti di protezione dei dati dell'UE. Modifica queste impostazioni solo se: (1) gestisci un'istanza personale/privata, (2) sei al di fuori della giurisdizione UE e comprendi i tuoi obblighi legali locali, oppure (3) hai ottenuto un'adeguata consulenza legale e accetti la piena responsabilità per tutti i dati utente e la conformità legale. PDF.wow.to e i suoi sviluppatori non assumono alcuna responsabilità per i tuoi obblighi legali."
 title = "Avviso di responsabilità legale"
 
 [admin.settings.legal.impressum]
@@ -1158,8 +1158,8 @@ description = "Nome utente per l'autenticazione SMTP"
 label = "Nome utente SMTP"
 
 [admin.settings.mcp]
-apikeyNote = "I client inviano una chiave API Stirling nell'intestazione X-API-KEY (o Authorization: Bearer <key>). La chiave viene mappata sul rispettivo utente Stirling proprietario: l'accesso è consentito solo agli account abilitati e le azioni vengono verificate a nome di quell'utente. Gestisci le chiavi in Account > Chiavi API."
-description = "Esponi gli strumenti PDF e gli agenti IA di Stirling ai client MCP tramite un endpoint protetto da OAuth."
+apikeyNote = "I client inviano una chiave API PDF.wow.to nell'intestazione X-API-KEY (o Authorization: Bearer <key>). La chiave viene mappata sul rispettivo utente PDF.wow.to proprietario: l'accesso è consentito solo agli account abilitati e le azioni vengono verificate a nome di quell'utente. Gestisci le chiavi in Account > Chiavi API."
+description = "Esponi gli strumenti PDF e gli agenti IA di PDF.wow.to ai client MCP tramite un endpoint protetto da OAuth."
 title = "Server MCP"
 
 [admin.settings.mcp.acceptedAudiences]
@@ -1189,7 +1189,7 @@ step3ApiKeyb = "(o Authorization: Bearer <key>). Non viene utilizzato alcun rile
 step4 = "Approva l'accesso; il client riproverà con un token. Gli strumenti appariranno raggruppati: convert, pages, misc, security, ai."
 step4ApiKey = "Gli strumenti appariranno raggruppati: convert, pages, misc, security, ai — e ogni chiamata verrà verificata a nome del proprietario della chiave."
 tip = "Suggerimento: registra l'ID risorsa come audience consentita nel tuo IdP. Testato con MCP Inspector e Claude Desktop."
-tipApiKey = "Suggerimento: la modalità chiave API non richiede un IdP esterno — è la più semplice per il self-hosting. La chiave viene mappata sul rispettivo utente Stirling proprietario."
+tipApiKey = "Suggerimento: la modalità chiave API non richiede un IdP esterno — è la più semplice per il self-hosting. La chiave viene mappata sul rispettivo utente PDF.wow.to proprietario."
 title = "Connetti un client MCP"
 
 [admin.settings.mcp.issuerUri]
@@ -1202,12 +1202,12 @@ label = "URL JWKS (opzionale)"
 placeholder = "Rilevato automaticamente dall'issuer"
 
 [admin.settings.mcp.mode]
-description = "La modalità OAuth richiede un IdP esterno. La modalità chiave API utilizza una chiave API Stirling per singolo utente (X-API-KEY) — è la più semplice per il self-hosting."
+description = "La modalità OAuth richiede un IdP esterno. La modalità chiave API utilizza una chiave API PDF.wow.to per singolo utente (X-API-KEY) — è la più semplice per il self-hosting."
 label = "Modalità di autenticazione"
 
 [admin.settings.mcp.requireAccount]
-description = "Consenti il passaggio dei token solo se il loro subject corrisponde a un utente Stirling abilitato e configurato."
-label = "Richiedi un account Stirling esistente"
+description = "Consenti il passaggio dei token solo se il loro subject corrisponde a un utente PDF.wow.to abilitato e configurato."
+label = "Richiedi un account PDF.wow.to esistente"
 
 [admin.settings.mcp.resourceId]
 description = "L'URL pubblico /mcp di questo server. I token devono includerlo nella loro audience (RFC 8707), altrimenti verranno rifiutati."
@@ -1218,7 +1218,7 @@ description = "Richiedi mcp.tools.read per le operazioni di lettura e mcp.tools.
 label = "Applica gli scope OAuth"
 
 [admin.settings.mcp.usernameClaim]
-description = "Il claim del JWT da confrontare con un nome utente Stirling (ad es. sub, email, preferred_username)."
+description = "Il claim del JWT da confrontare con un nome utente PDF.wow.to (ad es. sub, email, preferred_username)."
 label = "Claim del nome utente"
 
 [admin.settings.plan.noData]
@@ -1539,7 +1539,7 @@ description = "Se abilitato, solo gli ID utente elencati possono usare il bot."
 label = "Consenti ID utente specifici"
 
 [admin.settings.telegram.enabled]
-description = "Consenti agli utenti di interagire con Stirling PDF tramite il tuo bot Telegram configurato."
+description = "Consenti agli utenti di interagire con PDF.wow.to tramite il tuo bot Telegram configurato."
 label = "Abilita bot Telegram"
 
 [admin.settings.telegram.feedback]
@@ -1612,20 +1612,20 @@ settingsOverview = "Questo è il <strong>Pannello impostazioni</strong>. Le impo
 systemCustomization = "Abbiamo ampie modalità per personalizzare l'interfaccia: le <strong>Impostazioni di sistema</strong> consentono di cambiare il nome dell'app e le lingue, <strong>Funzionalità</strong> consente la gestione del certificato server e <strong>Endpoint</strong> permette di abilitare o disabilitare strumenti specifici per i tuoi utenti."
 teamsAndUsers = "Gestisci qui <strong>Team</strong> e singoli utenti. Puoi invitare nuovi utenti via email, link condivisibili o creare tu stesso account personalizzati per loro."
 welcome = "Benvenuto nel <strong>Tour Admin</strong>! Esploriamo le potenti funzionalità enterprise e le impostazioni disponibili per gli amministratori di sistema."
-wrapUp = "Questo è il tour admin! Hai visto le funzionalità enterprise che rendono Stirling PDF una soluzione potente e personalizzabile per le organizzazioni. Accedi a questo tour in qualsiasi momento dal menu <strong>Guida</strong>."
+wrapUp = "Questo è il tour admin! Hai visto le funzionalità enterprise che rendono PDF.wow.to una soluzione potente e personalizzabile per le organizzazioni. Accedi a questo tour in qualsiasi momento dal menu <strong>Guida</strong>."
 
 [adminUserSettings]
 admin = "Amministratore"
 title = "Impostazioni di controllo utente"
 
 [agents]
-stirling_name = "Stirling"
+stirling_name = "PDF.wow.to"
 
 [analytics]
 learnMore = "Scopri di più"
-paragraph1 = "Stirling PDF ha opt-in analytics per aiutarci a migliorare il prodotto. Non tracciamo alcuna informazione personale o contenuto di file."
-paragraph2 = "Si prega di prendere in considerazione l'attivazione dell'analytics per aiutare Stirling-PDF a crescere e consentirci di comprendere meglio i nostri utenti."
-title = "Vuoi migliorare Stirling PDF?"
+paragraph1 = "PDF.wow.to ha opt-in analytics per aiutarci a migliorare il prodotto. Non tracciamo alcuna informazione personale o contenuto di file."
+paragraph2 = "Si prega di prendere in considerazione l'attivazione dell'analytics per aiutare PDF.wow.to a crescere e consentirci di comprendere meglio i nostri utenti."
+title = "Vuoi migliorare PDF.wow.to?"
 
 [annotate]
 tags = "annota,evidenzia,disegna,markup,commento,note,recensione,linea rossa,feedback,strumenti di markup,note adesive,forme,frecce,casella di testo,mano libera"
@@ -2558,7 +2558,7 @@ bullet1 = "Supporta formati PEM, PKCS12, JKS e certificato server"
 bullet2 = "Opzione per mostrare o nascondere la firma nel PDF"
 bullet3 = "Aggiungi motivo, luogo e nome del firmatario"
 bullet4 = "Scegli in quale pagina posizionare le firme visibili"
-bullet5 = "Usa certificato server per semplice opzione 'Firma con Stirling-PDF'"
+bullet5 = "Usa certificato server per semplice opzione 'Firma con PDF.wow.to'"
 text = "Per firmare un PDF è necessario un certificato digitale (come PEM, PKCS12 o JKS). Puoi scegliere di rendere la firma visibile sul documento o mantenerla invisibile solo per sicurezza."
 title = "Aggiunta delle firme"
 
@@ -2739,10 +2739,10 @@ copy = "Copia messaggio"
 
 [chat.fab]
 close = "Chiudi chat"
-open = "Apri Stirling assistente IA"
+open = "Apri PDF.wow.to assistente IA"
 
 [chat.header]
-agentMenu = "Opzioni agente Stirling"
+agentMenu = "Opzioni agente PDF.wow.to"
 clearChat = "Cancella chat"
 
 [chat.input]
@@ -3072,14 +3072,14 @@ upgradeButton = "Aggiorna account"
 
 [config.apiKeys]
 copyKeyAriaLabel = "Copia chiave API"
-description = "La tua chiave API per accedere alla suite di strumenti PDF di Stirling. Copiala nel tuo progetto o aggiorna per generarne una nuova."
-docsDescription = "Scopri di più su come integrare con Stirling PDF:"
+description = "La tua chiave API per accedere alla suite di strumenti PDF di PDF.wow.to. Copiala nel tuo progetto o aggiorna per generarne una nuova."
+docsDescription = "Scopri di più su come integrare con PDF.wow.to:"
 docsLink = "Documentazione API"
 docsTitle = "Documentazione API"
 generateError = "Non siamo riusciti a generare la tua chiave API."
 goToAccount = "Vai all’Account"
 guestInfo = "Gli utenti ospiti non ricevono chiavi API. Crea un account per ottenere una chiave API da usare nelle tue applicazioni."
-intro = "Usa la tua chiave API per accedere programmaticamente alle capacità di elaborazione di Stirling PDF."
+intro = "Usa la tua chiave API per accedere programmaticamente alle capacità di elaborazione di PDF.wow.to."
 label = "Chiave API"
 publicKeyAriaLabel = "Chiave API pubblica"
 refreshAriaLabel = "Aggiorna chiave API"
@@ -3103,10 +3103,10 @@ title = "Aggiorna chiavi API"
 warning = "⚠️ Attenzione: questa azione genererà nuove chiavi API e renderà non valide le chiavi precedenti."
 
 [config.mcp]
-description = "Il Model Context Protocol (MCP) consente agli assistenti IA come Claude di usare direttamente i tuoi strumenti Stirling PDF. Connetti un client una sola volta e il tuo assistente potrà convertire, modificare, proteggere e l'elaborare documenti per tuo conto."
-guestInfo = "Gli utenti ospite non possono connettere client MCP. Crea un account per utilizzare il server MCP e consentire al tuo assistente IA di eseguire gli strumenti Stirling PDF per tuo conto."
+description = "Il Model Context Protocol (MCP) consente agli assistenti IA come Claude di usare direttamente i tuoi strumenti PDF.wow.to. Connetti un client una sola volta e il tuo assistente potrà convertire, modificare, proteggere e l'elaborare documenti per tuo conto."
+guestInfo = "Gli utenti ospite non possono connettere client MCP. Crea un account per utilizzare il server MCP e consentire al tuo assistente IA di eseguire gli strumenti PDF.wow.to per tuo conto."
 navLabel = "Server MCP"
-tip = "Ogni azione eseguita dal tuo assistente viene effettuata con il tuo account e viene conteggiata nel tuo consumo, esattamente come quando usi Stirling PDF direttamente."
+tip = "Ogni azione eseguita dal tuo assistente viene effettuata con il tuo account e viene conteggiata nel tuo consumo, esattamente come quando usi PDF.wow.to direttamente."
 
 [config.mcp.copy]
 configLabel = "Configurazione"
@@ -3121,7 +3121,7 @@ label = "Il tuo endpoint MCP"
 
 [config.mcp.setup]
 addTo = "Aggiungi a"
-hint = "Scegli il tuo client, incolla lo snippet nel file indicato, quindi riavvialo. Al primo utilizzo effettuerai l'accesso con il tuo account Stirling — nessuna chiave da copiare."
+hint = "Scegli il tuo client, incolla lo snippet nel file indicato, quindi riavvialo. Al primo utilizzo effettuerai l'accesso con il tuo account PDF.wow.to — nessuna chiave da copiare."
 title = "Connetti il tuo assistente IA"
 
 [config.overview]
@@ -3230,7 +3230,7 @@ showPreferencesBtn = "Gestisci preferenze"
 title = "Come utilizziamo i cookie"
 
 [cookieBanner.popUp.description]
-1 = "Utilizziamo cookie e altre tecnologie per migliorare l'esperienza utente di Stirling PDF, aiutandoci a perfezionare i nostri strumenti e a continuare a sviluppare funzionalità che amerai."
+1 = "Utilizziamo cookie e altre tecnologie per migliorare l'esperienza utente di PDF.wow.to, aiutandoci a perfezionare i nostri strumenti e a continuare a sviluppare funzionalità che amerai."
 2 = "Se preferisci non farlo, cliccando su \"No grazie\" verranno abilitati solo i cookie essenziali, necessari per il corretto funzionamento del sito."
 
 [cookieBanner.preferencesModal]
@@ -3243,12 +3243,12 @@ subtitle = "Utilizzo dei cookie"
 title = "Gestore delle preferenze per il consenso"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Questi cookie ci aiutano a capire come vengono utilizzati i nostri strumenti, così possiamo concentrarci sullo sviluppo delle funzionalità che la nostra community apprezza di più. Non preoccuparti: Stirling PDF non può e non traccerà mai il contenuto dei documenti con cui lavori."
+description = "Questi cookie ci aiutano a capire come vengono utilizzati i nostri strumenti, così possiamo concentrarci sullo sviluppo delle funzionalità che la nostra community apprezza di più. Non preoccuparti: PDF.wow.to non può e non traccerà mai il contenuto dei documenti con cui lavori."
 title = "Analitiche"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF utilizza cookie e tecnologie simili per migliorare la tua esperienza e comprendere come vengono utilizzati i nostri strumenti. Questo ci aiuta a migliorare le prestazioni, a sviluppare le funzionalità che ti interessano e a fornire supporto continuo ai nostri utenti."
-2 = "Stirling PDF non può e non potrà mai tracciare o accedere al contenuto dei documenti che utilizzi."
+1 = "PDF.wow.to utilizza cookie e tecnologie simili per migliorare la tua esperienza e comprendere come vengono utilizzati i nostri strumenti. Questo ci aiuta a migliorare le prestazioni, a sviluppare le funzionalità che ti interessano e a fornire supporto continuo ai nostri utenti."
+2 = "PDF.wow.to non può e non potrà mai tracciare o accedere al contenuto dei documenti che utilizzi."
 3 = "La tua privacy e la tua fiducia sono al centro del nostro operato."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3344,14 +3344,14 @@ message = "Impossibile impostare il gestore PDF predefinito"
 title = "Errore"
 
 [defaultApp.prompt]
-message = "Rendi Stirling PDF l'app predefinita per aprire i file PDF."
+message = "Rendi PDF.wow.to l'app predefinita per aprire i file PDF."
 
 [defaultApp.settingsOpened]
-message = "Seleziona Stirling PDF nelle impostazioni di sistema"
+message = "Seleziona PDF.wow.to nelle impostazioni di sistema"
 title = "Impostazioni aperte"
 
 [defaultApp.success]
-message = "Stirling PDF è ora il tuo editor PDF predefinito"
+message = "PDF.wow.to è ora il tuo editor PDF predefinito"
 title = "App predefinita impostata"
 
 [desktopUpdate]
@@ -3367,7 +3367,7 @@ updateFailedMessage = "Impossibile scaricare o installare l'aggiornamento."
 
 [desktopUpdate.blocked]
 docsLink = "Vedi documentazione di installazione"
-message = "Stirling-PDF non ha l'autorizzazione per aggiornarsi su questa macchina."
+message = "PDF.wow.to non ha l'autorizzazione per aggiornarsi su questa macchina."
 title = "Permessi di amministratore richiesti"
 
 [devAirgapped]
@@ -3937,7 +3937,7 @@ title = "Sposta nella cartella"
 [filesPage.origin]
 all = "Tutte le origini"
 cloud = "Cloud"
-cloudHint = "Archiviato sul server Stirling"
+cloudHint = "Archiviato sul server PDF.wow.to"
 local = "Locale"
 localHint = "Archiviato solo in questo browser"
 shared = "Condivisi"
@@ -4201,7 +4201,7 @@ invisible = "Invisibile (solo metadati)"
 location = "Località:"
 logo = "Logo:"
 logoHidden = "Nessun logo"
-logoShown = "Logo Stirling PDF visualizzato"
+logoShown = "Logo PDF.wow.to visualizzato"
 participantCount_one = "{{count}} participant will sign in order"
 participantCount_other = "{{count}} participants will sign in order"
 participants = "Partecipanti"
@@ -4255,7 +4255,7 @@ title = "Firma sequenziale"
 dismiss = "Chiudi banner"
 message = "Crea un account gratuito per salvare il tuo lavoro, accedere a più funzionalità e supportare il progetto."
 signUp = "Registrati gratis"
-title = "Stai usando Stirling PDF come ospite!"
+title = "Stai usando PDF.wow.to come ospite!"
 
 [home.addAttachments]
 desc = "Aggiungi o rimuovi file incorporati (allegati) da/verso un PDF"
@@ -4414,7 +4414,7 @@ tags = "combina,unisci,unifica"
 title = "Unisci"
 
 [home.mobile]
-brandAlt = "Logo Stirling PDF"
+brandAlt = "Logo PDF.wow.to"
 openFiles = "Apri file"
 swipeHint = "Scorri a sinistra o a destra per cambiare vista"
 tools = "Strumenti"
@@ -4639,7 +4639,7 @@ passwordRequired = "La password è obbligatoria"
 signIn = "Accedi"
 validating = "Convalida dell'invito..."
 validationError = "Impossibile convalidare il link di invito"
-welcome = "Benvenuto in Stirling PDF"
+welcome = "Benvenuto in PDF.wow.to"
 welcomeSubtitle = "Completa la configurazione dell'account per iniziare"
 welcomeTitle = "Sei stato invitato!"
 
@@ -4667,7 +4667,7 @@ terms = "Termini e Condizioni"
 title = "Licenze di terze parti"
 
 [localMode]
-toolUnavailable = "Questo strumento richiede un account. Accedi a Stirling Cloud o connettiti a un server self-hosted per usarlo."
+toolUnavailable = "Questo strumento richiede un account. Accedi a PDF.wow.to Cloud o connettiti a un server self-hosted per usarlo."
 
 [localMode.toolPicker]
 message = "Accedi per sbloccare tutti gli strumenti."
@@ -4724,7 +4724,7 @@ subtitle = "Con oltre una dozzina di strumenti per oscurare, firmare, leggere e 
 title = "Modifica i PDF per mostrare/proteggere le informazioni che desideri"
 
 [login.slides.overview]
-alt = "Panoramica di Stirling PDF"
+alt = "Panoramica di PDF.wow.to"
 subtitle = "Suite cloud incentrata sulla privacy per PDF che ti permette di convertire, firmare, oscurare e gestire documenti, con oltre 50 strumenti potenti."
 title = "La soluzione unica per tutte le tue esigenze PDF."
 
@@ -4842,7 +4842,7 @@ message = "L'autenticazione non è andata a buon fine. Puoi chiudere questa fine
 title = "Autenticazione non riuscita"
 
 [oauth.success]
-message = "Puoi chiudere questa finestra e tornare a Stirling PDF."
+message = "Puoi chiudere questa finestra e tornare a PDF.wow.to."
 title = "Autenticazione riuscita"
 
 [oauthConsent]
@@ -4855,17 +4855,17 @@ loadFailed = "Questa richiesta di autorizzazione non è valida o è scaduta. Chi
 loading = "Caricamento della richiesta di autorizzazione..."
 missingId = "Richiesta di autorizzazione mancante. Avvia la connessione dalla tua app e riprova."
 redirecting = "Ritorno all'app in corso..."
-requesting = "{{app}} desidera accedere al tuo account Stirling PDF"
+requesting = "{{app}} desidera accedere al tuo account PDF.wow.to"
 scopesIntro = "Questo consentirà a {{app}} di:"
 signedInAs = "Accesso effettuato come {{name}}"
 signInButton = "Accedi per continuare"
-signInPrompt = "Accedi al tuo account Stirling PDF per continuare a connettere l'app."
+signInPrompt = "Accedi al tuo account PDF.wow.to per continuare a connettere l'app."
 title = "Autorizza l'accesso"
 unknownApp = "Un'applicazione di terze parti"
 
 [oauthConsent.access]
 actAsYou = "Agire a tuo nome — qualsiasi operazione effettuata da {{app}} verrà eseguita con il tuo account e conteggiata nel tuo consumo"
-tools = "Usare i tuoi strumenti Stirling PDF per tuo conto — convertire, modificare, firmare, proteggere ed elaborare i tuoi documenti"
+tools = "Usare i tuoi strumenti PDF.wow.to per tuo conto — convertire, modificare, firmare, proteggere ed elaborare i tuoi documenti"
 
 [oauthConsent.scope]
 email = "Visualizzare il tuo indirizzo email"
@@ -4987,7 +4987,7 @@ skipForNow = "Salta per ora"
 skipTheTour = "Salta il tour"
 
 [onboarding.desktopInstall]
-body = "Stirling funziona al meglio come app desktop. Puoi usarla offline, accedere più velocemente ai documenti e modificare localmente sul tuo computer."
+body = "PDF.wow.to funziona al meglio come app desktop. Puoi usarla offline, accedere più velocemente ai documenti e modificare localmente sul tuo computer."
 selectOs = "Seleziona sistema operativo"
 title = "Download"
 titleWithOs = "Download per {{osLabel}}"
@@ -4997,8 +4997,8 @@ authenticationCode = "Codice di autenticazione"
 qrCodeLoading = "Generazione del tuo codice QR…"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Una volta abilitata la modalità login, potrai gestire utenti, configurare impostazioni e monitorare lo stato del server. Le prime <strong>{{freeTierLimit}}</strong> persone sul tuo server possono usare Stirling gratuitamente."
-adminBodyLoginEnabled = "Come admin, puoi gestire utenti, configurare impostazioni e monitorare lo stato del server. Le prime <strong>{{freeTierLimit}}</strong> persone sul tuo server possono usare Stirling gratuitamente."
+adminBodyLoginDisabled = "Una volta abilitata la modalità login, potrai gestire utenti, configurare impostazioni e monitorare lo stato del server. Le prime <strong>{{freeTierLimit}}</strong> persone sul tuo server possono usare PDF.wow.to gratuitamente."
+adminBodyLoginEnabled = "Come admin, puoi gestire utenti, configurare impostazioni e monitorare lo stato del server. Le prime <strong>{{freeTierLimit}}</strong> persone sul tuo server possono usare PDF.wow.to gratuitamente."
 adminTitle = "Panoramica admin"
 userBody = "Invita i colleghi, assegna ruoli e tieni i documenti organizzati in un unico spazio di lavoro sicuro. Abilita la modalità login quando sei pronto a crescere oltre l'uso individuale."
 userTitle = "Panoramica piano"
@@ -5006,7 +5006,7 @@ userTitle = "Panoramica piano"
 [onboarding.saas.freeEditor]
 freeLine = "L'editor è ora <free>completamente gratuito</free>."
 premium = "Abbiamo aggiunto tantissime nuove funzionalità, tra cui le <strong>Policy</strong> e la <strong>Chat con l'Agente</strong>."
-title = "Benvenuto in Stirling"
+title = "Benvenuto in PDF.wow.to"
 
 [onboarding.saas.team]
 addButton = "Aggiungi"
@@ -5026,20 +5026,20 @@ rolePlaceholder = "Conferma il tuo ruolo"
 roleUser = "Utente"
 
 [onboarding.serverLicense]
-freeBody = "La nostra licenza <strong>Open-Core</strong> consente fino a <strong>{{freeTierLimit}}</strong> utenti gratuiti per server. Per scalare senza interruzioni, consigliamo il piano Stirling Server - <strong>posti illimitati</strong> e <strong>supporto SSO</strong> a $99/server/mese."
+freeBody = "La nostra licenza <strong>Open-Core</strong> consente fino a <strong>{{freeTierLimit}}</strong> utenti gratuiti per server. Per scalare senza interruzioni, consigliamo il piano PDF.wow.to Server - <strong>posti illimitati</strong> e <strong>supporto SSO</strong> a $99/server/mese."
 freeTitle = "Licenza server"
-overLimitBody = "La nostra licenza consente fino a <strong>{{freeTierLimit}}</strong> utenti gratuiti per server. Hai <strong>{{overLimitUserCopy}}</strong> utenti Stirling. Per continuare senza interruzioni, esegui l'upgrade al piano Stirling Server - <strong>posti illimitati</strong>, modifica del testo PDF e pieno controllo admin a $99/server/mese."
+overLimitBody = "La nostra licenza consente fino a <strong>{{freeTierLimit}}</strong> utenti gratuiti per server. Hai <strong>{{overLimitUserCopy}}</strong> utenti PDF.wow.to. Per continuare senza interruzioni, esegui l'upgrade al piano PDF.wow.to Server - <strong>posti illimitati</strong>, modifica del testo PDF e pieno controllo admin a $99/server/mese."
 overLimitTitle = "Licenza server necessaria"
 seePlans = "Vedi piani →"
 upgrade = "Esegui upgrade ora →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 include dozzine di strumenti e un layout rinnovato. Fai un breve tour per vedere cosa è cambiato e dove trovare le funzionalità che ti servono."
+body = "PDF.wow.to V2 include dozzine di strumenti e un layout rinnovato. Fai un breve tour per vedere cosa è cambiato e dove trovare le funzionalità che ti servono."
 title = "Panoramica del tour"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF è ora pronto per team di tutte le dimensioni. Questo aggiornamento include un nuovo layout, potenti nuove funzionalità admin e la funzione più richiesta - <strong>Modifica testo</strong>."
-title = "Benvenuto in Stirling"
+body = "PDF.wow.to è ora pronto per team di tutte le dimensioni. Questo aggiornamento include un nuovo layout, potenti nuove funzionalità admin e la funzione più richiesta - <strong>Modifica testo</strong>."
+title = "Benvenuto in PDF.wow.to"
 
 [onboarding.whatsNew]
 activeFilesView = "Usa File attivi per vedere tutto ciò che hai aperto e scegliere su cosa lavorare."
@@ -5345,7 +5345,7 @@ benefit1Body = "concatena strumenti, pianifica esecuzioni, elabora in blocco"
 benefit1Title = "Pipeline di automazione"
 benefit2Body = "riassumi, classifica, oscura dati, AI-OCR"
 benefit2Title = "Strumenti IA"
-benefit3Body = "chiama qualsiasi endpoint di Stirling via codice"
+benefit3Body = "chiama qualsiasi endpoint di PDF.wow.to via codice"
 benefit3Title = "Accesso API"
 button = "Attiva Processor →"
 reassurance = "Nessun minimo · Imposta un limite di 0 $ per provare · Annulla quando vuoi"
@@ -5404,7 +5404,7 @@ leader = "Proprietario del team"
 member = "Membro"
 
 [payg.signupRequired]
-body = "Stirling PDF offre a ogni account registrato 500 operazioni gratuite, sufficienti per mantenere attivi la maggior parte dei flussi di lavoro senza pagare un centesimo. Al momento stai utilizzando Stirling come ospite, il che non include strumenti fatturabili come l'IA, le automazioni o l'elaborazione gestita sul server."
+body = "PDF.wow.to offre a ogni account registrato 500 operazioni gratuite, sufficienti per mantenere attivi la maggior parte dei flussi di lavoro senza pagare un centesimo. Al momento stai utilizzando PDF.wow.to come ospite, il che non include strumenti fatturabili come l'IA, le automazioni o l'elaborazione gestita sul server."
 cancel = "Non ora"
 cta = "Registrati gratis"
 subtext = "Creare un account è gratuito e richiede pochi secondi. Nessuna carta di credito richiesta."
@@ -5452,7 +5452,7 @@ usdNote = "Stima in USD. Dopo l'attivazione dell'abbonamento potrai modificare i
 [payg.upgrade.checkout]
 capValue = "{{symbol}}{{amount}} / mese"
 edit = "Modifica"
-help = "I dati della tua carta sono gestiti da Stripe. Stirling non ha accesso a queste informazioni."
+help = "I dati della tua carta sono gestiti da Stripe. PDF.wow.to non ha accesso a queste informazioni."
 loading = "Caricamento del pagamento in corso…"
 noCap = "Nessun limite"
 title = "Aggiungi il tuo metodo di pagamento"
@@ -5460,7 +5460,7 @@ title = "Aggiungi il tuo metodo di pagamento"
 [payg.upgrade.help]
 aiBody = "riassumi, classifica, oscura dati, AI-OCR"
 aiTitle = "Strumenti IA"
-apiBody = "accesso via codice a qualsiasi endpoint di Stirling"
+apiBody = "accesso via codice a qualsiasi endpoint di PDF.wow.to"
 apiTitle = "Chiamate API"
 automationBody = "strumenti concatenati o esecuzioni pianificate che non richiedono clic manuali"
 automationTitle = "Pipeline di automazione"
@@ -5891,7 +5891,7 @@ upToFiveUsers = "Fino a 5 utenti"
 usageTrackingPrometheus = "Monitoraggio utilizzo e Prometheus"
 
 [plan.licenseWarning]
-body = "Hai {{total}} utenti ma il livello gratuito supporta solo {{limit}} per server. Esegui l'upgrade per mantenere Stirling PDF operativo senza problemi."
+body = "Hai {{total}} utenti ma il livello gratuito supporta solo {{limit}} per server. Esegui l'upgrade per mantenere PDF.wow.to operativo senza problemi."
 cta = "Vedi piani"
 overLimit = "più di {{limit}}"
 title = "Limite gratuito self-hosted raggiunto"
@@ -6190,25 +6190,25 @@ comingSoon = "Disponibile a breve"
 [portal.accountLink.card]
 billingNote = "L'elaborazione non presidiata viene addebitata al portafoglio della tua organizzazione."
 eyebrow = "Collegamento account"
-linkButton = "Collega il tuo account Stirling"
+linkButton = "Collega il tuo account PDF.wow.to"
 linked = "Collegato"
 linkedAs = "Collegato come {{name}}."
 linkedGeneric = "Questa istanza è collegata."
 notLinked = "Non collegato"
-title = "Collega questa organizzazione al suo account Stirling"
+title = "Collega questa organizzazione al suo account PDF.wow.to"
 unlink = "Scollega"
 
 [portal.accountLink.card.error]
 title = "Impossibile collegare"
 
 [portal.accountLink.card.loginNotConfigured]
-after = "per abilitare il collegamento dell'account all'account Stirling ospitato. In dev puoi simulare l'accesso dalla finestra di dialogo di collegamento."
+after = "per abilitare il collegamento dell'account all'account PDF.wow.to ospitato. In dev puoi simulare l'accesso dalla finestra di dialogo di collegamento."
 before = "Imposta"
 title = "Accesso SaaS non configurato"
 
 [portal.accountLink.gate]
 action = "Collega account"
-description = "Collega l'account Stirling di questa organizzazione per usare funzionalità fatturabili."
+description = "Collega l'account PDF.wow.to di questa organizzazione per usare funzionalità fatturabili."
 title = "Collega per sbloccare"
 titleFeature = "Collega per sbloccare {{feature}}"
 
@@ -6240,13 +6240,13 @@ never = "mai"
 
 [portal.accountLink.modal]
 linkSubtitle = "Accedi all'account a cui questo server deve addebitare i costi."
-linkTitle = "Collega il tuo account Stirling"
-reauthSubtitle = "La tua sessione è scaduta — accedi di nuovo al tuo account Stirling. La tua istanza resta collegata."
+linkTitle = "Collega il tuo account PDF.wow.to"
+reauthSubtitle = "La tua sessione è scaduta — accedi di nuovo al tuo account PDF.wow.to. La tua istanza resta collegata."
 reauthTitle = "Accedi di nuovo"
 simulateSignIn = "Simula accesso (dev)"
 
 [portal.accountLink.modal.loginNotConfigured]
-after = "per abilitare il collegamento in-app all'account Stirling ospitato."
+after = "per abilitare il collegamento in-app all'account PDF.wow.to ospitato."
 and = "e"
 before = "Imposta"
 title = "Accesso SaaS non configurato"
@@ -6255,7 +6255,7 @@ title = "Accesso SaaS non configurato"
 instancesSub = "Ogni istanza self-hosted registrata a questa organizzazione. Revoca una credenziale per interrompere immediatamente il suo accesso non presidiato."
 instancesTitle = "Istanze collegate"
 revokeError = "Impossibile revocare l'istanza"
-sub = "Collega questa organizzazione self-hosted al suo account Stirling in modo che l'elaborazione non presidiata venga addebitata al portafoglio della tua organizzazione."
+sub = "Collega questa organizzazione self-hosted al suo account PDF.wow.to in modo che l'elaborazione non presidiata venga addebitata al portafoglio della tua organizzazione."
 
 [portal.accountLink.panel.loadError]
 forbidden = "Solo il proprietario del team può visualizzare le istanze collegate dell'organizzazione."
@@ -6352,7 +6352,7 @@ close = "Chiudi assistente"
 error = "Impossibile raggiungere l'assistente."
 errorWithDetail = "Impossibile raggiungere l'assistente: {{detail}}"
 inputAriaLabel = "Chiedi all'assistente"
-inputPlaceholder = "Chiedi informazioni su Stirling…"
+inputPlaceholder = "Chiedi informazioni su PDF.wow.to…"
 open = "Apri assistente"
 send = "Invia"
 title = "Assistente"
@@ -6390,7 +6390,7 @@ title = "Stripe non configurato"
 cta = "Crea il tuo preventivo Enterprise"
 description = "Sconti per volumi impegnati, distribuzione air-gapped, MSA personalizzato e revisioni di sicurezza, e partnership con distributori di terze parti."
 eyebrow = "Sconto volume · 1M+ PDF"
-title = "Stirling Enterprise"
+title = "PDF.wow.to Enterprise"
 
 [portal.billing.freeEditors]
 activeThisMonth = "Attivi questo mese"
@@ -6437,9 +6437,9 @@ viewAriaLabel = "Visualizza fattura {{number}} in Stripe"
 viewLink = "Visualizza ↗"
 
 [portal.billing.linkPrompt]
-cta = "Collega account Stirling"
+cta = "Collega account PDF.wow.to"
 description = "La modifica manuale dei PDF — visualizzazione, firma, unione, divisione, filigrana, compressione, conversione, OCR manuale — è sempre gratuita, collegata o meno. Collegati per richiedere 500 PDF gratuiti di elaborazione a consumo (automazione, AI e API); quando te ne servono altri, attiva il piano Processor e paga solo per ciò che usi."
-title = "Collega il tuo account Stirling"
+title = "Collega il tuo account PDF.wow.to"
 
 [portal.billing.paymentMethod]
 billedMonthly = "Fatturato mensilmente"
@@ -6721,7 +6721,7 @@ time = "Ora"
 user = "Utente"
 
 [portal.editorAdmin]
-subtitle = "Distribuisci Stirling PDF Editor, associa le istanze self-hosted alla tua organizzazione e gestisci la flotta in esecuzione: target, integrità, credenziali e attivazione offline in un unico posto."
+subtitle = "Distribuisci PDF.wow.to Editor, associa le istanze self-hosted alla tua organizzazione e gestisci la flotta in esecuzione: target, integrità, credenziali e attivazione offline in un unico posto."
 title = "Distribuzione dell'Editor"
 
 [portal.editorAdmin.health.columns]
@@ -6807,7 +6807,7 @@ title = "Qualcosa è andato storto in questa pagina"
 [portal.home.editor]
 activeUsers = "{{n}} attivi"
 invite = "Invita compagni di team"
-name = "Stirling PDF Editor"
+name = "PDF.wow.to Editor"
 open = "Apri nel browser"
 updated = "aggiornato {{time}}"
 
@@ -6867,7 +6867,7 @@ title = "Emetti una chiave API"
 [portal.infrastructure]
 manageEditorDeployment = "Gestisci la distribuzione dell'Editor"
 sectionsAriaLabel = "Sezioni dell'infrastruttura"
-subtitle = "Distribuzioni, credenziali, postura di sicurezza, storage e traccia di audit per il tuo workspace Stirling."
+subtitle = "Distribuzioni, credenziali, postura di sicurezza, storage e traccia di audit per il tuo workspace PDF.wow.to."
 title = "Infrastruttura"
 
 [portal.infrastructure.apiKeys]
@@ -6887,7 +6887,7 @@ usageMonth = "Utilizzo questo mese"
 usageToday = "Utilizzo oggi"
 
 [portal.infrastructure.apiKeys.empty]
-description = "Crea una chiave con ambito per iniziare a chiamare la Stirling API."
+description = "Crea una chiave con ambito per iniziare a chiamare la PDF.wow.to API."
 title = "Ancora nessuna chiave API"
 
 [portal.infrastructure.audit]
@@ -6956,7 +6956,7 @@ keyNameLabel = "Nome chiave"
 keyNamePlaceholder = "es. Produzione · acquisizione"
 permissionsLabel = "Autorizzazioni"
 secretKeyCaption = "Chiave segreta"
-secretWarning = "Archiviala in un gestore di segreti. Stirling memorizza sempre e solo un hash: non è possibile recuperarla in seguito."
+secretWarning = "Archiviala in un gestore di segreti. PDF.wow.to memorizza sempre e solo un hash: non è possibile recuperarla in seguito."
 subtitle = "Limita la chiave al minimo necessario. Puoi ruotarla o revocarla in qualsiasi momento."
 subtitleCreated = "Copia ora questo segreto: non verrà mostrato di nuovo."
 title = "Crea chiave API"
@@ -6991,7 +6991,7 @@ version = "Versione"
 
 [portal.infrastructure.deployments.regions]
 heading = "Regioni"
-subheading = "Integrità in tempo reale per ogni regione Stirling distribuita: latenza, carico e versione di rollout."
+subheading = "Integrità in tempo reale per ogni regione PDF.wow.to distribuita: latenza, carico e versione di rollout."
 
 [portal.infrastructure.deployments.regions.empty]
 description = "Le regioni distribuite appariranno qui una volta eseguito il provisioning del tuo workspace."
@@ -7048,16 +7048,16 @@ operation = "Operazione"
 routedTo = "Instradato a"
 
 [portal.infrastructure.security.access.byok]
-description = "Fornisci una chiave dal tuo KMS. Stirling cifra con essa ma può comunque leggere."
+description = "Fornisci una chiave dal tuo KMS. PDF.wow.to cifra con essa ma può comunque leggere."
 label = "Bring your own key (BYOK)"
 
 [portal.infrastructure.security.access.hyok]
-description = "Le chiavi non lasciano mai il tuo KMS. Stirling conserva solo ciphertext."
+description = "Le chiavi non lasciano mai il tuo KMS. PDF.wow.to conserva solo ciphertext."
 label = "Hold your own key (HYOK)"
 
 [portal.infrastructure.security.access.stirling]
-description = "Stirling gestisce le chiavi di crittografia. Il più semplice: zero operazioni sulle chiavi da parte tua."
-label = "Chiavi detenute da Stirling"
+description = "PDF.wow.to gestisce le chiavi di crittografia. Il più semplice: zero operazioni sulle chiavi da parte tua."
+label = "Chiavi detenute da PDF.wow.to"
 
 [portal.infrastructure.security.accessPolicy]
 heading = "Criterio di accesso ai documenti"
@@ -7071,15 +7071,15 @@ viewReport = "Visualizza report →"
 
 [portal.infrastructure.security.compliance]
 heading = "Conformità"
-subheading = "Attestazioni e certificazioni che coprono la piattaforma Stirling."
+subheading = "Attestazioni e certificazioni che coprono la piattaforma PDF.wow.to."
 
 [portal.infrastructure.security.empty]
 description = "La configurazione di sicurezza del tuo workspace apparirà qui."
 title = "Postura di sicurezza non disponibile"
 
 [portal.infrastructure.security.hyokBanner]
-description = "Con HYOK, le chiavi di crittografia non lasciano mai il tuo KMS. Stirling archivia ed elabora solo ciphertext che puoi revocare in qualsiasi momento."
-title = "Stirling non può decifrare i tuoi documenti"
+description = "Con HYOK, le chiavi di crittografia non lasciano mai il tuo KMS. PDF.wow.to archivia ed elabora solo ciphertext che puoi revocare in qualsiasi momento."
+title = "PDF.wow.to non può decifrare i tuoi documenti"
 
 [portal.infrastructure.security.ipAllowlist]
 empty = "Nessun intervallo IP configurato: tutti gli IP sono consentiti."
@@ -7108,7 +7108,7 @@ subheading = "Custodia delle chiavi che cifrano i documenti a riposo: chi può d
 
 [portal.infrastructure.security.managedBanner]
 description = "La custodia bring-your-own-key (BYOK) e hold-your-own-key (HYOK) è disponibile su Enterprise. Aggiorna per fornire chiavi dal tuo KMS."
-title = "Le chiavi sono gestite da Stirling nel tuo piano"
+title = "Le chiavi sono gestite da PDF.wow.to nel tuo piano"
 
 [portal.infrastructure.security.residency.apac]
 description = "ap-southeast-1"
@@ -7589,7 +7589,7 @@ upload = "Upload"
 
 [portal.procurement.agreement]
 agreeCta = "Accetta e abbonati"
-confirm = "Ho letto e accetto lo Stirling Enterprise Agreement."
+confirm = "Ho letto e accetto lo PDF.wow.to Enterprise Agreement."
 eyebrow = "Accordo"
 intro = "Un unico accordo combinato copre la tua offerta: Master Service Agreement, Order Form, EULA e Data Processing Agreement. Rivedilo, quindi accetta per trasformare il preventivo in un abbonamento vincolante."
 title = "Rivedi il tuo accordo enterprise"
@@ -7604,7 +7604,7 @@ country = "Paese"
 countryEuro = "Eurozona (EUR €)"
 countryUK = "Regno Unito (GBP £)"
 countryUS = "Stati Uniti (USD $)"
-eula = "Ho letto e accetto la Stirling Enterprise EULA. Regola l'accordo generato da questo preventivo."
+eula = "Ho letto e accetto la PDF.wow.to Enterprise EULA. Regola l'accordo generato da questo preventivo."
 generate = "Genera preventivo"
 included = "Incluso"
 indemnification = "Indennizzo IP"
@@ -7687,7 +7687,7 @@ daysLeft_one = "{{count}} giorno rimasto"
 daysLeft_other = "{{count}} giorni rimasti"
 engineerLabel = "Il tuo solutions engineer"
 eyebrow = "Il tuo rollout"
-live = "Sei live su Stirling Enterprise"
+live = "Sei live su PDF.wow.to Enterprise"
 nextStep = "Passaggio successivo: {{action}}"
 subtitle = "Il tuo solutions engineer ti accompagna in ogni passaggio. Un'azione successiva alla volta; la checklist completa è sotto."
 title = "Dalla trial al live, un percorso guidato"
@@ -7714,7 +7714,7 @@ gatingAction = "Accetta il preventivo"
 label = "Preventivo"
 
 [portal.procurement.journeySteps.trial]
-blurb = "Valuta Stirling rispetto ai tuoi documenti e workflow."
+blurb = "Valuta PDF.wow.to rispetto ai tuoi documenti e workflow."
 gatingAction = "Crea il preventivo"
 label = "Trial"
 
@@ -7728,14 +7728,14 @@ label = "La tua chiave di licenza"
 
 [portal.procurement.link]
 cta = "Collega account"
-description = "Il procurement viene eseguito sul tuo account Stirling collegato: è così che effettuiamo il provisioning della trial, prezzamo il preventivo e avviamo la fatturazione. Collega un account per iniziare."
+description = "Il procurement viene eseguito sul tuo account PDF.wow.to collegato: è così che effettuiamo il provisioning della trial, prezzamo il preventivo e avviamo la fatturazione. Collega un account per iniziare."
 eyebrow = "Enterprise"
 title = "Collega il tuo account per iniziare"
 
 [portal.procurement.live]
 description = "Il tuo abbonamento è attivo e la tua licenza è stata emessa. Il provisioning del tuo team è completato e la fatturazione è iniziata."
 eyebrow = "Live"
-title = "Sei live su Stirling Enterprise"
+title = "Sei live su PDF.wow.to Enterprise"
 
 [portal.procurement.locked]
 description = "Chiavi trial, preventivi a volume impegnato, accordo con firma unica, pagamento e registro documenti saranno tutti qui quando avvii una valutazione enterprise."
@@ -7770,7 +7770,7 @@ requestBodyFree = "Lo generiamo su richiesta. Conferma e il tuo solutions engine
 requestBodyPaid = "Questo è un componente aggiuntivo a pagamento. Conferma e il tuo solutions engineer ne definirà l'ambito e invierà la documentazione."
 requestCta = "Richiedi"
 requestTitle = "Richiedi questo documento"
-signBody = "Apre lo Stirling Enterprise Agreement per la firma elettronica: una firma copre MSA, order form, EULA e DPA. Controfirmiamo automaticamente e passi al pagamento."
+signBody = "Apre lo PDF.wow.to Enterprise Agreement per la firma elettronica: una firma copre MSA, order form, EULA e DPA. Controfirmiamo automaticamente e passi al pagamento."
 signCta = "Apri per la firma"
 signTitle = "Rivedi e firma il tuo accordo"
 uploadBody = "Inviaci il tuo PO e fattureremo in base ai tuoi termini. Trascina il PDF o scegli un file qui sotto."
@@ -7822,7 +7822,7 @@ title = "Ancora nulla qui"
 
 [portal.search]
 ariaLabel = "Cerca"
-placeholder = "Cerca in Stirling — endpoint, pipeline, doc…"
+placeholder = "Cerca in PDF.wow.to — endpoint, pipeline, doc…"
 
 [portal.search.empty]
 noActionsDescription = "Le azioni rapide appariranno qui quando saranno disponibili."
@@ -7850,9 +7850,9 @@ switchToLight = "Passa al tema chiaro"
 [portal.shell.sidebar]
 appEditor = "Editor"
 appProcessor = "Processor"
-brandSuffix = "Stirling Processor"
+brandSuffix = "PDF.wow.to Processor"
 docsCount = "{{docs}} doc"
-linkAccount = "Collega account Stirling"
+linkAccount = "Collega account PDF.wow.to"
 planEditor = "Piano Editor"
 planEnterprise = "Piano Enterprise"
 planProcessor = "Piano Processor"
@@ -7860,7 +7860,7 @@ primaryNav = "Navigazione principale"
 switchApp = "Cambia app"
 
 [portal.sources]
-subtitle = "Connessioni di input riutilizzabili che alimentano documenti in Stirling. Configura una connessione una volta, quindi referenziala da qualsiasi numero di criteri. Fai clic su una riga per la sua configurazione e per vedere quali criteri la usano."
+subtitle = "Connessioni di input riutilizzabili che alimentano documenti in PDF.wow.to. Configura una connessione una volta, quindi referenziala da qualsiasi numero di criteri. Fai clic su una riga per la sua configurazione e per vedere quali criteri la usano."
 title = "Origini"
 
 [portal.sources.actions]
@@ -7915,7 +7915,7 @@ description = "Monitora una directory sul server per nuovi documenti."
 label = "Cartella"
 
 [portal.sources.types.folder.fields.directory]
-helperText = "Percorso assoluto che Stirling monitora per i file da elaborare."
+helperText = "Percorso assoluto che PDF.wow.to monitora per i file da elaborare."
 label = "Percorso directory"
 placeholder = "/data/incoming"
 
@@ -7963,7 +7963,7 @@ review = "Rivedi e collega"
 
 [portal.usage]
 managePayment = "Gestisci pagamento"
-subtitle = "Consumi, fatture e gestione del piano per ogni PDF fatturato da Stirling, in un'unica console."
+subtitle = "Consumi, fatture e gestione del piano per ogni PDF fatturato da PDF.wow.to, in un'unica console."
 title = "Utilizzo e fatturazione"
 
 [portal.usage.error]
@@ -7973,7 +7973,7 @@ walletUnavailable = "Wallet non disponibile: {{status}} {{statusText}}"
 
 [portal.usage.sessionExpired]
 action = "Accedi di nuovo"
-body = "La sessione del tuo account Stirling è scaduta. Accedi di nuovo per visualizzare la fatturazione — la tua istanza resta collegata."
+body = "La sessione del tuo account PDF.wow.to è scaduta. Accedi di nuovo per visualizzare la fatturazione — la tua istanza resta collegata."
 title = "Sessione scaduta"
 
 [portal.users]
@@ -8020,7 +8020,7 @@ summary = "Possiede un team — gestisce le risorse dei membri e le configurazio
 3 = "Tutto ciò che può fare un membro"
 
 [portal.welcome]
-ariaLabel = "Benvenuto in Stirling PDF"
+ariaLabel = "Benvenuto in PDF.wow.to"
 badge = "Open-source"
 installEditor = "Installa l'Editor"
 inviteTeammates = "Invita compagni di team"
@@ -8028,7 +8028,7 @@ openInBrowser = "Apri nel browser"
 perks = "Gratis per sempre · Self-hostable"
 subtitle = "Il PDF Editor più sicuro al mondo è gratuito per team di ogni dimensione. Include oltre 60 operazioni PDF e SSO."
 title = "Benvenuto in"
-titleAccent = "Stirling PDF"
+titleAccent = "PDF.wow.to"
 
 [printFile]
 title = "Stampa file"
@@ -8719,8 +8719,8 @@ hideTools = "Nascondi strumenti non disponibili ▴"
 messageNoFallback = "Gli strumenti non sono disponibili finché il server non torna online."
 messageWithFallback = "Alcuni strumenti richiedono una connessione al server."
 showTools = "Mostra strumenti non disponibili ▾"
-title = "Il tuo server Stirling-PDF non è raggiungibile"
-toolNotAvailableLocally = "Il tuo server Stirling-PDF è offline e \"{{endpoint}}\" non è disponibile nel backend locale."
+title = "Il tuo server PDF.wow.to non è raggiungibile"
+toolNotAvailableLocally = "Il tuo server PDF.wow.to è offline e \"{{endpoint}}\" non è disponibile nel backend locale."
 
 [session]
 expired = "La tua sessione è scaduta. Aggiorna la pagina e riprova."
@@ -8780,7 +8780,7 @@ user = "Connesso come"
 
 [settings.connection.mode]
 local = "Solo locale"
-saas = "Stirling Cloud"
+saas = "PDF.wow.to Cloud"
 selfhosted = "Self-hosted"
 
 [settings.developer]
@@ -8795,7 +8795,7 @@ autoUnzipFileLimitDescription = "Numero massimo di file da estrarre dallo ZIP"
 autoUnzipFileLimitTooltip = "Decomprimi solo se lo ZIP contiene questo numero di file o meno. Imposta un valore più alto per estrarre ZIP più grandi."
 autoUnzipTooltip = "Estrae automaticamente i file ZIP restituiti dalle operazioni API. Disabilita per mantenere intatti i file ZIP. Questo non influisce sui flussi di automazione."
 defaultPdfEditor = "Editor PDF predefinito"
-defaultPdfEditorActive = "Stirling PDF è il tuo editor PDF predefinito"
+defaultPdfEditorActive = "PDF.wow.to è il tuo editor PDF predefinito"
 defaultPdfEditorChecking = "Verifica..."
 defaultPdfEditorInactive = "Un'altra applicazione è impostata come predefinita"
 defaultPdfEditorSet = "Già predefinito"
@@ -8856,7 +8856,7 @@ updateBehavior = "Comportamento aggiornamenti"
 updateBehaviorDescription = "Scegli se chiedere prima di installare gli aggiornamenti, installarli automaticamente o saltare completamente i controlli degli aggiornamenti."
 updateBehaviorError = "Impossibile modificare il comportamento degli aggiornamenti"
 updateBehaviorErrorLocked = "Questa impostazione è bloccata dal tuo amministratore."
-updateBehaviorLockedDescription = "Il tuo amministratore ha configurato come Stirling-PDF gestisce gli aggiornamenti su questa macchina. Contattalo per modificarlo."
+updateBehaviorLockedDescription = "Il tuo amministratore ha configurato come PDF.wow.to gestisce gli aggiornamenti su questa macchina. Contattalo per modificarlo."
 updateBehaviorSaved = "Comportamento aggiornamenti salvato."
 versionMismatch = "Attenzione: è stata rilevata una discrepanza tra la versione del client e la versione di AppConfig. L'utilizzo di versioni diverse può causare problemi di compatibilità, errori e rischi per la sicurezza. Assicurarsi che server e client utilizzino la stessa versione."
 viewDetails = "Vedi dettagli"
@@ -8940,7 +8940,7 @@ usageAnalytics = "Analytics d'uso"
 [settings.planBilling]
 currentPlan = "Piano attuale"
 loading = "Caricamento delle informazioni di fatturazione..."
-notAvailable = "Piano e Fatturazione sono disponibili solo quando connessi a Stirling Cloud (modalità SaaS)."
+notAvailable = "Piano e Fatturazione sono disponibili solo quando connessi a PDF.wow.to Cloud (modalità SaaS)."
 title = "Piano e Fatturazione"
 
 [settings.planBilling.billing]
@@ -9066,7 +9066,7 @@ emptyUsername = "Inserisci il nome utente"
 oauthFailed = "Accesso OAuth non riuscito. Riprova."
 
 [setup.saas]
-title = "Accedi a Stirling"
+title = "Accedi a PDF.wow.to"
 
 [setup.selfhosted]
 changeServerLocked = "La tua organizzazione ha limitato questa app a un server specifico"
@@ -9104,7 +9104,7 @@ step3 = "Riavvia il server"
 title = "Accesso non abilitato"
 
 [setup.server.url]
-description = "Inserisci l'URL completo del tuo server Stirling PDF self-hosted"
+description = "Inserisci l'URL completo del tuo server PDF.wow.to self-hosted"
 label = "URL server"
 
 [sharedSign]
@@ -9340,7 +9340,7 @@ pleaseFillAllFields = "Compila tutti i campi"
 signUp = "Registrati"
 signUpWith = "Registrati con"
 skip = "Salta"
-subtitle = "Unisciti a Stirling PDF per iniziare"
+subtitle = "Unisciti a PDF.wow.to per iniziare"
 title = "Crea un account"
 unexpectedError = "Errore imprevisto: {{message}}"
 
@@ -9567,7 +9567,7 @@ download = "Scarica"
 downloaded = "Scaricato"
 downloadFailed = "Impossibile scaricare questo file."
 downloadsCount = "Download: {{count}}"
-emailWarningBody = "Sembra un indirizzo email. Se questa persona non è già un utente di Stirling PDF, non potrà accedere al file."
+emailWarningBody = "Sembra un indirizzo email. Se questa persona non è già un utente di PDF.wow.to, non potrà accedere al file."
 emailWarningConfirm = "Condividi comunque"
 emailWarningTitle = "Indirizzo email"
 errorTitle = "Condivisione non riuscita"
@@ -9598,7 +9598,7 @@ manageTitle = "Gestisci condivisione"
 noActivity = "Ancora nessuna attività."
 noLinks = "Ancora nessun link di condivisione attivo."
 noSharedUsers = "Ancora nessun utente ha accesso."
-openInApp = "Apri in Stirling PDF"
+openInApp = "Apri in PDF.wow.to"
 ownerLabel = "Proprietario"
 ownerUnknown = "Sconosciuto"
 removeLink = "Rimuovi link"
@@ -9652,7 +9652,7 @@ updateButton = "Aggiorna sul server"
 uploadButton = "Carica sul server"
 
 [survey]
-title = "Sondaggio su Stirling-PDF"
+title = "Sondaggio su PDF.wow.to"
 
 [swagger]
 tags = "api,documentazione,swagger,endpoint,sviluppo"
@@ -9780,7 +9780,7 @@ favorites = "Preferiti"
 heading = "Tutti gli strumenti (vista a schermo intero)"
 noResults = "Prova a modificare la ricerca o attiva/disattiva le descrizioni per trovare ciò che ti serve."
 recommended = "Consigliato"
-selfHostedOffline = "Richiede il tuo server Stirling-PDF (attualmente offline):"
+selfHostedOffline = "Richiede il tuo server PDF.wow.to (attualmente offline):"
 showDetails = "Mostra dettagli"
 unavailable = "Disabilitato dall'amministratore del server:"
 unavailableDependency = "Non disponibile - strumento richiesto mancante sul server:"
@@ -9789,7 +9789,7 @@ unfavorite = "Rimuovi dai preferiti"
 [toolPanel.modePrompt]
 chooseFullscreen = "Usa modalità a schermo intero"
 chooseSidebar = "Usa modalità barra laterale"
-description = "Visualizza in anteprima entrambi i layout e decidi come esplorare gli strumenti di Stirling PDF."
+description = "Visualizza in anteprima entrambi i layout e decidi come esplorare gli strumenti di PDF.wow.to."
 dismiss = "Magari dopo"
 fullscreenDescription = "Sfoglia ogni strumento in un catalogo che copre l'area di lavoro finché non ne scegli uno."
 fullscreenTitle = "Modalità a schermo intero - (legacy)"
@@ -9857,7 +9857,7 @@ loadingDetailedInfo = "Caricamento informazioni dettagliate..."
 migrationGuide = "Guida di migrazione"
 migrationGuides = "Guide di migrazione"
 migrationGuidesDesc = "Esamina le modifiche importanti prima di aggiornare."
-modalSubtitle = "Una nuova versione di Stirling PDF è pronta per l'installazione."
+modalSubtitle = "Una nuova versione di PDF.wow.to è pronta per l'installazione."
 modalTitle = "Aggiornamento disponibile"
 notes = "Note"
 releaseNotes = "Note di rilascio"
@@ -9881,7 +9881,7 @@ urgent = "Urgente"
 attentionBody = "Il tuo admin deve accedere per vedere più informazioni. Contattalo immediatamente."
 attentionBodyAdmin = "Verifica i requisiti di licenza per mantenere questo server conforme."
 attentionTitle = "Questo server richiede attenzione dell'admin"
-message = "Ottieni il massimo da Stirling PDF con utenti illimitati e funzionalità avanzate"
+message = "Ottieni il massimo da PDF.wow.to con utenti illimitati e funzionalità avanzate"
 seeInfo = "Vedi info"
 title = "Aggiorna al piano Server"
 upgradeButton = "Esegui upgrade ora"
@@ -9998,7 +9998,7 @@ authWeb = "Password"
 create = "Crea account"
 createSubtitle = "Crea un account self-hosted con password o SSO."
 createTitle = "Crea account"
-editorDesc = "Modifica PDF nello Stirling PDF Editor. Tutti lo ricevono."
+editorDesc = "Modifica PDF nello PDF.wow.to Editor. Tutti lo ricevono."
 email = "Indirizzo email"
 emailError = "Inserisci un indirizzo email valido"
 emailPlaceholder2 = "nome@azienda.com"
@@ -10013,7 +10013,7 @@ processorDeferred = "Invito inviato, ma l'accesso Processor non può ancora esse
 processorDesc = "La superficie di governance, esecuzione di pipeline, agenti e API."
 role = "Ruolo"
 send2 = "Invia invito"
-subtitle2 = "Riceveranno un'email per unirsi alla tua area di lavoro Stirling."
+subtitle2 = "Riceveranno un'email per unirsi alla tua area di lavoro PDF.wow.to."
 team = "Team"
 title = "Invita persone"
 username = "Nome utente"
@@ -10136,7 +10136,7 @@ downloads = "Download"
 entryLabel = "Riepilogo firma"
 filesEvaluated_one = "{{count}} file valutato"
 filesEvaluated_other = "{{count}} file valutati"
-footer = "Validato tramite Stirling PDF"
+footer = "Validato tramite PDF.wow.to"
 generatedAt = "Generato"
 noPdf = "Il report PDF sarà disponibile dopo una validazione riuscita."
 page = "Pagina"

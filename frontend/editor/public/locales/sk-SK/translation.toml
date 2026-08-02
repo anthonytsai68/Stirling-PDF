@@ -57,7 +57,7 @@ keepWorking = "Pokračovať v práci"
 loading = "Načítava sa..."
 loginAgreementAccept = "Prijať"
 loginAgreementDecline = "Odmietnuť"
-loginAgreementProvider = "Toto oznámenie poskytol váš administrátor, nie Stirling PDF Inc."
+loginAgreementProvider = "Toto oznámenie poskytol váš administrátor, nie PDF.wow.to Inc."
 loginAgreementTitle = "Dohoda pri prihlásení"
 logOut = "Odhlásiť sa"
 marginTooltip = "Vzdialenosť medzi číslom strany a okrajom strany."
@@ -633,9 +633,9 @@ description = "Nakonfigurujte ukladanie dočasných súborov a správanie čiste
 label = "Správa dočasných súborov"
 
 [admin.settings.advanced.tempFileManagement.baseTmpDir]
-description = "Základný adresár pre dočasné súbory (ponechajte prázdne pre predvolené: java.io.tmpdir/stirling-pdf)"
+description = "Základný adresár pre dočasné súbory (ponechajte prázdne pre predvolené: java.io.tmpdir/pdf.wow.to)"
 label = "Základný dočasný adresár"
-placeholder = "Predvolené: java.io.tmpdir/stirling-pdf"
+placeholder = "Predvolené: java.io.tmpdir/pdf.wow.to"
 
 [admin.settings.advanced.tempFileManagement.cleanupIntervalMinutes]
 description = "Ako často spúšťať čistenie (v minútach)"
@@ -919,11 +919,11 @@ description = "Nakonfigurujte voliteľné funkcie a funkcionalitu."
 title = "Funkcie"
 
 [admin.settings.features.serverCertificate]
-description = "Nakonfigurujte generovanie serverového certifikátu pre funkciu \"Podpísať so Stirling-PDF\""
+description = "Nakonfigurujte generovanie serverového certifikátu pre funkciu \"Podpísať so PDF.wow.to\""
 label = "Serverový certifikát"
 
 [admin.settings.features.serverCertificate.enabled]
-description = "Povoliť serverový certifikát pre možnosť \"Podpísať so Stirling-PDF\""
+description = "Povoliť serverový certifikát pre možnosť \"Podpísať so PDF.wow.to\""
 label = "Povoliť serverový certifikát"
 
 [admin.settings.features.serverCertificate.organizationName]
@@ -1071,7 +1071,7 @@ description = "URL alebo názov súboru so zásadami používania súborov cooki
 label = "Zásady používania súborov cookie"
 
 [admin.settings.legal.disclaimer]
-message = "Úpravou týchto právnych dokumentov preberáte plnú zodpovednosť za zabezpečenie súladu so všetkými platnými zákonmi a nariadeniami, vrátane, ale nie výlučne, GDPR a ďalších požiadaviek EÚ na ochranu údajov. Tieto nastavenia upravujte len vtedy, ak: (1) prevádzkujete osobnú/súkromnú inštanciu, (2) nachádzate sa mimo jurisdikcie EÚ a rozumiete svojim miestnym právnym povinnostiam, alebo (3) ste získali riadne právne poradenstvo a preberáte výlučnú zodpovednosť za všetky používateľské údaje a právny súlad. Stirling-PDF a jeho vývojári nenesú žiadnu zodpovednosť za vaše právne povinnosti."
+message = "Úpravou týchto právnych dokumentov preberáte plnú zodpovednosť za zabezpečenie súladu so všetkými platnými zákonmi a nariadeniami, vrátane, ale nie výlučne, GDPR a ďalších požiadaviek EÚ na ochranu údajov. Tieto nastavenia upravujte len vtedy, ak: (1) prevádzkujete osobnú/súkromnú inštanciu, (2) nachádzate sa mimo jurisdikcie EÚ a rozumiete svojim miestnym právnym povinnostiam, alebo (3) ste získali riadne právne poradenstvo a preberáte výlučnú zodpovednosť za všetky používateľské údaje a právny súlad. PDF.wow.to a jeho vývojári nenesú žiadnu zodpovednosť za vaše právne povinnosti."
 title = "Upozornenie na právnu zodpovednosť"
 
 [admin.settings.legal.impressum]
@@ -1158,8 +1158,8 @@ description = "Používateľské meno pre overenie SMTP"
 label = "SMTP používateľské meno"
 
 [admin.settings.mcp]
-apikeyNote = "Clients send a Stirling API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning Stirling user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
-description = "Expose Stirling's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
+apikeyNote = "Clients send a PDF.wow.to API key in the X-API-KEY header (or Authorization: Bearer <key>). The key maps to its owning PDF.wow.to user - only provisioned accounts get in, and actions are audited as that user. Manage keys under Account > API Keys."
+description = "Expose PDF.wow.to's PDF tools and AI agents to MCP clients over an OAuth-protected endpoint."
 title = "MCP Server"
 
 [admin.settings.mcp.acceptedAudiences]
@@ -1189,7 +1189,7 @@ step3ApiKeyb = "header (or Authorization: Bearer <key>). No OAuth or metadata di
 step4 = "Approve the sign-in; the client retries with a token. Tools appear grouped: convert, pages, misc, security, ai."
 step4ApiKey = "Tools appear grouped: convert, pages, misc, security, ai - and every call is audited as the key's owner."
 tip = "Tip: register the resource ID as an allowed audience in your IdP. Tested with MCP Inspector and Claude Desktop."
-tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning Stirling user."
+tipApiKey = "Tip: API-key mode needs no external IdP - simplest for self-host. The key maps to its owning PDF.wow.to user."
 title = "Connect an MCP client"
 
 [admin.settings.mcp.issuerUri]
@@ -1202,12 +1202,12 @@ label = "JWKS URL (optional)"
 placeholder = "Auto-discovered from issuer"
 
 [admin.settings.mcp.mode]
-description = "OAuth needs an external IdP. API key uses a Stirling per-user API key (X-API-KEY) - simplest for self-host."
+description = "OAuth needs an external IdP. API key uses a PDF.wow.to per-user API key (X-API-KEY) - simplest for self-host."
 label = "Authentication mode"
 
 [admin.settings.mcp.requireAccount]
-description = "Only let tokens through if their subject maps to a provisioned, enabled Stirling user."
-label = "Require an existing Stirling account"
+description = "Only let tokens through if their subject maps to a provisioned, enabled PDF.wow.to user."
+label = "Require an existing PDF.wow.to account"
 
 [admin.settings.mcp.resourceId]
 description = "This server's public /mcp URL. Tokens must list it in their audience (RFC 8707) or they are rejected."
@@ -1218,7 +1218,7 @@ description = "Require mcp.tools.read for read ops and mcp.tools.write for write
 label = "Enforce OAuth scopes"
 
 [admin.settings.mcp.usernameClaim]
-description = "JWT claim matched against a Stirling username (e.g. sub, email, preferred_username)."
+description = "JWT claim matched against a PDF.wow.to username (e.g. sub, email, preferred_username)."
 label = "Username claim"
 
 [admin.settings.plan.noData]
@@ -1539,7 +1539,7 @@ description = "Ak je zapnuté, bot môžu používať len uvedené používateľ
 label = "Povoliť konkrétne ID používateľov"
 
 [admin.settings.telegram.enabled]
-description = "Umožniť používateľom pracovať so Stirling PDF cez váš nakonfigurovaný Telegram bot."
+description = "Umožniť používateľom pracovať so PDF.wow.to cez váš nakonfigurovaný Telegram bot."
 label = "Povoliť Telegram bota"
 
 [admin.settings.telegram.feedback]
@@ -1612,20 +1612,20 @@ settingsOverview = "Toto je <strong>panel nastavení</strong>. Admin nastavenia 
 systemCustomization = "Máme rozsiahle možnosti prispôsobenia UI: <strong>System Settings</strong> vám umožnia zmeniť názov aplikácie a jazyky, <strong>Features</strong> umožňuje správu serverových certifikátov a <strong>Endpoints</strong> umožňuje povoliť alebo zakázať konkrétne nástroje pre vašich používateľov."
 teamsAndUsers = "Tu spravujete <strong>Tímy</strong> a jednotlivých používateľov. Nových používateľov môžete pozývať e-mailom, zdieľateľnými odkazmi alebo im sami vytvoriť vlastné účty."
 welcome = "Vitajte v <strong>administrátorskom sprievodcovi</strong>! Poďme preskúmať výkonné podnikové funkcie a nastavenia dostupné pre systémových administrátorov."
-wrapUp = "To je všetko z admin sprievodcu! Videli ste podnikové funkcie, vďaka ktorým je Stirling PDF výkonným, prispôsobiteľným riešením pre organizácie. Tento sprievodca je dostupný kedykoľvek z menu <strong>Pomoc</strong>."
+wrapUp = "To je všetko z admin sprievodcu! Videli ste podnikové funkcie, vďaka ktorým je PDF.wow.to výkonným, prispôsobiteľným riešením pre organizácie. Tento sprievodca je dostupný kedykoľvek z menu <strong>Pomoc</strong>."
 
 [adminUserSettings]
 admin = "Admin"
 title = "Nastavenia kontroly používateľov"
 
 [agents]
-stirling_name = "Stirling"
+stirling_name = "PDF.wow.to"
 
 [analytics]
 learnMore = "Viac informácií"
-paragraph1 = "Stirling PDF má dobrovoľnú analytiku, ktorá nám pomáha zlepšovať produkt. Nesledujeme žiadne osobné informácie ani obsah súborov."
-paragraph2 = "Zvážte, prosím, povolenie analytiky, aby mohol Stirling-PDF rásť a aby sme lepšie porozumeli našim používateľom."
-title = "Chcete zlepšiť Stirling PDF?"
+paragraph1 = "PDF.wow.to má dobrovoľnú analytiku, ktorá nám pomáha zlepšovať produkt. Nesledujeme žiadne osobné informácie ani obsah súborov."
+paragraph2 = "Zvážte, prosím, povolenie analytiky, aby mohol PDF.wow.to rásť a aby sme lepšie porozumeli našim používateľom."
+title = "Chcete zlepšiť PDF.wow.to?"
 
 [annotate]
 tags = "annotate,highlight,draw,markup,comment,notes,review,redline,feedback,markup tools,sticky notes,shapes,arrows,text box,freehand"
@@ -2558,7 +2558,7 @@ bullet1 = "Podporuje formáty PEM, PKCS12, JKS a serverový certifikát"
 bullet2 = "Možnosť zobraziť alebo skryť podpis v PDF"
 bullet3 = "Pridajte dôvod, miesto a meno podpisujúceho"
 bullet4 = "Zvoľte, na ktorej strane umiestniť viditeľné podpisy"
-bullet5 = "Použite serverový certifikát pre jednoduchú možnosť 'Sign with Stirling-PDF'"
+bullet5 = "Použite serverový certifikát pre jednoduchú možnosť 'Sign with PDF.wow.to'"
 text = "Na podpis PDF potrebujete digitálny certifikát (napr. PEM, PKCS12 alebo JKS). Môžete zvoliť, či bude podpis v dokumente viditeľný, alebo ho ponechať neviditeľný len pre bezpečnosť."
 title = "Pridávanie podpisov"
 
@@ -2739,10 +2739,10 @@ copy = "Kopírovať správu"
 
 [chat.fab]
 close = "Close chat"
-open = "Open Stirling AI assistant"
+open = "Open PDF.wow.to AI assistant"
 
 [chat.header]
-agentMenu = "Možnosti agenta Stirling"
+agentMenu = "Možnosti agenta PDF.wow.to"
 clearChat = "Vyčistiť chat"
 
 [chat.input]
@@ -3072,14 +3072,14 @@ upgradeButton = "Inovovať účet"
 
 [config.apiKeys]
 copyKeyAriaLabel = "Kopírovať API kľúč"
-description = "Váš API kľúč na prístup k sade nástrojov PDF od Stirling. Skopírujte ho do svojho projektu alebo obnovte na vygenerovanie nového."
-docsDescription = "Zistite viac o integrácii so Stirling PDF:"
+description = "Váš API kľúč na prístup k sade nástrojov PDF od PDF.wow.to. Skopírujte ho do svojho projektu alebo obnovte na vygenerovanie nového."
+docsDescription = "Zistite viac o integrácii so PDF.wow.to:"
 docsLink = "Dokumentácia API"
 docsTitle = "Dokumentácia API"
 generateError = "Nepodarilo sa vygenerovať váš API kľúč."
 goToAccount = "Prejsť na účet"
 guestInfo = "Hostia nedostávajú API kľúče. Vytvorte si účet a získajte API kľúč, ktorý môžete použiť vo svojich aplikáciách."
-intro = "Použite svoj API kľúč na programový prístup k spracovateľským možnostiam Stirling PDF."
+intro = "Použite svoj API kľúč na programový prístup k spracovateľským možnostiam PDF.wow.to."
 label = "API kľúč"
 publicKeyAriaLabel = "Verejný API kľúč"
 refreshAriaLabel = "Obnoviť API kľúč"
@@ -3103,10 +3103,10 @@ title = "Obnoviť API kľúče"
 warning = "⚠️ Upozornenie: Táto akcia vygeneruje nové API kľúče a vaše predchádzajúce kľúče zneplatní."
 
 [config.mcp]
-description = "Model Context Protocol (MCP) lets AI assistants like Claude use your Stirling PDF tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
-guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run Stirling PDF tools on your behalf."
+description = "Model Context Protocol (MCP) lets AI assistants like Claude use your PDF.wow.to tools directly. Connect a client once and your assistant can convert, edit, secure and process documents on your behalf."
+guestInfo = "Guest users can't connect MCP clients. Create an account to use the MCP server and let your AI assistant run PDF.wow.to tools on your behalf."
 navLabel = "MCP Server"
-tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using Stirling PDF directly."
+tip = "Every action your assistant runs is performed as your account and counts towards your usage, just like using PDF.wow.to directly."
 title = "MCP Server"
 viewApiKeys = "View API keys"
 
@@ -3123,7 +3123,7 @@ label = "Your MCP endpoint"
 
 [config.mcp.setup]
 addTo = "Add to"
-hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your Stirling account on first use - no keys to copy."
+hint = "Pick your client, paste the snippet into the file shown, then restart it. You'll sign in with your PDF.wow.to account on first use - no keys to copy."
 title = "Connect your AI assistant"
 
 [config.overview]
@@ -3232,7 +3232,7 @@ showPreferencesBtn = "Spravovať nastavenia"
 title = "Ako používame súbory cookie"
 
 [cookieBanner.popUp.description]
-1 = "Používame cookies a iné technológie, aby Stirling PDF fungoval lepšie pre vás—pomáhajú nám vylepšovať naše nástroje a ďalej budovať funkcie, ktoré si obľúbite."
+1 = "Používame cookies a iné technológie, aby PDF.wow.to fungoval lepšie pre vás—pomáhajú nám vylepšovať naše nástroje a ďalej budovať funkcie, ktoré si obľúbite."
 2 = "If you’d rather not, clicking 'No Thanks' will only enable the essential cookies needed to keep things running smoothly."
 
 [cookieBanner.preferencesModal]
@@ -3245,12 +3245,12 @@ subtitle = "Používanie súborov cookie"
 title = "Centrum nastavení súhlasu"
 
 [cookieBanner.preferencesModal.analytics]
-description = "Tieto súbory cookie nám pomáhajú pochopiť, ako sa naše nástroje používajú, aby sme sa mohli sústrediť na budovanie funkcií, ktoré si naša komunita najviac cení. Bez obáv—Stirling PDF nemôže a nikdy nebude sledovať obsah dokumentov, s ktorými pracujete."
+description = "Tieto súbory cookie nám pomáhajú pochopiť, ako sa naše nástroje používajú, aby sme sa mohli sústrediť na budovanie funkcií, ktoré si naša komunita najviac cení. Bez obáv—PDF.wow.to nemôže a nikdy nebude sledovať obsah dokumentov, s ktorými pracujete."
 title = "Analytika"
 
 [cookieBanner.preferencesModal.description]
-1 = "Stirling PDF používa súbory cookie a podobné technológie na zlepšenie vašej skúsenosti a pochopenie toho, ako sa naše nástroje používajú. Pomáha nám to zlepšovať výkon, vyvíjať funkcie, na ktorých vám záleží, a poskytovať priebežnú podporu používateľom."
-2 = "Stirling PDF nemôže—and nikdy nebude—sledovať ani pristupovať k obsahu dokumentov, ktoré používate."
+1 = "PDF.wow.to používa súbory cookie a podobné technológie na zlepšenie vašej skúsenosti a pochopenie toho, ako sa naše nástroje používajú. Pomáha nám to zlepšovať výkon, vyvíjať funkcie, na ktorých vám záleží, a poskytovať priebežnú podporu používateľom."
+2 = "PDF.wow.to nemôže—and nikdy nebude—sledovať ani pristupovať k obsahu dokumentov, ktoré používate."
 3 = "Vaše súkromie a dôvera sú základom toho, čo robíme."
 
 [cookieBanner.preferencesModal.necessary]
@@ -3346,14 +3346,14 @@ message = "Nepodarilo sa nastaviť predvolenú aplikáciu PDF"
 title = "Chyba"
 
 [defaultApp.prompt]
-message = "Nastavte Stirling PDF ako predvolenú aplikáciu na otváranie PDF súborov."
+message = "Nastavte PDF.wow.to ako predvolenú aplikáciu na otváranie PDF súborov."
 
 [defaultApp.settingsOpened]
-message = "Vyberte Stirling PDF v nastaveniach systému"
+message = "Vyberte PDF.wow.to v nastaveniach systému"
 title = "Nastavenia otvorené"
 
 [defaultApp.success]
-message = "Stirling PDF je teraz váš predvolený editor PDF"
+message = "PDF.wow.to je teraz váš predvolený editor PDF"
 title = "Predvolená aplikácia nastavená"
 
 [desktopUpdate]
@@ -3369,7 +3369,7 @@ updateFailedMessage = "Zlyhalo preberanie alebo inštalácia aktualizácie."
 
 [desktopUpdate.blocked]
 docsLink = "Zobraziť dokumentáciu k inštalácii"
-message = "Stirling-PDF nemá povolenie aktualizovať sa na tomto počítači."
+message = "PDF.wow.to nemá povolenie aktualizovať sa na tomto počítači."
 title = "Vyžadujú sa oprávnenia správcu"
 
 [devAirgapped]
@@ -3939,7 +3939,7 @@ title = "Presunúť do priečinka"
 [filesPage.origin]
 all = "Všetky zdroje"
 cloud = "Cloud"
-cloudHint = "Uložené na serveri Stirling"
+cloudHint = "Uložené na serveri PDF.wow.to"
 local = "Lokálne"
 localHint = "Uložené len v tomto prehliadači"
 shared = "Zdieľané"
@@ -4203,7 +4203,7 @@ invisible = "Neviditeľné (len metadáta)"
 location = "Poloha:"
 logo = "Logo:"
 logoHidden = "Bez loga"
-logoShown = "Zobrazené logo Stirling PDF"
+logoShown = "Zobrazené logo PDF.wow.to"
 participantCount_one = "{{count}} participant will sign in order"
 participantCount_other = "{{count}} participants will sign in order"
 participants = "Účastníci"
@@ -4257,7 +4257,7 @@ title = "Postupné podpisovanie"
 dismiss = "Skryť banner"
 message = "Vytvorte si bezplatný účet, uložte svoju prácu, získajte prístup k ďalším funkciám a podporte projekt."
 signUp = "Zaregistrujte sa zadarmo"
-title = "Používate Stirling PDF ako hosť!"
+title = "Používate PDF.wow.to ako hosť!"
 
 [home.addAttachments]
 desc = "Pridať alebo odstrániť vložené súbory (prílohy) do/z PDF"
@@ -4416,7 +4416,7 @@ tags = "spojiť,zlúčiť,zjednotiť"
 title = "Zlúčiť"
 
 [home.mobile]
-brandAlt = "Logo Stirling PDF"
+brandAlt = "Logo PDF.wow.to"
 openFiles = "Otvoriť súbory"
 swipeHint = "Potiahnite doľava alebo doprava na prepnutie zobrazení"
 tools = "Nástroje"
@@ -4455,7 +4455,7 @@ tags = "organizovať,preusporiadať,premenovať"
 title = "Organizovať"
 
 [home.pdfTextEditor]
-desc = "Kontrolujte a upravujte Stirling PDF JSON exporty so skupinovými úpravami textu a opätovným vytvorením PDF"
+desc = "Kontrolujte a upravujte PDF.wow.to JSON exporty so skupinovými úpravami textu a opätovným vytvorením PDF"
 tags = "edit text,modify text,change text,edit content,update text,rewrite,correct,amend,redline,revise,text editor,content editor"
 title = "Editor textu PDF"
 
@@ -4641,7 +4641,7 @@ passwordRequired = "Heslo je povinné"
 signIn = "Prihlásiť sa"
 validating = "Overuje sa pozvánka..."
 validationError = "Nepodarilo sa overiť pozývací odkaz"
-welcome = "Vitajte v Stirling PDF"
+welcome = "Vitajte v PDF.wow.to"
 welcomeSubtitle = "Dokončite nastavenie účtu a môžete začať"
 welcomeTitle = "Boli ste pozvaní!"
 
@@ -4669,7 +4669,7 @@ terms = "Podmienkami používania"
 title = "Licencie tretích strán"
 
 [localMode]
-toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do Stirling Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
+toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do PDF.wow.to Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
 
 [localMode.toolPicker]
 message = "Prihláste sa a odomknite všetky nástroje."
@@ -4726,7 +4726,7 @@ subtitle = "S viac než tuctom nástrojov na začierňovanie, podpisovanie, čí
 title = "Upravujte PDF na zobrazenie/ochranu požadovaných informácií"
 
 [login.slides.overview]
-alt = "Prehľad Stirling PDF"
+alt = "Prehľad PDF.wow.to"
 subtitle = "Cloudová sada s dôrazom na súkromie pre PDF: konvertovanie, podpisovanie, začierňovanie a správa dokumentov, a 50+ ďalších výkonných nástrojov."
 title = "Všetko pre vaše PDF na jednom mieste."
 
@@ -4844,7 +4844,7 @@ message = "Overenie nebolo úspešné. Môžete zavrieť toto okno a skúsiť zn
 title = "Overenie zlyhalo"
 
 [oauth.success]
-message = "Môžete zavrieť toto okno a vrátiť sa do Stirling PDF."
+message = "Môžete zavrieť toto okno a vrátiť sa do PDF.wow.to."
 title = "Overenie úspešné"
 
 [oauthConsent]
@@ -4857,17 +4857,17 @@ loadFailed = "This authorisation request is invalid or has expired. Close this t
 loading = "Loading authorisation request..."
 missingId = "Missing authorisation request. Start the connection from your app and try again."
 redirecting = "Returning you to the app..."
-requesting = "{{app}} wants to access your Stirling PDF account"
+requesting = "{{app}} wants to access your PDF.wow.to account"
 scopesIntro = "This will allow {{app}} to:"
 signedInAs = "Signed in as {{name}}"
 signInButton = "Sign in to continue"
-signInPrompt = "Sign in to your Stirling PDF account to continue connecting the app."
+signInPrompt = "Sign in to your PDF.wow.to account to continue connecting the app."
 title = "Authorise access"
 unknownApp = "A third-party application"
 
 [oauthConsent.access]
 actAsYou = "Act as you - everything {{app}} does runs under your account and counts towards your usage"
-tools = "Use your Stirling PDF tools on your behalf - convert, edit, sign, secure and process your documents"
+tools = "Use your PDF.wow.to tools on your behalf - convert, edit, sign, secure and process your documents"
 
 [oauthConsent.scope]
 email = "See your email address"
@@ -4989,7 +4989,7 @@ skipForNow = "Preskočiť zatiaľ"
 skipTheTour = "Preskočiť prehliadku"
 
 [onboarding.desktopInstall]
-body = "Stirling najlepšie funguje ako desktopová aplikácia. Môžete ju používať offline, pristupovať k dokumentom rýchlejšie a upravovať lokálne na počítači."
+body = "PDF.wow.to najlepšie funguje ako desktopová aplikácia. Môžete ju používať offline, pristupovať k dokumentom rýchlejšie a upravovať lokálne na počítači."
 selectOs = "Vyberte operačný systém"
 title = "Stiahnuť"
 titleWithOs = "Stiahnuť pre {{osLabel}}"
@@ -4999,8 +4999,8 @@ authenticationCode = "Overovací kód"
 qrCodeLoading = "Generuje sa váš QR kód…"
 
 [onboarding.planOverview]
-adminBodyLoginDisabled = "Keď zapnete režim prihlásenia, môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Stirling bezplatne."
-adminBodyLoginEnabled = "Ako admin môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Stirling bezplatne."
+adminBodyLoginDisabled = "Keď zapnete režim prihlásenia, môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať PDF.wow.to bezplatne."
+adminBodyLoginEnabled = "Ako admin môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať PDF.wow.to bezplatne."
 adminTitle = "Prehľad pre admina"
 userBody = "Pozvite kolegov, priraďujte roly a udržujte dokumenty organizované v jednom bezpečnom pracovnom priestore. Režim prihlásenia zapnite, keď ste pripravení rásť nad sólo použitie."
 userTitle = "Prehľad plánu"
@@ -5008,7 +5008,7 @@ userTitle = "Prehľad plánu"
 [onboarding.saas.freeEditor]
 freeLine = "The editor is now <free>completely free</free>."
 premium = "We've added loads of new features, including <strong>Policies</strong> and <strong>Agent Chat</strong>."
-title = "Welcome to Stirling"
+title = "Welcome to PDF.wow.to"
 
 [onboarding.saas.team]
 addButton = "Add"
@@ -5028,20 +5028,20 @@ rolePlaceholder = "Potvrďte svoju rolu"
 roleUser = "Používateľ"
 
 [onboarding.serverLicense]
-freeBody = "Naše licencovanie <strong>Open-Core</strong> povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Ak chcete škálovať bez prerušenia a získať skorý prístup k nášmu novému <strong>nástroju na úpravu textu PDF</strong>, odporúčame plán Stirling Server - plné úpravy a <strong>neobmedzené miesta</strong> za $99/server/mo."
+freeBody = "Naše licencovanie <strong>Open-Core</strong> povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Ak chcete škálovať bez prerušenia a získať skorý prístup k nášmu novému <strong>nástroju na úpravu textu PDF</strong>, odporúčame plán PDF.wow.to Server - plné úpravy a <strong>neobmedzené miesta</strong> za $99/server/mo."
 freeTitle = "Serverová licencia"
-overLimitBody = "Naše licencovanie povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Máte <strong>{{overLimitUserCopy}}</strong> používateľov Stirling. Ak chcete pokračovať bez prerušenia, prejdite na plán Stirling Server - <strong>neobmedzené miesta</strong>, úpravy textu PDF a plná správa pre $99/server/mo."
+overLimitBody = "Naše licencovanie povoľuje až <strong>{{freeTierLimit}}</strong> používateľov zdarma na server. Máte <strong>{{overLimitUserCopy}}</strong> používateľov PDF.wow.to. Ak chcete pokračovať bez prerušenia, prejdite na plán PDF.wow.to Server - <strong>neobmedzené miesta</strong>, úpravy textu PDF a plná správa pre $99/server/mo."
 overLimitTitle = "Potrebná serverová licencia"
 seePlans = "Zobraziť plány →"
 upgrade = "Upgradovať teraz →"
 
 [onboarding.tourOverview]
-body = "Stirling PDF V2 prichádza s desiatkami nástrojov a obnoveným rozložením. Dajte si rýchlu prehliadku, aby ste zistili, čo sa zmenilo a kde nájdete potrebné funkcie."
+body = "PDF.wow.to V2 prichádza s desiatkami nástrojov a obnoveným rozložením. Dajte si rýchlu prehliadku, aby ste zistili, čo sa zmenilo a kde nájdete potrebné funkcie."
 title = "Prehľad prehliadky"
 
 [onboarding.welcomeSlide]
-body = "Stirling PDF je teraz pripravený pre tímy všetkých veľkostí. Táto aktualizácia prináša nové rozloženie, silné admin schopnosti a našu najžiadanejšiu funkciu - <strong>Upraviť text</strong>."
-title = "Vitajte v Stirling"
+body = "PDF.wow.to je teraz pripravený pre tímy všetkých veľkostí. Táto aktualizácia prináša nové rozloženie, silné admin schopnosti a našu najžiadanejšiu funkciu - <strong>Upraviť text</strong>."
+title = "Vitajte v PDF.wow.to"
 
 [onboarding.whatsNew]
 activeFilesView = "Použite Aktívne súbory na zobrazenie všetkého, čo máte otvorené, a vyberte si, na čom pracovať."
@@ -5347,7 +5347,7 @@ benefit1Body = "chain tools, schedule runs, batch process"
 benefit1Title = "Automation pipelines"
 benefit2Body = "summarise, classify, redact, AI-OCR"
 benefit2Title = "AI tools"
-benefit3Body = "call any Stirling endpoint programmatically"
+benefit3Body = "call any PDF.wow.to endpoint programmatically"
 benefit3Title = "API access"
 button = "Turn on Processor →"
 reassurance = "No minimum · Set a $0 cap to test · Cancel anytime"
@@ -5406,7 +5406,7 @@ leader = "Team owner"
 member = "Member"
 
 [payg.signupRequired]
-body = "Stirling PDF gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using Stirling as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
+body = "PDF.wow.to gives every signed-up account 500 free operations, enough to keep most workflows humming without paying a cent. You're currently using PDF.wow.to as a guest, which doesn't include billable tools like AI, automations, or hosted processing."
 cancel = "Not now"
 cta = "Sign up free"
 subtext = "Creating an account is free and takes a few seconds. No credit card required."
@@ -5454,7 +5454,7 @@ usdNote = "Estimated in USD. You can adjust your cap any time after subscribing,
 [payg.upgrade.checkout]
 capValue = "{{symbol}}{{amount}} / month"
 edit = "Edit"
-help = "Stripe handles your card details. Stirling never sees them."
+help = "Stripe handles your card details. PDF.wow.to never sees them."
 loading = "Loading checkout…"
 noCap = "No cap"
 title = "Add your payment method"
@@ -5462,7 +5462,7 @@ title = "Add your payment method"
 [payg.upgrade.help]
 aiBody = "summarise, classify, redact, AI-OCR"
 aiTitle = "AI tools"
-apiBody = "programmatic access to any Stirling endpoint"
+apiBody = "programmatic access to any PDF.wow.to endpoint"
 apiTitle = "API calls"
 automationBody = "chained tools or scheduled runs that don't need clicks"
 automationTitle = "Automation pipelines"
@@ -5893,7 +5893,7 @@ upToFiveUsers = "Až 5 používateľov"
 usageTrackingPrometheus = "Sledovanie používania a Prometheus"
 
 [plan.licenseWarning]
-body = "Máte {{total}} používateľov, ale bezplatná úroveň podporuje len {{limit}} na server. Upgradujte, aby Stirling PDF bežal hladko."
+body = "Máte {{total}} používateľov, ale bezplatná úroveň podporuje len {{limit}} na server. Upgradujte, aby PDF.wow.to bežal hladko."
 cta = "Zobraziť plány"
 overLimit = "viac než {{limit}}"
 title = "Dosiahnutý bezplatný limit self-hostingu"
@@ -6192,25 +6192,25 @@ comingSoon = "Už čoskoro"
 [portal.accountLink.card]
 billingNote = "Bezobslužné spracovanie sa účtuje z peňaženky vašej organizácie."
 eyebrow = "Prepojenie účtu"
-linkButton = "Prepojiť váš účet Stirling"
+linkButton = "Prepojiť váš účet PDF.wow.to"
 linked = "Prepojené"
 linkedAs = "Prepojené ako {{name}}."
 linkedGeneric = "Táto inštancia je prepojená."
 notLinked = "Neprepojené"
-title = "Prepojiť túto organizáciu s jej účtom Stirling"
+title = "Prepojiť túto organizáciu s jej účtom PDF.wow.to"
 unlink = "Zrušiť prepojenie"
 
 [portal.accountLink.card.error]
 title = "Nepodarilo sa prepojiť"
 
 [portal.accountLink.card.loginNotConfigured]
-after = "na povolenie prepájania účtov s hosťovaným účtom Stirling. Vo vývoji môžete simulovať prihlásenie z dialógu prepojenia."
+after = "na povolenie prepájania účtov s hosťovaným účtom PDF.wow.to. Vo vývoji môžete simulovať prihlásenie z dialógu prepojenia."
 before = "Nastavte"
 title = "SaaS prihlásenie nie je nakonfigurované"
 
 [portal.accountLink.gate]
 action = "Prepojiť účet"
-description = "Prepojte účet Stirling tejto organizácie, aby ste mohli používať spoplatnené funkcie."
+description = "Prepojte účet PDF.wow.to tejto organizácie, aby ste mohli používať spoplatnené funkcie."
 title = "Prepojte na odomknutie"
 titleFeature = "Prepojte na odomknutie {{feature}}"
 
@@ -6242,13 +6242,13 @@ never = "nikdy"
 
 [portal.accountLink.modal]
 linkSubtitle = "Prihláste sa do účtu, voči ktorému má tento server účtovať."
-linkTitle = "Prepojiť váš účet Stirling"
-reauthSubtitle = "Platnosť vašej relácie vypršala — znova sa prihláste do svojho účtu Stirling. Vaša inštancia zostane prepojená."
+linkTitle = "Prepojiť váš účet PDF.wow.to"
+reauthSubtitle = "Platnosť vašej relácie vypršala — znova sa prihláste do svojho účtu PDF.wow.to. Vaša inštancia zostane prepojená."
 reauthTitle = "Znova sa prihlásiť"
 simulateSignIn = "Simulovať prihlásenie (dev)"
 
 [portal.accountLink.modal.loginNotConfigured]
-after = "na povolenie prepájania v aplikácii s hosťovaným účtom Stirling."
+after = "na povolenie prepájania v aplikácii s hosťovaným účtom PDF.wow.to."
 and = "a"
 before = "Nastavte"
 title = "SaaS prihlásenie nie je nakonfigurované"
@@ -6257,7 +6257,7 @@ title = "SaaS prihlásenie nie je nakonfigurované"
 instancesSub = "Každá self-hosted inštancia zaregistrovaná v tejto organizácii. Odvolajte poverenie, aby ste okamžite prerušili jej bezobslužný prístup."
 instancesTitle = "Prepojené inštancie"
 revokeError = "Inštanciu sa nepodarilo odvolať"
-sub = "Prepojte túto self-hosted organizáciu s jej účtom Stirling, aby sa bezobslužné spracovanie účtovalo z peňaženky vašej organizácie."
+sub = "Prepojte túto self-hosted organizáciu s jej účtom PDF.wow.to, aby sa bezobslužné spracovanie účtovalo z peňaženky vašej organizácie."
 
 [portal.accountLink.panel.loadError]
 forbidden = "Prepojené inštancie organizácie môže zobraziť iba vlastník tímu."
@@ -6354,7 +6354,7 @@ close = "Zavrieť asistenta"
 error = "Asistenta sa nepodarilo kontaktovať."
 errorWithDetail = "Asistenta sa nepodarilo kontaktovať: {{detail}}"
 inputAriaLabel = "Opýtať sa asistenta"
-inputPlaceholder = "Opýtajte sa na Stirling…"
+inputPlaceholder = "Opýtajte sa na PDF.wow.to…"
 open = "Otvoriť asistenta"
 send = "Odoslať"
 title = "Asistent"
@@ -6392,7 +6392,7 @@ title = "Stripe nie je nakonfigurovaný"
 cta = "Vytvoriť vašu ponuku Enterprise"
 description = "Zľavy za záväzný objem, nasadenie air-gapped, vlastná MSA a bezpečnostné posúdenia, a partnerstvá s distribútormi tretích strán."
 eyebrow = "Množstevná zľava · 1M+ PDF"
-title = "Stirling Enterprise"
+title = "PDF.wow.to Enterprise"
 
 [portal.billing.freeEditors]
 activeThisMonth = "Aktívne tento mesiac"
@@ -6439,9 +6439,9 @@ viewAriaLabel = "Zobraziť faktúru {{number}} v Stripe"
 viewLink = "Zobraziť ↗"
 
 [portal.billing.linkPrompt]
-cta = "Prepojiť účet Stirling"
+cta = "Prepojiť účet PDF.wow.to"
 description = "Manuálna úprava PDF — zobrazenie, podpisovanie, zlúčenie, rozdelenie, vodoznak, kompresia, konverzia, manuálne OCR — je vždy bezplatná, či už je účet prepojený alebo nie. Prepojením získate 500 bezplatných PDF meraného spracovania (automatizácia, AI a API); keď budete potrebovať viac, zapnite plán Processor a plaťte iba za to, čo použijete."
-title = "Prepojiť váš účet Stirling"
+title = "Prepojiť váš účet PDF.wow.to"
 
 [portal.billing.paymentMethod]
 billedMonthly = "Účtované mesačne"
@@ -6723,7 +6723,7 @@ time = "Čas"
 user = "Používateľ"
 
 [portal.editorAdmin]
-subtitle = "Nasaďte Stirling PDF Editor, spárujte self-hosted inštancie s vašou organizáciou a spravujte bežiacu flotilu — ciele, stav, prihlasovacie údaje a offline aktiváciu na jednom mieste."
+subtitle = "Nasaďte PDF.wow.to Editor, spárujte self-hosted inštancie s vašou organizáciou a spravujte bežiacu flotilu — ciele, stav, prihlasovacie údaje a offline aktiváciu na jednom mieste."
 title = "Nasadenie Editoru"
 
 [portal.editorAdmin.health.columns]
@@ -6809,7 +6809,7 @@ title = "Na tejto stránke sa niečo pokazilo"
 [portal.home.editor]
 activeUsers = "{{n}} aktívnych"
 invite = "Pozvať členov tímu"
-name = "Stirling PDF Editor"
+name = "PDF.wow.to Editor"
 open = "Otvoriť v prehliadači"
 updated = "aktualizované {{time}}"
 
@@ -6869,7 +6869,7 @@ title = "Vydať API kľúč"
 [portal.infrastructure]
 manageEditorDeployment = "Spravovať nasadenie Editoru"
 sectionsAriaLabel = "Sekcie infraštruktúry"
-subtitle = "Nasadenia, prihlasovacie údaje, bezpečnostný stav, úložisko a auditná stopa pre váš pracovný priestor Stirling."
+subtitle = "Nasadenia, prihlasovacie údaje, bezpečnostný stav, úložisko a auditná stopa pre váš pracovný priestor PDF.wow.to."
 title = "Infraštruktúra"
 
 [portal.infrastructure.apiKeys]
@@ -6889,7 +6889,7 @@ usageMonth = "Použitie tento mesiac"
 usageToday = "Použitie dnes"
 
 [portal.infrastructure.apiKeys.empty]
-description = "Vytvorte kľúč s rozsahom a začnite volať Stirling API."
+description = "Vytvorte kľúč s rozsahom a začnite volať PDF.wow.to API."
 title = "Zatiaľ žiadne API kľúče"
 
 [portal.infrastructure.audit]
@@ -6958,7 +6958,7 @@ keyNameLabel = "Názov kľúča"
 keyNamePlaceholder = "napr. Produkcia · ingest"
 permissionsLabel = "Oprávnenia"
 secretKeyCaption = "Tajný kľúč"
-secretWarning = "Uložte ho v správcovi tajomstiev. Stirling vždy ukladá iba hash — neskôr ho nebude možné obnoviť."
+secretWarning = "Uložte ho v správcovi tajomstiev. PDF.wow.to vždy ukladá iba hash — neskôr ho nebude možné obnoviť."
 subtitle = "Obmedzte rozsah kľúča na minimum, ktoré potrebuje. Kedykoľvek ho môžete rotovať alebo zrušiť."
 subtitleCreated = "Skopírujte tento tajný kľúč teraz — znova sa už nezobrazí."
 title = "Vytvoriť API kľúč"
@@ -6993,7 +6993,7 @@ version = "Verzia"
 
 [portal.infrastructure.deployments.regions]
 heading = "Regióny"
-subheading = "Živý stav pre každý nasadený región Stirling — latencia, zaťaženie a verzia rollout."
+subheading = "Živý stav pre každý nasadený región PDF.wow.to — latencia, zaťaženie a verzia rollout."
 
 [portal.infrastructure.deployments.regions.empty]
 description = "Nasadené regióny sa tu zobrazia po zriadení vášho pracovného priestoru."
@@ -7050,16 +7050,16 @@ operation = "Operácia"
 routedTo = "Smerované na"
 
 [portal.infrastructure.security.access.byok]
-description = "Dodajte kľúč z vlastného KMS. Stirling ním šifruje, ale stále môže čítať."
+description = "Dodajte kľúč z vlastného KMS. PDF.wow.to ním šifruje, ale stále môže čítať."
 label = "Prineste si vlastný kľúč (BYOK)"
 
 [portal.infrastructure.security.access.hyok]
-description = "Kľúče nikdy neopustia váš KMS. Stirling uchováva iba ciphertext."
+description = "Kľúče nikdy neopustia váš KMS. PDF.wow.to uchováva iba ciphertext."
 label = "Držte si vlastný kľúč (HYOK)"
 
 [portal.infrastructure.security.access.stirling]
-description = "Stirling spravuje šifrovacie kľúče. Najjednoduchšie — žiadne operácie s kľúčmi na vašej strane."
-label = "Kľúče držané službou Stirling"
+description = "PDF.wow.to spravuje šifrovacie kľúče. Najjednoduchšie — žiadne operácie s kľúčmi na vašej strane."
+label = "Kľúče držané službou PDF.wow.to"
 
 [portal.infrastructure.security.accessPolicy]
 heading = "Politika prístupu k dokumentom"
@@ -7073,15 +7073,15 @@ viewReport = "Zobraziť správu →"
 
 [portal.infrastructure.security.compliance]
 heading = "Zhoda"
-subheading = "Potvrdenia a certifikácie pokrývajúce platformu Stirling."
+subheading = "Potvrdenia a certifikácie pokrývajúce platformu PDF.wow.to."
 
 [portal.infrastructure.security.empty]
 description = "Bezpečnostná konfigurácia vášho pracovného priestoru sa zobrazí tu."
 title = "Bezpečnostný stav nie je dostupný"
 
 [portal.infrastructure.security.hyokBanner]
-description = "S HYOK šifrovacie kľúče nikdy neopustia váš KMS. Stirling ukladá a spracúva iba ciphertext, ktorý môžete kedykoľvek odvolať."
-title = "Stirling nemôže dešifrovať vaše dokumenty"
+description = "S HYOK šifrovacie kľúče nikdy neopustia váš KMS. PDF.wow.to ukladá a spracúva iba ciphertext, ktorý môžete kedykoľvek odvolať."
+title = "PDF.wow.to nemôže dešifrovať vaše dokumenty"
 
 [portal.infrastructure.security.ipAllowlist]
 empty = "Nie sú nakonfigurované žiadne rozsahy IP adries — všetky IP adresy sú povolené."
@@ -7110,7 +7110,7 @@ subheading = "Správa kľúčov, ktoré šifrujú dokumenty v pokoji — kto mô
 
 [portal.infrastructure.security.managedBanner]
 description = "Správa kľúčov bring-your-own-key (BYOK) a hold-your-own-key (HYOK) je dostupná v Enterprise. Inovujte a dodajte kľúče z vlastného KMS."
-title = "Kľúče vo vašom pláne spravuje Stirling"
+title = "Kľúče vo vašom pláne spravuje PDF.wow.to"
 
 [portal.infrastructure.security.residency.apac]
 description = "ap-southeast-1"
@@ -7591,7 +7591,7 @@ upload = "Nahrať"
 
 [portal.procurement.agreement]
 agreeCta = "Súhlasiť a predplatiť"
-confirm = "Prečítal/-a som si Stirling Enterprise Agreement a súhlasím s ňou."
+confirm = "Prečítal/-a som si PDF.wow.to Enterprise Agreement a súhlasím s ňou."
 eyebrow = "Zmluva"
 intro = "Jedna kombinovaná zmluva pokrýva vašu dohodu: Master Service Agreement, Order Form, EULA a Data Processing Agreement. Skontrolujte ju a potom súhlasom prijmite ponuku ako záväzné predplatné."
 title = "Skontrolujte svoju enterprise zmluvu"
@@ -7606,7 +7606,7 @@ country = "Krajina"
 countryEuro = "Eurozóna (EUR €)"
 countryUK = "Spojené kráľovstvo (GBP £)"
 countryUS = "Spojené štáty (USD $)"
-eula = "Prečítal/-a som si Stirling Enterprise EULA a súhlasím s ňou. Riadi zmluvu vygenerovanú z tejto ponuky."
+eula = "Prečítal/-a som si PDF.wow.to Enterprise EULA a súhlasím s ňou. Riadi zmluvu vygenerovanú z tejto ponuky."
 generate = "Vygenerovať ponuku"
 included = "Zahrnuté"
 indemnification = "Odškodnenie za IP"
@@ -7689,7 +7689,7 @@ daysLeft_one = "Zostáva {{count}} deň"
 daysLeft_other = "Zostávajú {{count}} dni"
 engineerLabel = "Váš solutions engineer"
 eyebrow = "Vaše zavedenie"
-live = "Ste live na Stirling Enterprise"
+live = "Ste live na PDF.wow.to Enterprise"
 nextStep = "Ďalší krok: {{action}}"
 subtitle = "Váš solutions engineer je pri každom kroku. Naraz jedna ďalšia akcia; celý kontrolný zoznam je nižšie."
 title = "Od skúšobnej verzie po live, jedna vedená cesta"
@@ -7716,7 +7716,7 @@ gatingAction = "Prijmite svoju ponuku"
 label = "Ponuka"
 
 [portal.procurement.journeySteps.trial]
-blurb = "Vyhodnoťte Stirling na svojich dokumentoch a workflow."
+blurb = "Vyhodnoťte PDF.wow.to na svojich dokumentoch a workflow."
 gatingAction = "Vytvorte svoju ponuku"
 label = "Skúšobná verzia"
 
@@ -7730,14 +7730,14 @@ label = "Váš licenčný kľúč"
 
 [portal.procurement.link]
 cta = "Prepojiť účet"
-description = "Obstarávanie beží na vašom prepojenom účte Stirling: takto zriaďujeme skúšobnú verziu, oceňujeme ponuku a spúšťame fakturáciu. Prepojte účet a začnite."
+description = "Obstarávanie beží na vašom prepojenom účte PDF.wow.to: takto zriaďujeme skúšobnú verziu, oceňujeme ponuku a spúšťame fakturáciu. Prepojte účet a začnite."
 eyebrow = "Enterprise"
 title = "Prepojte svoj účet a začnite"
 
 [portal.procurement.live]
 description = "Vaše predplatné je aktívne a licencia je vydaná. Váš tím je zriadený a fakturácia sa začala."
 eyebrow = "Live"
-title = "Ste live na Stirling Enterprise"
+title = "Ste live na PDF.wow.to Enterprise"
 
 [portal.procurement.locked]
 description = "Skúšobné kľúče, ponuky na záväzný objem, zmluva na jeden podpis, platba a register dokumentov budú po spustení enterprise hodnotenia všetky tu."
@@ -7772,7 +7772,7 @@ requestBodyFree = "Vygenerujeme to na požiadanie. Potvrďte a váš solutions e
 requestBodyPaid = "Toto je platený doplnok. Potvrďte a váš solutions engineer ho nacení a pošle dokumenty."
 requestCta = "Vyžiadať"
 requestTitle = "Vyžiadať tento dokument"
-signBody = "Otvorí Stirling Enterprise Agreement na elektronický podpis: jeden podpis pokrýva MSA, objednávkový formulár, EULA a DPA. Automaticky spolupodpíšeme a posuniete sa k platbe."
+signBody = "Otvorí PDF.wow.to Enterprise Agreement na elektronický podpis: jeden podpis pokrýva MSA, objednávkový formulár, EULA a DPA. Automaticky spolupodpíšeme a posuniete sa k platbe."
 signCta = "Otvoriť na podpis"
 signTitle = "Skontrolujte a podpíšte svoju zmluvu"
 uploadBody = "Pošlite nám svoju objednávku a my ju vyfakturujeme podľa vašich podmienok. Presuňte PDF sem alebo vyberte súbor nižšie."
@@ -7824,7 +7824,7 @@ title = "Zatiaľ tu nič nie je"
 
 [portal.search]
 ariaLabel = "Hľadať"
-placeholder = "Hľadať v Stirling — endpointy, pipeline, dokumenty…"
+placeholder = "Hľadať v PDF.wow.to — endpointy, pipeline, dokumenty…"
 
 [portal.search.empty]
 noActionsDescription = "Rýchle akcie sa tu zobrazia, keď budú dostupné."
@@ -7852,9 +7852,9 @@ switchToLight = "Prepnúť na svetlú tému"
 [portal.shell.sidebar]
 appEditor = "Editor"
 appProcessor = "Processor"
-brandSuffix = "Stirling Processor"
+brandSuffix = "PDF.wow.to Processor"
 docsCount = "{{docs}} dokumentov"
-linkAccount = "Prepojiť účet Stirling"
+linkAccount = "Prepojiť účet PDF.wow.to"
 planEditor = "Plán Editor"
 planEnterprise = "Plán Enterprise"
 planProcessor = "Plán Processor"
@@ -7862,7 +7862,7 @@ primaryNav = "Primárna navigácia"
 switchApp = "Prepnúť aplikáciu"
 
 [portal.sources]
-subtitle = "Opakovane použiteľné vstupné pripojenia, ktoré privádzajú dokumenty do Stirling. Nakonfigurujte pripojenie raz a potom ho odkazujte z ľubovoľného počtu politík. Kliknutím na riadok zobrazíte jeho konfiguráciu a politiky, ktoré ho používajú."
+subtitle = "Opakovane použiteľné vstupné pripojenia, ktoré privádzajú dokumenty do PDF.wow.to. Nakonfigurujte pripojenie raz a potom ho odkazujte z ľubovoľného počtu politík. Kliknutím na riadok zobrazíte jeho konfiguráciu a politiky, ktoré ho používajú."
 title = "Zdroje"
 
 [portal.sources.actions]
@@ -7917,7 +7917,7 @@ description = "Sledujte adresár na serveri pre nové dokumenty."
 label = "Priečinok"
 
 [portal.sources.types.folder.fields.directory]
-helperText = "Absolútna cesta, ktorú Stirling sleduje pre súbory na spracovanie."
+helperText = "Absolútna cesta, ktorú PDF.wow.to sleduje pre súbory na spracovanie."
 label = "Cesta k adresáru"
 placeholder = "/data/incoming"
 
@@ -7965,7 +7965,7 @@ review = "Skontrolovať a pripojiť"
 
 [portal.usage]
 managePayment = "Spravovať platbu"
-subtitle = "Spotreba, faktúry a správa plánu pre každý PDF, ktorý Stirling fakturoval, v jednej konzole."
+subtitle = "Spotreba, faktúry a správa plánu pre každý PDF, ktorý PDF.wow.to fakturoval, v jednej konzole."
 title = "Používanie a fakturácia"
 
 [portal.usage.error]
@@ -7975,7 +7975,7 @@ walletUnavailable = "Peňaženka nie je dostupná: {{status}} {{statusText}}"
 
 [portal.usage.sessionExpired]
 action = "Znova sa prihlásiť"
-body = "Platnosť relácie vášho účtu Stirling vypršala. Ak chcete zobraziť fakturáciu, prihláste sa znova — vaša inštancia zostáva prepojená."
+body = "Platnosť relácie vášho účtu PDF.wow.to vypršala. Ak chcete zobraziť fakturáciu, prihláste sa znova — vaša inštancia zostáva prepojená."
 title = "Relácia vypršala"
 
 [portal.users]
@@ -8022,7 +8022,7 @@ summary = "Vlastní tím — spravuje zdroje jeho členov a zdieľané konfigur�
 3 = "Všetko, čo môže robiť člen"
 
 [portal.welcome]
-ariaLabel = "Vitajte v Stirling PDF"
+ariaLabel = "Vitajte v PDF.wow.to"
 badge = "Open-source"
 installEditor = "Nainštalovať Editor"
 inviteTeammates = "Pozvať spoluhráčov"
@@ -8030,7 +8030,7 @@ openInBrowser = "Otvoriť v prehliadači"
 perks = "Navždy zadarmo · Self-hostable"
 subtitle = "Najbezpečnejší PDF Editor na svete je zadarmo pre tímy všetkých veľkostí. Zahŕňa viac ako 60 PDF operácií a SSO."
 title = "Vitajte v"
-titleAccent = "Stirling PDF"
+titleAccent = "PDF.wow.to"
 
 [printFile]
 title = "Vytlačiť súbor"
@@ -8721,8 +8721,8 @@ hideTools = "Skryť nedostupné nástroje ▴"
 messageNoFallback = "Nástroje nebudú dostupné, kým sa váš server znovu nepripojí."
 messageWithFallback = "Niektoré nástroje vyžadujú pripojenie k serveru."
 showTools = "Zobraziť nedostupné nástroje ▾"
-title = "Váš server Stirling-PDF je nedostupný"
-toolNotAvailableLocally = "Váš server Stirling-PDF je offline a \"{{endpoint}}\" nie je dostupný na lokálnom backende."
+title = "Váš server PDF.wow.to je nedostupný"
+toolNotAvailableLocally = "Váš server PDF.wow.to je offline a \"{{endpoint}}\" nie je dostupný na lokálnom backende."
 
 [session]
 expired = "Vaša relácia vypršala. Obnovte stránku a skúste znova."
@@ -8782,7 +8782,7 @@ user = "Prihlásený ako"
 
 [settings.connection.mode]
 local = "Len lokálne"
-saas = "Stirling Cloud"
+saas = "PDF.wow.to Cloud"
 selfhosted = "Self-hostovaný"
 
 [settings.developer]
@@ -8797,7 +8797,7 @@ autoUnzipFileLimitDescription = "Maximálny počet súborov na extrakciu zo ZIP"
 autoUnzipFileLimitTooltip = "Rozbaľovať len vtedy, ak ZIP obsahuje najviac tento počet súborov. Zvýšte hodnotu pre extrakciu väčších ZIPov."
 autoUnzipTooltip = "Automaticky extrahuje ZIP súbory vrátené z operácií API. Zakážte, aby zostali ZIP súbory nedotknuté. Toto neovplyvní automatizačné pracovné postupy."
 defaultPdfEditor = "Predvolený editor PDF"
-defaultPdfEditorActive = "Stirling PDF je váš predvolený editor PDF"
+defaultPdfEditorActive = "PDF.wow.to je váš predvolený editor PDF"
 defaultPdfEditorChecking = "Kontroluje sa..."
 defaultPdfEditorInactive = "Iná aplikácia je nastavená ako predvolená"
 defaultPdfEditorSet = "Už je predvolené"
@@ -8858,7 +8858,7 @@ updateBehavior = "Spôsob aktualizácií"
 updateBehaviorDescription = "Vyberte, či sa má pýtať pred inštaláciou aktualizácií, inštalovať ich automaticky alebo úplne preskočiť kontroly aktualizácií."
 updateBehaviorError = "Nepodarilo sa zmeniť spôsob aktualizácií"
 updateBehaviorErrorLocked = "Toto nastavenie je uzamknuté vaším správcom."
-updateBehaviorLockedDescription = "Váš správca nastavil, ako Stirling-PDF narába s aktualizáciami na tomto počítači. Kontaktujte ho na zmenu."
+updateBehaviorLockedDescription = "Váš správca nastavil, ako PDF.wow.to narába s aktualizáciami na tomto počítači. Kontaktujte ho na zmenu."
 updateBehaviorSaved = "Spôsob aktualizácií bol uložený."
 versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
 viewDetails = "Zobraziť podrobnosti"
@@ -8942,7 +8942,7 @@ usageAnalytics = "Analytika používania"
 [settings.planBilling]
 currentPlan = "Aktuálny plán"
 loading = "Načítavajú sa fakturačné informácie..."
-notAvailable = "Plán a fakturácia sú dostupné len pri pripojení k Stirling Cloud (režim SaaS)."
+notAvailable = "Plán a fakturácia sú dostupné len pri pripojení k PDF.wow.to Cloud (režim SaaS)."
 title = "Plán a fakturácia"
 
 [settings.planBilling.billing]
@@ -9068,7 +9068,7 @@ emptyUsername = "Prosím, zadajte svoje používateľské meno"
 oauthFailed = "Prihlásenie cez OAuth zlyhalo. Skúste znova."
 
 [setup.saas]
-title = "Prihláste sa do Stirling"
+title = "Prihláste sa do PDF.wow.to"
 
 [setup.selfhosted]
 changeServerLocked = "Vaša organizácia obmedzila túto aplikáciu na konkrétny server"
@@ -9106,7 +9106,7 @@ step3 = "Reštartujte server"
 title = "Prihlásenie nie je povolené"
 
 [setup.server.url]
-description = "Zadajte úplnú URL svojho self-hostovaného servera Stirling PDF"
+description = "Zadajte úplnú URL svojho self-hostovaného servera PDF.wow.to"
 label = "URL servera"
 
 [sharedSign]
@@ -9342,7 +9342,7 @@ pleaseFillAllFields = "Vyplňte, prosím, všetky polia"
 signUp = "Zaregistrovať sa"
 signUpWith = "Sign up with"
 skip = "Skip"
-subtitle = "Pridajte sa k Stirling PDF a začnite"
+subtitle = "Pridajte sa k PDF.wow.to a začnite"
 title = "Vytvoriť účet"
 unexpectedError = "Neočakávaná chyba: {{message}}"
 
@@ -9569,7 +9569,7 @@ download = "Stiahnuť"
 downloaded = "Stiahnuté"
 downloadFailed = "Nepodarilo sa stiahnuť tento súbor."
 downloadsCount = "Stiahnutia: {{count}}"
-emailWarningBody = "Vyzerá to ako e‑mailová adresa. Ak táto osoba ešte nie je používateľom Stirling PDF, k súboru nebude mať prístup."
+emailWarningBody = "Vyzerá to ako e‑mailová adresa. Ak táto osoba ešte nie je používateľom PDF.wow.to, k súboru nebude mať prístup."
 emailWarningConfirm = "Aj tak zdieľať"
 emailWarningTitle = "E‑mailová adresa"
 errorTitle = "Zdieľanie zlyhalo"
@@ -9600,7 +9600,7 @@ manageTitle = "Správa zdieľania"
 noActivity = "Zatiaľ žiadna aktivita."
 noLinks = "Zatiaľ žiadne aktívne zdieľacie odkazy."
 noSharedUsers = "Zatiaľ nemá prístup žiadny používateľ."
-openInApp = "Otvoriť v Stirling PDF"
+openInApp = "Otvoriť v PDF.wow.to"
 ownerLabel = "Vlastník"
 ownerUnknown = "Neznámy"
 removeLink = "Odstrániť odkaz"
@@ -9654,7 +9654,7 @@ updateButton = "Aktualizovať na serveri"
 uploadButton = "Nahrať na server"
 
 [survey]
-title = "Stirling-PDF Survey"
+title = "PDF.wow.to Survey"
 
 [swagger]
 tags = "api,documentation,swagger,endpoints,development"
@@ -9782,7 +9782,7 @@ favorites = "Obľúbené"
 heading = "Všetky nástroje (zobrazenie na celú obrazovku)"
 noResults = "Skúste upraviť vyhľadávanie alebo prepnite popisy, aby ste našli, čo potrebujete."
 recommended = "Odporúčané"
-selfHostedOffline = "Vyžaduje váš server Stirling-PDF (aktuálne offline):"
+selfHostedOffline = "Vyžaduje váš server PDF.wow.to (aktuálne offline):"
 showDetails = "Zobraziť podrobnosti"
 unavailable = "Zakázané správcom servera:"
 unavailableDependency = "Nedostupné – chýba požadovaný nástroj na serveri:"
@@ -9791,7 +9791,7 @@ unfavorite = "Odstrániť z obľúbených"
 [toolPanel.modePrompt]
 chooseFullscreen = "Použiť režim celej obrazovky"
 chooseSidebar = "Použiť režim bočného panela"
-description = "Pozrite si obe rozloženia a rozhodnite sa, ako chcete skúmať nástroje Stirling PDF."
+description = "Pozrite si obe rozloženia a rozhodnite sa, ako chcete skúmať nástroje PDF.wow.to."
 dismiss = "Možno neskôr"
 fullscreenDescription = "Prehliadajte každý nástroj v katalógu, ktorý zakryje pracovný priestor, kým si jeden nevyberiete."
 fullscreenTitle = "Režim na celú obrazovku – (starší)"
@@ -9859,7 +9859,7 @@ loadingDetailedInfo = "Načítavajú sa podrobné informácie..."
 migrationGuide = "Migračná príručka"
 migrationGuides = "Migračné príručky"
 migrationGuidesDesc = "Pred aktualizáciou si preštudujte dôležité zmeny."
-modalSubtitle = "Nová verzia Stirling PDF je pripravená na inštaláciu."
+modalSubtitle = "Nová verzia PDF.wow.to je pripravená na inštaláciu."
 modalTitle = "Dostupná aktualizácia"
 notes = "Poznámky"
 releaseNotes = "Poznámky k vydaniu"
@@ -9883,7 +9883,7 @@ urgent = "Urgentná"
 attentionBody = "Váš admin sa musí prihlásiť na zobrazenie ďalších informácií. Ihneď ho kontaktujte."
 attentionBodyAdmin = "Skontrolujte licenčné požiadavky, aby tento server zostal v súlade."
 attentionTitle = "Tento server vyžaduje pozornosť admina"
-message = "Využite Stirling PDF naplno s neobmedzenými používateľmi a pokročilými funkciami"
+message = "Využite PDF.wow.to naplno s neobmedzenými používateľmi a pokročilými funkciami"
 seeInfo = "Zobraziť info"
 title = "Upgradovať na Server plán"
 upgradeButton = "Upgradovať teraz"
@@ -10000,7 +10000,7 @@ authWeb = "Heslo"
 create = "Vytvoriť účet"
 createSubtitle = "Vytvorte self-hosted účet s heslom alebo SSO."
 createTitle = "Vytvoriť účet"
-editorDesc = "Upravujte PDF v Stirling PDF Editor. Toto dostane každý."
+editorDesc = "Upravujte PDF v PDF.wow.to Editor. Toto dostane každý."
 email = "Emailová adresa"
 emailError = "Zadajte platnú emailovú adresu"
 emailPlaceholder2 = "name@company.com"
@@ -10015,7 +10015,7 @@ processorDeferred = "Pozvánka bola odoslaná, ale prístup k Processor zatiaľ 
 processorDesc = "Priestor pre governance, spúšťanie pipeline, agentov a API."
 role = "Rola"
 send2 = "Odoslať pozvánku"
-subtitle2 = "Dostanú e-mail s pozvánkou do vášho pracovného priestoru Stirling."
+subtitle2 = "Dostanú e-mail s pozvánkou do vášho pracovného priestoru PDF.wow.to."
 team = "Tím"
 title = "Pozvať ľudí"
 username = "Používateľské meno"
@@ -10138,7 +10138,7 @@ downloads = "Sťahovania"
 entryLabel = "Súhrn podpisu"
 filesEvaluated_one = "{{count}} súbor vyhodnotený"
 filesEvaluated_other = "{{count}} súborov vyhodnotených"
-footer = "Overené cez Stirling PDF"
+footer = "Overené cez PDF.wow.to"
 generatedAt = "Vygenerované"
 noPdf = "PDF správa bude dostupná po úspešnom overení."
 page = "Strana"
